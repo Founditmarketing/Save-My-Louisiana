@@ -221,7 +221,7 @@ const App: React.FC = () => {
           {/* Background Image with Slow Zoom */}
           <div className="absolute inset-0 z-0 overflow-hidden rounded-[2.5rem]">
             <img
-              src="https://picsum.photos/id/28/1920/1080"
+              src="/herosectionpic.png"
               alt="Louisiana Bayou Landscape"
               className="w-full h-full object-cover animate-zoom-slow"
             />

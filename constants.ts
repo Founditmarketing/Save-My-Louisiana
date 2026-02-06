@@ -96,15 +96,18 @@ export const SECTIONS: SectionData[] = [
       features: [
         {
           title: "Our Land",
-          description: "Pipeline corridors will slash through forests, farmlands, and coastal wetlands, fragmenting habitats that are essential for biodiversity and storm protection."
+          description: "Pipeline corridors will slash through forests, farmlands, and coastal wetlands, fragmenting habitats that are essential for biodiversity and storm protection.",
+          backgroundImage: "/herosectionpic.png"
         },
         {
           title: "Our Water",
-          description: "Injection wells threaten the Chicot Aquifer, the primary source of drinking and irrigation water for millions, with potential contamination from acidified waste."
+          description: "Injection wells threaten the Chicot Aquifer, the primary source of drinking and irrigation water for millions, with potential contamination from acidified waste.",
+          backgroundImage: "/water.png"
         },
         {
           title: "Our Future",
-          description: "Locking our state into a waste-disposal economy delays the transition to sustainable energy and leaves a toxic legacy for future generations."
+          description: "Locking our state into a waste-disposal economy delays the transition to sustainable energy and leaves a toxic legacy for future generations.",
+          backgroundImage: "/future.png"
         }
       ],
       fact: {
@@ -147,6 +150,7 @@ export const SECTIONS: SectionData[] = [
     imageSrc: 'https://picsum.photos/id/195/800/600', // Nature/Hope
     imageAlt: 'Green field sunrise',
     videoUrl: 'https://www.youtube.com/embed/-uL-2MkBA8E?si=VZtM_gY8gy8co7D6',
+    galleryImages: ['/savemylouisianagallery.jpg', '/savemylouisianagallery1.jpg', '/savemylouisianagallery2.png'],
     environmental: {
       title: 'Our Hope',
       subtitle: 'Resilience & Restoration: Nature can recover.',

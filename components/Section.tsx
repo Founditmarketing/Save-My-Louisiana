@@ -190,14 +190,26 @@ export const Section: React.FC<Props> = ({ data, perspective, index, isActive })
 
           <div className={`grid md:grid-cols-3 gap-8 transition-all duration-1000 delay-200 ${hasEntered ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             {content.features?.map((feature, i) => (
-              <div key={i} className="group bg-white rounded-[2rem] p-8 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:bg-white border-2 border-gray-200 hover:border-gray-300 relative overflow-hidden">
+              <div key={i} className={`group bg-white rounded-[2rem] p-8 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:bg-white border-2 border-gray-200 hover:border-gray-300 relative overflow-hidden ${feature.backgroundImage ? 'text-white' : ''}`}>
 
-                <div className="w-16 h-16 rounded-2xl bg-gray-50 flex items-center justify-center mb-6 text-brand-dark group-hover:bg-brand-red group-hover:text-white transition-colors duration-300">
+                {/* Optional Background Image */}
+                {feature.backgroundImage && (
+                  <div className="absolute inset-0 z-0">
+                    <img
+                      src={feature.backgroundImage}
+                      alt={feature.title}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-40 group-hover:opacity-100" // Opacity to ensure text readability
+                    />
+                    <div className="absolute inset-0 bg-black/60 group-hover:bg-black/40 transition-colors duration-300"></div>
+                  </div>
+                )}
+
+                <div className={`relative z-10 w-16 h-16 rounded-2xl bg-gray-50 flex items-center justify-center mb-6 text-brand-dark group-hover:bg-brand-red group-hover:text-white transition-colors duration-300 ${feature.backgroundImage ? 'bg-white/10 text-white backdrop-blur-sm' : ''}`}>
                   {icons[i] || <Info size={32} />}
                 </div>
 
-                <h4 className="text-2xl font-heading font-bold mb-4 text-gray-900">{feature.title}</h4>
-                <p className="text-gray-600 leading-relaxed">
+                <h4 className={`relative z-10 text-2xl font-heading font-bold mb-4 ${feature.backgroundImage ? 'text-white' : 'text-gray-900'}`}>{feature.title}</h4>
+                <p className={`relative z-10 leading-relaxed ${feature.backgroundImage ? 'text-white/90' : 'text-gray-600'}`}>
                   {feature.description}
                 </p>
               </div>
@@ -249,7 +261,51 @@ export const Section: React.FC<Props> = ({ data, perspective, index, isActive })
 
               {/* Main Media Container */}
               <div className="relative overflow-hidden rounded-[2.5rem] shadow-2xl aspect-video bg-gray-100 h-full">
-                {data.videoUrl ? (
+                {data.galleryImages && data.galleryImages.length > 0 ? (
+                  /* Image Slider Logic */
+                  (() => {
+                    const [currentSlide, setCurrentSlide] = useState(0);
+
+                    useEffect(() => {
+                      if (!isActive) return;
+                      const timer = setInterval(() => {
+                        setCurrentSlide((prev) => (prev + 1) % (data.galleryImages?.length || 1));
+                      }, 4000); // Change slide every 4 seconds
+                      return () => clearInterval(timer);
+                    }, [isActive]);
+
+                    return (
+                      <div className="w-full h-full relative">
+                        {data.galleryImages.map((img, idx) => (
+                          <div
+                            key={idx}
+                            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${idx === currentSlide ? 'opacity-100' : 'opacity-0'}`}
+                          >
+                            <img
+                              src={img}
+                              alt={`${data.baseTitle} gallery slide ${idx + 1}`}
+                              className="w-full h-full object-cover"
+                            />
+                            {/* Gradient Overlay for text readability if needed */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                          </div>
+                        ))}
+
+                        {/* Slide Indicators */}
+                        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
+                          {data.galleryImages.map((_, idx) => (
+                            <button
+                              key={idx}
+                              onClick={() => setCurrentSlide(idx)}
+                              className={`w-2 h-2 rounded-full transition-all duration-300 ${idx === currentSlide ? 'bg-white w-6' : 'bg-white/50 hover:bg-white/80'}`}
+                              aria-label={`Go to slide ${idx + 1}`}
+                            />
+                          ))}
+                        </div>
+                      </div>
+                    );
+                  })()
+                ) : data.videoUrl ? (
                   <iframe
                     width="100%"
                     height="100%"
