@@ -199,15 +199,10 @@ export const Section: React.FC<Props> = ({ data, perspective, index, isActive })
             <div className="h-1 w-24 bg-brand-red md:mx-auto mt-8 rounded-full"></div>
 
             {/* Added Description */}
-            <div className="max-w-3xl mx-auto mt-8 text-lg md:text-xl text-gray-700 leading-relaxed font-serif">
-              <p className="mb-4">
-                This issue affects everyone, but it places the greatest burden on:
-              </p>
-              <p className="font-bold text-gray-900 mb-4">
-                Working families • Rural communities • Farmers and landowners • Future generations
-              </p>
-              <p className="italic text-gray-600">
-                This is about safety, sovereignty, and fairness—regardless of political party, race, income, or background.
+            <div className="max-w-3xl mx-auto mt-8 text-lg md:text-xl text-gray-700 leading-relaxed font-serif text-center">
+              <p>
+                While affecting us all, the burden falls heaviest on our working families, farmers, and future generations. <br className="hidden md:block" />
+                This is a fight for <span className="font-bold text-gray-900">safety, sovereignty, and fairness.</span>
               </p>
             </div>
           </div>

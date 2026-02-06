@@ -53,10 +53,10 @@ export const Lightbox: React.FC<LightboxProps> = ({ images, initialIndex, isOpen
 
     return (
         <div
-            className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-sm flex items-center justify-center transition-opacity duration-300"
+            className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-sm flex items-center justify-center transition-opacity duration-300 p-4"
             onClick={onClose}
         >
-            {/* Close Button */}
+            {/* Top Close Button (Backup) */}
             <button
                 onClick={onClose}
                 className="absolute top-6 right-6 text-white/50 hover:text-white transition-colors p-2 z-[110]"
@@ -65,43 +65,56 @@ export const Lightbox: React.FC<LightboxProps> = ({ images, initialIndex, isOpen
                 <X size={32} />
             </button>
 
-            {/* Navigation Buttons - Only show if multiple images */}
-            {images.length > 1 && (
-                <>
+            <div
+                className="flex items-center justify-center gap-4 md:gap-8 max-w-full max-h-full"
+                onClick={(e) => e.stopPropagation()}
+            >
+                {/* Prev Button - Now relative to flow */}
+                {images.length > 1 && (
                     <button
                         onClick={handlePrev}
-                        className="absolute left-4 md:left-8 text-white/50 hover:text-white transition-colors p-4 rounded-full hover:bg-white/10 z-[110]"
+                        className="text-white/50 hover:text-white transition-colors p-2 rounded-full hover:bg-white/10 shrink-0"
                         aria-label="Previous image"
                     >
-                        <ChevronLeft size={40} />
+                        <ChevronLeft size={48} />
                     </button>
+                )}
 
+                {/* Main Image Container */}
+                <div className="relative max-h-[85vh] max-w-[80vw]">
+                    <img
+                        src={images[currentIndex]}
+                        alt={`Gallery image ${currentIndex + 1}`}
+                        className="max-h-[85vh] max-w-full object-contain shadow-2xl rounded-sm select-none"
+                    />
+
+                    {/* Image Counter */}
+                    {images.length > 1 && (
+                        <div className="absolute top-4 left-4 bg-black/50 px-3 py-1 rounded text-white/70 text-xs font-medium tracking-widest uppercase backdrop-blur-sm">
+                            {currentIndex + 1} / {images.length}
+                        </div>
+                    )}
+
+                    {/* Bottom Right Close Button */}
+                    <button
+                        onClick={onClose}
+                        className="absolute -bottom-12 -right-0 md:-right-12 text-white/70 hover:text-white transition-colors p-2 flex items-center gap-1 group"
+                        aria-label="Close lightbox"
+                    >
+                        <span className="text-sm font-medium uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity">Close</span>
+                        <X size={24} />
+                    </button>
+                </div>
+
+                {/* Next Button - Now relative to flow */}
+                {images.length > 1 && (
                     <button
                         onClick={handleNext}
-                        className="absolute right-4 md:right-8 text-white/50 hover:text-white transition-colors p-4 rounded-full hover:bg-white/10 z-[110]"
+                        className="text-white/50 hover:text-white transition-colors p-2 rounded-full hover:bg-white/10 shrink-0"
                         aria-label="Next image"
                     >
-                        <ChevronRight size={40} />
+                        <ChevronRight size={48} />
                     </button>
-                </>
-            )}
-
-            {/* Main Image Container */}
-            <div
-                className="relative max-w-7xl w-full h-full max-h-screen p-4 md:p-12 flex items-center justify-center"
-                onClick={(e) => e.stopPropagation()} // Prevent closing when clicking image area
-            >
-                <img
-                    src={images[currentIndex]}
-                    alt={`Gallery image ${currentIndex + 1}`}
-                    className="max-w-full max-h-full object-contain shadow-2xl rounded-sm select-none"
-                />
-
-                {/* Image Counter */}
-                {images.length > 1 && (
-                    <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-white/50 text-sm font-medium tracking-widest uppercase">
-                        {currentIndex + 1} / {images.length}
-                    </div>
                 )}
             </div>
         </div>

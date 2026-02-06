@@ -10,7 +10,7 @@ export const ContactFooter: React.FC = () => {
                     {/* Brand Column */}
                     <div className="space-y-4">
                         <a href="#" className="inline-block">
-                            <img src="/Save-My-LA-logo.png" alt="Save My Louisiana" className="h-16 w-auto object-contain brightness-0 invert opacity-90 hover:opacity-100 transition-opacity" />
+                            <img src="/Save-My-LA-logo.png" alt="Save My Louisiana" className="h-16 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity" />
                         </a>
                         <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
                             Empowering citizens to protect our land, water, and constitutional rights against unchecked industrial expansion.
