@@ -202,7 +202,7 @@ export const Section: React.FC<Props> = ({ data, perspective, index, isActive })
             <div className="max-w-3xl mx-auto mt-8 text-lg md:text-xl text-gray-700 leading-relaxed font-serif text-center">
               <p>
                 While affecting us all, the burden falls heaviest on our working families, farmers, and future generations. <br className="hidden md:block" />
-                This is a fight for <span className="font-bold text-gray-900">safety, sovereignty, and fairness.</span>
+                This is a stand for <span className="font-bold text-gray-900">safety, sovereignty, and fairness.</span>
               </p>
             </div>
           </div>

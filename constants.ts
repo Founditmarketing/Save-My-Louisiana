@@ -66,7 +66,7 @@ export const SECTIONS: SectionData[] = [
       title: 'The Friction',
       subtitle: 'Regulatory Capture: Who is protecting you?',
       body: [
-        'We are fighting against a system where regulators often fast-track permits for industry rather than scrutinizing them for public safety.',
+        'We are challenging a system where regulators often fast-track permits for industry rather than scrutinizing them for public safety.',
         'Lobbyists have spent millions in Baton Rouge to craft legislation that favors pipeline developers, stripping away local control and leaving individual citizens to fend for themselves.'
       ],
       cta: 'Track the Money',
@@ -200,7 +200,7 @@ export const SECTIONS: SectionData[] = [
       title: 'Your Help',
       subtitle: 'Fund the Defense.',
       body: [
-        'Legal battles against billion-dollar corporations are expensive. We provide pro-bono legal assistance to landowners who cannot afford to fight alone.',
+        'Legal battles against billion-dollar corporations are expensive. We provide pro-bono legal assistance to landowners who cannot afford to defend their rights alone.',
         'Your donation goes directly to expert witnesses, legal filing fees, and educational resources. Help us keep the courtroom doors open for every Louisiana family.'
       ],
       cta: 'Donate Today',
