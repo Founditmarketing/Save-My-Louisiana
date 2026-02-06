@@ -54,20 +54,20 @@ const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
 
         {/* Legal Seal / Icon Area */}
         <div className="mb-10 relative flex flex-col items-center">
-          <div className="w-20 h-20 rounded-full border-4 border-double border-gray-200 flex items-center justify-center mb-6 bg-gray-50 shadow-sm">
-            <Scale size={32} className="text-gray-800" />
+          <div className="w-24 h-24 mb-6 relative">
+            <img src="/Save-My-LA-logo.png" alt="Save My Louisiana Logo" className="w-full h-full object-contain" />
           </div>
 
           <div className="space-y-4">
-            <h2 className="text-4xl md:text-6xl font-serif font-black text-gray-900 uppercase tracking-tight leading-none">
-              Public<br />Notice
+            <h2 className="text-4xl md:text-6xl font-serif font-black text-gray-900 uppercase tracking-tight leading-none whitespace-nowrap">
+              Public Notice
             </h2>
             <div className="h-1 w-24 bg-brand-red mx-auto"></div>
           </div>
         </div>
 
         <p className="text-gray-600 font-serif italic text-xl md:text-3xl max-w-2xl leading-relaxed mb-12 text-center mx-auto">
-          "Formal Notice: Imminent threat to property and sovereignty."
+          Formal Notice: Imminent threat to property and sovereignty.
         </p>
 
         {/* Progress Bar Container - Refined for Legal Look */}
@@ -94,18 +94,13 @@ const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
 const Globe = () => {
   return (
     <div className="relative w-48 h-48 md:w-64 md:h-64 flex items-center justify-center perspective-[1000px]">
-      {/* Rotating Sphere */}
-      <div className="w-full h-full rounded-full shadow-[inset_-10px_-10px_30px_rgba(0,0,0,0.5),_0_0_20px_rgba(25,118,210,0.3)] bg-[#0f2c4e] relative overflow-hidden z-10">
-        {/* Map Texture - Rotating */}
-        <div
-          className="absolute inset-0 bg-[url('https://raw.githubusercontent.com/turban/webgl-earth/master/images/2_no_clouds_4k.jpg')] opacity-90 animate-globe-rotate"
-          style={{
-            backgroundSize: 'cover',
-            backgroundRepeat: 'repeat-x'
-          }}
-        ></div>
-        {/* Inner Shadow for sphere depth */}
-        <div className="absolute inset-0 shadow-[inset_10px_0_50px_rgba(0,0,0,0.4)] pointer-events-none"></div>
+      {/* Logo Container */}
+      <div className="w-full h-full rounded-full bg-white shadow-[0_0_50px_rgba(25,118,210,0.2)] flex items-center justify-center relative z-10 p-2">
+        <img
+          src="/Save-My-LA-logo.png"
+          alt="Save My Louisiana Logo"
+          className="w-full h-full object-contain"
+        />
       </div>
 
       {/* Outer Rings - Pulsing Effect */}
@@ -246,7 +241,7 @@ const App: React.FC = () => {
           <div className="relative z-10 max-w-7xl mx-auto space-y-12 px-6 mt-12 w-full">
             <div className={`transition-all duration-1000 delay-300 ${isRevealed ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               {/* Two Lines - Wider Container */}
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-[1.1] drop-shadow-2xl tracking-tight mb-8">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-white leading-[1.1] drop-shadow-2xl tracking-tight mb-8">
                 Preserving Our Land.<br />
                 Protecting Our Water.<br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300 italic">Securing Our Future.</span>
