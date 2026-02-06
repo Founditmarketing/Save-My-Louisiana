@@ -264,12 +264,12 @@ const App: React.FC = () => {
               <span className="text-brand-blue bg-brand-blue/10 px-2 leading-relaxed decoration-clone italic">The Journey.</span>
             </h2>
             <p className="text-xl md:text-2xl text-gray-600 font-serif leading-relaxed">
-              Follow the path from the <span className="text-brand-red font-bold">Situation</span> we face, to the <span className="text-gray-900 font-bold">Risks</span> threatening our land and water, towards the <span className="text-green-700 font-bold">Mission</span> that unites us.
+              Explore the evidence: from the industrial expansion challenging our sovereignty to the risks threatening our ecosystem. This journey maps out exactly what is at stake and how we can secure a safer future.
             </p>
           </div>
 
-          {/* Globe Restored */}
-          <div className="shrink-0 flex justify-center">
+          {/* Globe Restored - Hidden on Mobile */}
+          <div className="shrink-0 hidden md:flex justify-center">
             <Globe />
           </div>
         </div>
