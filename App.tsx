@@ -247,15 +247,15 @@ const App: React.FC = () => {
             <div className={`transition-all duration-1000 delay-300 ${isRevealed ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                 {/* Two Lines - Wider Container */}
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-white leading-[1.1] drop-shadow-2xl tracking-tight mb-8">
-                From Vacant Land to<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300 italic">Thriving Communities.</span>
+                Preserving Our Heritage.<br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300 italic">Securing Our Future.</span>
                 </h1>
             </div>
 
             {/* Buttons */}
             <div className={`flex flex-col sm:flex-row gap-5 justify-center pt-8 pb-4 transition-all duration-1000 delay-500 ${isRevealed ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                 <a href="#donate" className="bg-brand-red hover:bg-red-700 text-white px-10 py-5 rounded-full font-bold text-sm uppercase tracking-widest transition-all shadow-xl hover:shadow-red-500/30 transform hover:-translate-y-1">
-                  Join the Fight
+                  Join the Mission
                 </a>
                 <a href="#problem" className="bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/50 px-10 py-5 rounded-full font-bold text-sm uppercase tracking-widest transition-all shadow-lg transform hover:-translate-y-1">
                   Watch Video
