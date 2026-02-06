@@ -190,7 +190,7 @@ export const Section: React.FC<Props> = ({ data, perspective, index, isActive })
 
           <div className={`grid md:grid-cols-3 gap-8 transition-all duration-1000 delay-200 ${hasEntered ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             {content.features?.map((feature, i) => (
-              <div key={i} className={`group bg-white rounded-[2rem] p-8 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:bg-white border-2 border-gray-200 hover:border-gray-300 relative overflow-hidden ${feature.backgroundImage ? 'text-white' : ''}`}>
+              <div key={i} className={`group bg-white rounded-[2rem] p-8 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 relative overflow-hidden ${feature.backgroundImage ? 'text-white' : 'hover:bg-white border-2 border-gray-200 hover:border-gray-300'}`}>
 
                 {/* Optional Background Image */}
                 {feature.backgroundImage && (
