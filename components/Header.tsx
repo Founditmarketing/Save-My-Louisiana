@@ -44,7 +44,7 @@ export const Header: React.FC = () => {
       `}</style>
 
       {/* Top Bar - Scrolling Marquee - UPDATED COLORS */}
-      <div className="hidden md:flex bg-brand-blue text-white text-[10px] font-medium py-2 overflow-hidden z-50 relative border-b border-white/10">
+      <div className="hidden md:flex bg-brand-red text-white text-[10px] font-medium py-2 overflow-hidden z-50 relative border-b border-white/10">
         {/* We render the content twice to create a seamless infinite loop */}
         <div className="flex overflow-hidden w-full">
           <div className="animate-marquee flex gap-12 items-center shrink-0 min-w-full px-6 justify-around">

@@ -36,17 +36,10 @@ const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
 
       {/* Left Door Panel - White Legal Paper Theme */}
       <div className={`absolute left-0 top-0 w-1/2 h-full bg-white z-20 transition-transform duration-[1.8s] ease-[cubic-bezier(0.87,0,0.13,1)] border-r border-gray-100 ${isExiting ? '-translate-x-full' : 'translate-x-0'}`}>
-        {/* Legal File Number Watermark */}
-        <div className="absolute bottom-10 left-10 text-[10px] text-gray-400 font-serif tracking-widest uppercase opacity-60">
-          Case No. 2025-LA
-        </div>
       </div>
 
       {/* Right Door Panel - White Legal Paper Theme */}
       <div className={`absolute right-0 top-0 w-1/2 h-full bg-white z-20 transition-transform duration-[1.8s] ease-[cubic-bezier(0.87,0,0.13,1)] border-l border-gray-100 ${isExiting ? 'translate-x-full' : 'translate-x-0'}`}>
-        <div className="absolute bottom-10 right-10 text-[10px] text-gray-400 font-serif tracking-widest uppercase opacity-60">
-          Docket: Environmental Rights
-        </div>
       </div>
 
       {/* Center Content (Z-30 to sit on top of doors) */}
