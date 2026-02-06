@@ -51,6 +51,7 @@ export const SECTIONS: SectionData[] = [
     baseTitle: 'The Friction',
     imageSrc: 'https://picsum.photos/id/433/800/600', // Business/Conflict
     imageAlt: 'Corporate building low angle',
+    videoUrl: 'https://www.youtube.com/embed/MV7dfPqopjg?si=yQ0FnKc0nA6rTpNS',
     environmental: {
       title: 'The Friction',
       subtitle: 'Corporate Greed: Profit over preservation.',
@@ -145,6 +146,7 @@ export const SECTIONS: SectionData[] = [
     baseTitle: 'Our Hope',
     imageSrc: 'https://picsum.photos/id/195/800/600', // Nature/Hope
     imageAlt: 'Green field sunrise',
+    videoUrl: 'https://www.youtube.com/embed/-uL-2MkBA8E?si=VZtM_gY8gy8co7D6',
     environmental: {
       title: 'Our Hope',
       subtitle: 'Resilience & Restoration: Nature can recover.',
