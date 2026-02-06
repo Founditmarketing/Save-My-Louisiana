@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Perspective, SectionData } from '../types';
-import { ChevronRight, Info, Heart, Users, ArrowRight, Trees, Droplets, Clock } from 'lucide-react';
+import { ChevronRight, Info, Heart, Users, ArrowRight, Trees, Droplets, Clock, ZoomIn } from 'lucide-react';
+import { Lightbox } from './Lightbox';
 
 interface Props {
   data: SectionData;
@@ -59,6 +60,16 @@ export const Section: React.FC<Props> = ({ data, perspective, index, isActive })
 
   const [hasEntered, setHasEntered] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
+
+  // Lightbox State
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
+
+  const openLightbox = (index: number) => {
+    setLightboxIndex(index);
+    setIsLightboxOpen(true);
+  };
+
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -297,15 +308,20 @@ export const Section: React.FC<Props> = ({ data, perspective, index, isActive })
                         {data.galleryImages.map((img, idx) => (
                           <div
                             key={idx}
-                            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${idx === currentSlide ? 'opacity-100' : 'opacity-0'}`}
+                            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out cursor-zoom-in ${idx === currentSlide ? 'opacity-100' : 'opacity-0'}`}
+                            onClick={() => openLightbox(idx)}
                           >
                             <img
                               src={img}
                               alt={`${data.baseTitle} gallery slide ${idx + 1}`}
                               className="w-full h-full object-cover"
                             />
+                            {/* Zoom Hint Overlay */}
+                            <div className="absolute inset-0 bg-black/0 hover:bg-black/10 transition-colors duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
+                              <ZoomIn className="text-white drop-shadow-lg" size={48} />
+                            </div>
                             {/* Gradient Overlay for text readability if needed */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                           </div>
                         ))}
 
@@ -438,6 +454,19 @@ export const Section: React.FC<Props> = ({ data, perspective, index, isActive })
 
         </div>
       </div>
-    </section>
+
+
+      {/* Lightbox Component - Rendered at section level but used only when active */}
+      {
+        data.galleryImages && (
+          <Lightbox
+            images={data.galleryImages}
+            initialIndex={lightboxIndex}
+            isOpen={isLightboxOpen}
+            onClose={() => setIsLightboxOpen(false)}
+          />
+        )
+      }
+    </section >
   );
 };

@@ -6,7 +6,7 @@ import { ContactFooter } from './components/ContactFooter';
 import { SideNav } from './components/SideNav';
 import { SECTIONS } from './constants';
 import { Perspective } from './types';
-import { ArrowRight, Play, Scale } from 'lucide-react';
+import { ArrowRight, Play, Scale, ArrowDown } from 'lucide-react';
 
 // --- Loading Screen Component ---
 const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
@@ -272,6 +272,12 @@ const App: React.FC = () => {
           <div className="shrink-0 flex justify-center">
             <Globe />
           </div>
+        </div>
+
+        {/* Scroll Indicator - Added as requested */}
+        <div className="flex flex-col items-center justify-center gap-2 mb-12 animate-bounce">
+          <span className="text-xs font-bold uppercase tracking-widest text-gray-400">Scroll to Explore</span>
+          <ArrowDown className="text-gray-400" size={16} />
         </div>
 
         {/* Expanding Video Section */}
