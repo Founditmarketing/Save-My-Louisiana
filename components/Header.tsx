@@ -68,7 +68,7 @@ export const Header: React.FC = () => {
       </div>
 
       {/* Main Header - Skinnier (py-2) */}
-      <header className="sticky top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 py-2 transition-all duration-300">
+      <header className="sticky top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md py-2 transition-all duration-300">
         <div className="max-w-[95%] mx-auto px-2 relative flex items-center justify-between h-14">
 
           {/* Left: Logo Area */}

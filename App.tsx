@@ -204,7 +204,7 @@ const App: React.FC = () => {
       <SideNav sections={SECTIONS} activeId={activeSectionId} />
 
       {/* Intro / Hero Container */}
-      <div className="px-4 md:px-6 pt-6 pb-12 bg-white relative flex justify-center items-center min-h-[90vh]">
+      <div className="px-4 md:px-6 pb-12 bg-white relative flex justify-center items-center min-h-[90vh]">
 
         {/* The "Banner" Text that sits underneath/behind the animation */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
@@ -237,7 +237,7 @@ const App: React.FC = () => {
               <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-white leading-[1.1] drop-shadow-2xl tracking-tight mb-8 flex flex-col items-center pb-4">
                 <span className={`block transition-all duration-1000 delay-500 ${isRevealed ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>Preserving Our <span className="relative inline-block px-2 -rotate-1 bg-green-900/60 text-white transform mx-1 rounded-sm shadow-sm backdrop-blur-sm">Land.</span></span>
                 <span className={`block transition-all duration-1000 delay-[1200ms] ${isRevealed ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>Protecting Our <span className="relative inline-block px-2 rotate-1 bg-blue-900/60 text-white transform mx-1 rounded-sm shadow-sm backdrop-blur-sm">Water.</span></span>
-                <span className={`block transition-all duration-1000 delay-[1900ms] italic ${isRevealed ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>Securing Our <span className="relative inline-block px-2 -rotate-1 bg-red-900/60 text-white transform mx-1 rounded-sm shadow-sm backdrop-blur-sm">Future.</span></span>
+                <span className={`block transition-all duration-1000 delay-[1900ms] ${isRevealed ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>Securing Our <span className="relative inline-block px-2 -rotate-1 bg-red-900/60 text-white transform mx-1 rounded-sm shadow-sm backdrop-blur-sm">Future.</span></span>
               </h1>
             </div>
 
