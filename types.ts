@@ -25,4 +25,5 @@ export interface SectionData {
   legal: SectionContent;
   imageAlt: string;
   imageSrc: string; // URL for the background or side image
+  videoUrl?: string; // Optional YouTube embed URL
 }

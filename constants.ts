@@ -7,6 +7,7 @@ export const SECTIONS: SectionData[] = [
     baseTitle: 'The Problem',
     imageSrc: 'https://picsum.photos/id/164/800/600', // Industrial/Infrastructure
     imageAlt: 'Industrial pipelines',
+    videoUrl: 'https://www.youtube.com/embed/VqGIHbSprVk?si=VpPLjC7XAOnJuE73',
     environmental: {
       title: 'The Problem',
       subtitle: 'Industrial Overreach: A massive infrastructure expansion.',
