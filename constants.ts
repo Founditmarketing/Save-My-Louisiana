@@ -119,15 +119,18 @@ export const SECTIONS: SectionData[] = [
       features: [
         {
           title: "Our Land",
-          description: "Eminent domain is being weaponized to strip property rights from citizens, forcing pipelines onto private land against the will of the owners."
+          description: "Eminent domain is being weaponized to strip property rights from citizens, forcing pipelines onto private land against the will of the owners.",
+          backgroundImage: "/herosectionpic.png"
         },
         {
           title: "Our Water",
-          description: "Legal protections for groundwater are being eroded, prioritizing industrial injection rights over the public's right to clean, safe water."
+          description: "Legal protections for groundwater are being eroded, prioritizing industrial injection rights over the public's right to clean, safe water.",
+          backgroundImage: "/water.png"
         },
         {
           title: "Our Future",
-          description: "Long-term liability laws are shifting the burden of future accidents from the corporations to the taxpayers, creating a financial time bomb."
+          description: "Long-term liability laws are shifting the burden of future accidents from the corporations to the taxpayers, creating a financial time bomb.",
+          backgroundImage: "/future.png"
         }
       ]
     }
