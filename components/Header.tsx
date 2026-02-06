@@ -44,7 +44,7 @@ export const Header: React.FC = () => {
       `}</style>
 
       {/* Top Bar - Scrolling Marquee - UPDATED COLORS */}
-      <div className="hidden md:flex bg-brand-red text-white text-[10px] font-medium py-2 overflow-hidden z-50 relative border-b border-white/10">
+      <div className="flex bg-brand-red text-white text-[10px] font-medium py-2 overflow-hidden z-50 relative border-b border-white/10">
         {/* We render the content twice to create a seamless infinite loop */}
         <div className="flex overflow-hidden w-full">
           <div className="animate-marquee flex gap-12 items-center shrink-0 min-w-full px-6 justify-around">
@@ -72,8 +72,8 @@ export const Header: React.FC = () => {
 
           {/* Left: Logo Area */}
           <div className="flex items-center gap-3 z-10 shrink-0">
-            <a href="#" className="flex items-center gap-3 font-heading font-semibold text-xl md:text-2xl tracking-tighter text-gray-900 uppercase leading-none">
-              <img src="/Save-My-LA-logo.png" alt="Logo" className="w-10 h-10 object-contain" />
+            <a href="#" className="flex items-center gap-3 font-heading font-semibold text-xl md:text-xl tracking-tighter text-gray-900 uppercase leading-[0.85]">
+              <img src="/Save-My-LA-logo.png" alt="Logo" className="w-10 h-10 md:w-16 md:h-16 object-contain" />
               <span>Save My<br /><span className="text-brand-blue">Louisiana</span></span>
             </a>
           </div>

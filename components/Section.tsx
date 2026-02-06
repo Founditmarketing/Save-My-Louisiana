@@ -174,8 +174,8 @@ export const Section: React.FC<Props> = ({ data, perspective, index, isActive })
         className={`relative py-20 md:py-32 scroll-mt-0 transition-all duration-700 ease-in-out overflow-hidden bg-gray-50 opacity-100`}
       >
         <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="text-center max-w-3xl mx-auto mb-20 space-y-6">
-            <div className="flex flex-col items-center gap-2 mb-2">
+          <div className="text-left md:text-center max-w-3xl md:mx-auto mb-20 space-y-6">
+            <div className="flex flex-col items-start md:items-center gap-2 mb-2">
               <span className="font-heading font-medium text-6xl opacity-20 select-none text-brand-red">03</span>
             </div>
 
@@ -185,7 +185,7 @@ export const Section: React.FC<Props> = ({ data, perspective, index, isActive })
             <h3 className="text-xl md:text-2xl font-serif italic text-gray-600">
               {content.subtitle}
             </h3>
-            <div className="h-1 w-24 bg-brand-red mx-auto mt-8 rounded-full"></div>
+            <div className="h-1 w-24 bg-brand-red md:mx-auto mt-8 rounded-full"></div>
           </div>
 
           <div className={`grid md:grid-cols-3 gap-8 transition-all duration-1000 delay-200 ${hasEntered ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
@@ -248,7 +248,7 @@ export const Section: React.FC<Props> = ({ data, perspective, index, isActive })
                 } border-brand-blue/20`} />
 
               {/* Main Media Container */}
-              <div className="relative overflow-hidden rounded-[2.5rem] shadow-2xl aspect-[4/3] bg-gray-100 h-full">
+              <div className="relative overflow-hidden rounded-[2.5rem] shadow-2xl aspect-video bg-gray-100 h-full">
                 {data.videoUrl ? (
                   <iframe
                     width="100%"
