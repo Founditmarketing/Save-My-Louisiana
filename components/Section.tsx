@@ -186,8 +186,9 @@ export const Section: React.FC<Props> = ({ data, perspective, index, isActive })
       >
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-left md:text-center max-w-3xl md:mx-auto mb-20 space-y-6">
-            <div className="flex flex-col items-start md:items-center gap-2 mb-2">
+            <div className="flex items-center gap-4 mb-2 w-full md:justify-center">
               <span className="font-heading font-medium text-6xl opacity-20 select-none text-brand-red">03</span>
+              <div className="h-px flex-1 bg-gradient-to-r to-transparent from-brand-red/50 md:hidden"></div>
             </div>
 
             <h2 className="text-4xl md:text-6xl font-heading font-bold tracking-tight text-gray-900">
