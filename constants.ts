@@ -186,8 +186,7 @@ export const SECTIONS: SectionData[] = [
       title: 'Your Help',
       subtitle: 'Join the Coalition.',
       body: [
-        'We need you. Whether you are a hunter, a birdwatcher, or just a concerned citizen, your voice matters. We are building a massive coalition to show Baton Rouge that Louisiana is not for sale.',
-        'Sign the petition, attend a town hall, or simply share this message. Every action builds the momentum we need to stop these projects.'
+        'No matter your background, your voice matters in this movement. Whether you sign a petition, attend a town hall, or share this message, every action helps build a coalition dedicated to protecting Louisiana\'s future.'
       ],
       cta: 'Volunteer Now',
       fact: {
