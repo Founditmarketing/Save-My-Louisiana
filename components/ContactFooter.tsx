@@ -3,7 +3,7 @@ import { Facebook, Mail, MapPin, Phone, Twitter, Instagram } from 'lucide-react'
 
 export const ContactFooter: React.FC = () => {
     return (
-        <footer id="contact" className="bg-brand-dark text-white border-t border-white/10">
+        <footer id="contact" className="bg-black text-white border-t border-white/10">
             <div className="max-w-7xl mx-auto px-6 py-12 lg:py-16">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
 

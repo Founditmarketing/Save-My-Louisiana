@@ -15,11 +15,7 @@ export const SECTIONS: SectionData[] = [
         'Louisiana is facing an unprecedented proposal to build a vast network of high-pressure carbon pipelines and underground injection wells. This isn\'t just about one project; it\'s a statewide transformation of our landscape.',
         'These projects propose to transport hazardous CO2 through our rural communities and inject it permanently beneath the wetlands that protect us from storms.'
       ],
-      bulletPoints: [
-        'High-pressure hazardous pipelines.',
-        'Permanent waste injection.',
-        'Industrialization of wetlands.'
-      ],
+      bulletPoints: [],
       fact: {
         statistic: "100+",
         label: "Miles of Pipe",
