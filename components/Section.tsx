@@ -186,11 +186,24 @@ export const Section: React.FC<Props> = ({ data, perspective, index, isActive })
               {content.subtitle}
             </h3>
             <div className="h-1 w-24 bg-brand-red md:mx-auto mt-8 rounded-full"></div>
+
+            {/* Added Description */}
+            <div className="max-w-3xl mx-auto mt-8 text-lg md:text-xl text-gray-700 leading-relaxed font-serif">
+              <p className="mb-4">
+                This issue affects everyone, but it places the greatest burden on:
+              </p>
+              <p className="font-bold text-gray-900 mb-4">
+                Working families • Rural communities • Farmers and landowners • Future generations
+              </p>
+              <p className="italic text-gray-600">
+                This is about safety, sovereignty, and fairness—regardless of political party, race, income, or background.
+              </p>
+            </div>
           </div>
 
           <div className={`grid md:grid-cols-3 gap-8 transition-all duration-1000 delay-200 ${hasEntered ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             {content.features?.map((feature, i) => (
-              <div key={i} className={`group bg-white rounded-[2rem] p-8 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 relative overflow-hidden ${feature.backgroundImage ? 'text-white' : 'hover:bg-white border-2 border-gray-200 hover:border-gray-300'}`}>
+              <div key={i} className={`group bg-white rounded-[2rem] p-8 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-2xl transition-all duration-300 relative overflow-hidden border-2 border-transparent hover:border-brand-red ${feature.backgroundImage ? 'text-white' : 'hover:bg-white border-gray-200'}`}>
 
                 {/* Optional Background Image */}
                 {feature.backgroundImage && (
@@ -212,6 +225,11 @@ export const Section: React.FC<Props> = ({ data, perspective, index, isActive })
                 <p className={`relative z-10 leading-relaxed ${feature.backgroundImage ? 'text-white/90' : 'text-gray-600'}`}>
                   {feature.description}
                 </p>
+
+                {/* Arrow Icon on Hover */}
+                <div className={`absolute bottom-8 right-8 transition-all duration-300 transform translate-x-10 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 ${feature.backgroundImage ? 'text-white' : 'text-brand-red'}`}>
+                  <ArrowRight size={24} />
+                </div>
               </div>
             ))}
           </div>

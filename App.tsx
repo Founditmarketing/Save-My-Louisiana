@@ -235,9 +235,9 @@ const App: React.FC = () => {
             <div>
               {/* Two Lines - Wider Container */}
               <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-white leading-[1.1] drop-shadow-2xl tracking-tight mb-8 flex flex-col items-center pb-4">
-                <span className={`block transition-all duration-1000 delay-500 ${isRevealed ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>Preserving Our <span className="text-green-400">Land.</span></span>
-                <span className={`block transition-all duration-1000 delay-[1200ms] ${isRevealed ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>Protecting Our <span className="text-brand-blue">Water.</span></span>
-                <span className={`block transition-all duration-1000 delay-[1900ms] italic ${isRevealed ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>Securing Our <span className="text-brand-red">Future.</span></span>
+                <span className={`block transition-all duration-1000 delay-500 ${isRevealed ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>Preserving Our <span className="relative inline-block px-2 -rotate-1 bg-green-500 text-white transform mx-1 rounded-sm shadow-sm">Land.</span></span>
+                <span className={`block transition-all duration-1000 delay-[1200ms] ${isRevealed ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>Protecting Our <span className="relative inline-block px-2 rotate-1 bg-brand-blue text-white transform mx-1 rounded-sm shadow-sm">Water.</span></span>
+                <span className={`block transition-all duration-1000 delay-[1900ms] italic ${isRevealed ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>Securing Our <span className="relative inline-block px-2 -rotate-1 bg-brand-red text-white transform mx-1 rounded-sm shadow-sm">Future.</span></span>
               </h1>
             </div>
 
