@@ -241,7 +241,7 @@ const App: React.FC = () => {
           <div className="relative z-10 max-w-7xl mx-auto space-y-12 px-6 mt-12 w-full">
             <div className={`transition-all duration-1000 delay-300 ${isRevealed ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               {/* Two Lines - Wider Container */}
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-white leading-[1.1] drop-shadow-2xl tracking-tight mb-8">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-white leading-[1.1] drop-shadow-2xl tracking-tight mb-8">
                 Preserving Our Land.<br />
                 Protecting Our Water.<br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300 italic">Securing Our Future.</span>
