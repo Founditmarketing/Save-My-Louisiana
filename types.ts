@@ -16,7 +16,7 @@ export interface SectionContent {
   features?: { title: string; description: string; backgroundImage?: string }[]; // New field for the 3 main points
   cta?: string;
   ctaLink?: string; // Optional link target for the CTA button
-  fact: HighlightedFact; // Changed from statistics[] to a single impactful fact
+  fact?: HighlightedFact; // Changed from statistics[] to a single impactful fact
 }
 
 export interface SectionData {

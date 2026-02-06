@@ -108,12 +108,7 @@ export const SECTIONS: SectionData[] = [
           description: "Locking our state into a waste-disposal economy delays the transition to sustainable energy and leaves a toxic legacy for future generations.",
           backgroundImage: "/future.png"
         }
-      ],
-      fact: {
-        statistic: "2M+",
-        label: "Relies on Aquifer",
-        description: "The Chicot Aquifer, which sits directly in the path of proposed injection zones, provides water for over two million people and nearly half of Louisiana's rice irrigation."
-      }
+      ]
     },
     legal: {
       title: 'What Is At Risk?',
@@ -134,12 +129,7 @@ export const SECTIONS: SectionData[] = [
           title: "Our Future",
           description: "Long-term liability laws are shifting the burden of future accidents from the corporations to the taxpayers, creating a financial time bomb."
         }
-      ],
-      fact: {
-        statistic: "10 Yrs",
-        label: "To Transfer Liability",
-        description: "Proposed legislation would allow corporations to transfer all liability for the waste to the State of Louisiana as soon as 10 years after injection operations cease."
-      }
+      ]
     }
   },
   {
