@@ -16,6 +16,8 @@ export const SECTIONS: SectionData[] = [
         'These projects propose to transport hazardous CO2 through our rural communities and inject it permanently beneath the wetlands that protect us from storms.'
       ],
       bulletPoints: [],
+      cta: 'Learn More',
+      ctaLink: '#risk',
       fact: {
         statistic: "100+",
         label: "Miles of Pipe",
@@ -56,6 +58,7 @@ export const SECTIONS: SectionData[] = [
         'These out-of-state entities view our rich biodiversity and cultural heritage as merely "pore space" on a balance sheet, willing to sacrifice our long-term health for their short-term quarterly gains.'
       ],
       cta: 'See the Lobbying Data',
+      ctaLink: '#risk', // Linking to risk for now as placeholder or specific section
       fact: {
         statistic: "$85",
         label: "Per Ton Tax Credit",

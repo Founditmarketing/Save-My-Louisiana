@@ -439,10 +439,17 @@ export const Section: React.FC<Props> = ({ data, perspective, index, isActive })
 
             {content.cta && (
               <div className="pt-6">
-                <button className="group inline-flex items-center gap-2 font-bold uppercase tracking-widest text-xs border-b-2 border-transparent hover:border-brand-red pb-1 transition-all text-brand-dark">
-                  {content.cta}
-                  <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform text-brand-red" />
-                </button>
+                {content.ctaLink ? (
+                  <a href={content.ctaLink} className="group inline-flex items-center gap-2 font-bold uppercase tracking-widest text-xs border-b-2 border-transparent hover:border-brand-red pb-1 transition-all text-brand-dark">
+                    {content.cta}
+                    <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform text-brand-red" />
+                  </a>
+                ) : (
+                  <button className="group inline-flex items-center gap-2 font-bold uppercase tracking-widest text-xs border-b-2 border-transparent hover:border-brand-red pb-1 transition-all text-brand-dark">
+                    {content.cta}
+                    <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform text-brand-red" />
+                  </button>
+                )}
               </div>
             )}
           </div>

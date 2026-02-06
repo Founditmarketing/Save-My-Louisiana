@@ -15,6 +15,7 @@ export interface SectionContent {
   bulletPoints?: string[];
   features?: { title: string; description: string; backgroundImage?: string }[]; // New field for the 3 main points
   cta?: string;
+  ctaLink?: string; // Optional link target for the CTA button
   fact: HighlightedFact; // Changed from statistics[] to a single impactful fact
 }
 

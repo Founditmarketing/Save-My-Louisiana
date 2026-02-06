@@ -276,7 +276,7 @@ const App: React.FC = () => {
 
         {/* Scroll Indicator - Added as requested */}
         <div className="flex flex-col items-center justify-center gap-2 mb-12 animate-bounce">
-          <span className="text-xs font-bold uppercase tracking-widest text-gray-400">Begin the Journey</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-gray-400">Examine the Evidence</span>
           <ArrowDown className="text-gray-400" size={16} />
         </div>
 
