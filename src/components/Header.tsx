@@ -100,6 +100,7 @@ export const Header: React.FC = () => {
             </div>
 
             <a href="https://www.youtube.com/@SAVEMYLOUISIANA-p4l" target="_blank" rel="noopener noreferrer" className="text-sm font-medium tracking-[0.1em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1">Videos</a>
+            <Link to="/documentation" className="text-sm font-medium tracking-[0.1em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1">Documentation</Link>
             <Link to="/contact" className="text-sm font-medium tracking-[0.1em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1">Contact</Link>
           </nav>
 
@@ -169,6 +170,7 @@ export const Header: React.FC = () => {
               </div>
 
               <a href="https://www.youtube.com/@SAVEMYLOUISIANA-p4l" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Videos</a>
+              <Link to="/documentation" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Documentation</Link>
               <Link to="/contact" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Contact</Link>
             </nav>
 
