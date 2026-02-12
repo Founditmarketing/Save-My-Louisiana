@@ -107,27 +107,18 @@ export const Documentation: React.FC = () => {
                             </div>
                         </div>
 
-                        {/* PDF Viewer (Object) */}
-                        <object
-                            data={`/${selectedDoc}`}
-                            type="application/pdf"
-                            className="w-full h-full"
-                            aria-label="PDF Document"
-                        >
-                            {/* Fallback content for large files or unsupported browsers */}
-                            <div className="flex flex-col items-center justify-center h-full space-y-4 p-8 text-center bg-gray-50">
-                                <p className="text-lg font-medium text-gray-800">
-                                    This document is large and may not display directly in your browser.
-                                </p>
-                                <a
-                                    href={`/${selectedDoc}`}
-                                    download
-                                    className="px-6 py-3 bg-brand-blue hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md transition-colors"
-                                >
-                                    Download PDF to View
-                                </a>
+                        {/* PDF Viewer (Google Docs Viewer) */}
+                        <div className="flex-grow bg-gray-100 relative">
+                            <iframe
+                                src={`https://docs.google.com/viewer?url=${window.location.origin}/${selectedDoc}&embedded=true`}
+                                className="w-full h-full border-0"
+                                title="PDF Viewer"
+                            />
+                            {/* Fallback/Localhost Notice */}
+                            <div className="absolute bottom-0 text-center w-full p-2 bg-yellow-100 text-yellow-800 text-xs text-opacity-80 pointer-events-none">
+                                Note: Viewer requires public URL (deploy to view). Localhost may show "No Preview".
                             </div>
-                        </object>
+                        </div>
                     </div>
                 </div>
             )}
