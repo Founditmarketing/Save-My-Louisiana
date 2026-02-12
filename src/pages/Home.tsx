@@ -21,7 +21,12 @@ export const Home: React.FC = () => {
                 </div>
 
                 {/* Content */}
-                <div className="relative z-10 max-w-7xl mx-auto px-6 text-center text-white space-y-8">
+                <div className="relative z-10 max-w-7xl mx-auto px-6 text-center text-white space-y-8 opacity-0 animate-fade-in-up" style={{ animationDelay: '2.5s', animationFillMode: 'forwards' }}>
+                    <img
+                        src="/LouisianaStateSeal Medium.png"
+                        alt="Louisiana State Seal"
+                        className="w-24 h-24 mx-auto mb-6 brightness-0 invert"
+                    />
                     <h1 className="text-4xl md:text-7xl font-heading font-bold leading-tight drop-shadow-2xl">
                         Protect Our Water: <br />
                         <span className="text-brand-blue/90">The Hidden Threat Beneath Louisiana’s Soil</span>

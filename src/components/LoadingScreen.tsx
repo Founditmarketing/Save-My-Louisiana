@@ -6,15 +6,15 @@ export const LoadingScreen: React.FC = () => {
     const [fade, setFade] = useState(false);
 
     useEffect(() => {
-        // Start fade out after 1.5s
+        // Start fade out after 2s
         const timer = setTimeout(() => {
             setFade(true);
-        }, 1500);
+        }, 2000);
 
-        // Remove from DOM after transition (1.5s + 0.5s transition)
+        // Remove from DOM after transition (2s + 0.5s transition)
         const removeTimer = setTimeout(() => {
             setVisible(false);
-        }, 2000);
+        }, 2500);
 
         return () => {
             clearTimeout(timer);
@@ -28,23 +28,25 @@ export const LoadingScreen: React.FC = () => {
         <div
             className={`fixed inset-0 z-[100] bg-white flex flex-col items-center justify-center transition-opacity duration-700 ${fade ? 'opacity-0' : 'opacity-100'}`}
         >
-            <div className="relative flex flex-col items-center">
-                <img src="/Save-My-LA-logo.png" alt="Save My Louisiana Logo" className="w-32 h-32 md:w-48 md:h-48 object-contain mb-6 animate-pulse" />
-                <h1 className="font-heading font-bold text-2xl md:text-3xl tracking-tighter uppercase text-gray-900 text-center">
-                    Save My <span className="text-brand-blue">Louisiana</span>
-                </h1>
+            <div className="relative flex flex-col items-center justify-center">
+                {/* Spinner Container */}
+                <div className="relative w-40 h-40 flex items-center justify-center">
+                    {/* Rotating Border */}
+                    <div className="absolute inset-0 border-4 border-gray-100 rounded-full"></div>
+                    <div className="absolute inset-0 border-4 border-brand-blue rounded-full border-t-transparent animate-spin"></div>
 
-                <div className="mt-8 text-center space-y-2">
-                    <p className="text-red-600 font-bold uppercase tracking-widest text-sm animate-pulse">
-                        Urgent Message
-                    </p>
-                    <p className="text-gray-600 font-serif italic text-lg max-w-md mx-auto px-4">
-                        "Louisiana's future is on the line. Protect our land. Protect our water."
-                    </p>
+                    {/* Logo in Center */}
+                    <img src="/Save-My-LA-logo.png" alt="Save My Louisiana" className="w-24 h-auto object-contain" />
                 </div>
 
-                <div className="mt-8 h-1 w-24 bg-gray-100 mx-auto rounded-full overflow-hidden">
-                    <div className="h-full bg-brand-blue w-full animate-progress-indeterminate origin-left"></div>
+                {/* Urgent Message */}
+                <div className="mt-8 text-center space-y-2 animate-pulse">
+                    <p className="text-brand-red font-bold uppercase tracking-[0.2em] text-sm md:text-base">
+                        Defending Louisiana's Future
+                    </p>
+                    <p className="text-gray-400 text-xs uppercase tracking-wider">
+                        Loading...
+                    </p>
                 </div>
             </div>
         </div>
