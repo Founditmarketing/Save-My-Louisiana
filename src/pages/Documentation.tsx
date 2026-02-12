@@ -94,7 +94,7 @@ export const Documentation: React.FC = () => {
                                     href={`/${selectedDoc}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 text-xs uppercase tracking-widest font-bold"
+                                    className="bg-brand-blue hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors flex items-center gap-2 text-xs uppercase tracking-widest font-bold shadow-sm"
                                 >
                                     Open in New Tab <ExternalLink size={14} />
                                 </a>
@@ -107,17 +107,41 @@ export const Documentation: React.FC = () => {
                             </div>
                         </div>
 
-                        {/* PDF Viewer (Google Docs Viewer) */}
+                        {/* PDF Viewer (Object) */}
                         <div className="flex-grow bg-gray-100 relative">
-                            <iframe
-                                src={`https://docs.google.com/viewer?url=${window.location.origin}/${selectedDoc}&embedded=true`}
-                                className="w-full h-full border-0"
-                                title="PDF Viewer"
-                            />
-                            {/* Fallback/Localhost Notice */}
-                            <div className="absolute bottom-0 text-center w-full p-2 bg-yellow-100 text-yellow-800 text-xs text-opacity-80 pointer-events-none">
-                                Note: Viewer requires public URL (deploy to view). Localhost may show "No Preview".
-                            </div>
+                            <object
+                                data={`/${selectedDoc}`}
+                                type="application/pdf"
+                                className="w-full h-full"
+                                aria-label="PDF Document"
+                            >
+                                {/* Fallback content for large files or unsupported browsers */}
+                                <div className="flex flex-col items-center justify-center h-full space-y-6 p-8 text-center bg-gray-50">
+                                    <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 max-w-sm">
+                                        <p className="text-lg font-bold text-gray-900 mb-2">
+                                            Document Preview Unavailable
+                                        </p>
+                                        <p className="text-gray-600 mb-6 text-sm">
+                                            This document (7MB+) may be too large to display in your browser.
+                                        </p>
+                                        <a
+                                            href={`/${selectedDoc}`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="block w-full bg-brand-blue hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-bold uppercase tracking-widest transition-colors mb-3"
+                                        >
+                                            Open in New Tab
+                                        </a>
+                                        <a
+                                            href={`/${selectedDoc}`}
+                                            download
+                                            className="block w-full bg-white border border-gray-200 text-gray-700 hover:bg-gray-50 px-6 py-3 rounded-lg font-bold uppercase tracking-widest transition-colors text-xs"
+                                        >
+                                            Download PDF
+                                        </a>
+                                    </div>
+                                </div>
+                            </object>
                         </div>
                     </div>
                 </div>
