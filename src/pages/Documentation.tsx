@@ -107,13 +107,30 @@ export const Documentation: React.FC = () => {
                             </div>
                         </div>
 
-                        {/* PDF Viewer (Iframe) */}
+                        {/* PDF Viewer (Object/Embed) */}
                         <div className="flex-grow bg-gray-100 relative">
-                            <iframe
-                                src={`/${selectedDoc}`}
-                                className="w-full h-full border-0"
-                                title="PDF Viewer"
-                            />
+                            <object
+                                data={`/${selectedDoc}`}
+                                type="application/pdf"
+                                className="w-full h-full"
+                            >
+                                <embed
+                                    src={`/${selectedDoc}`}
+                                    type="application/pdf"
+                                    className="w-full h-full"
+                                />
+                                {/* Fallback content */}
+                                <div className="flex flex-col items-center justify-center h-full text-center p-8">
+                                    <p className="text-gray-600 mb-4">Unable to display PDF directly.</p>
+                                    <a
+                                        href={`/${selectedDoc}`}
+                                        download
+                                        className="bg-brand-blue text-white px-6 py-3 rounded-lg font-bold uppercase tracking-widest hover:bg-blue-800 transition-colors"
+                                    >
+                                        Download PDF
+                                    </a>
+                                </div>
+                            </object>
                         </div>
                     </div>
                 </div>
