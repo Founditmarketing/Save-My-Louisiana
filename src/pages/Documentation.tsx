@@ -11,7 +11,7 @@ const DOCUMENTS = [
     },
     {
         title: "Buried in Lies: Analysis",
-        filename: "buried-in-lies.pdf",
+        filename: "buried-in-lies-compressed.pdf",
         description: "An annotated breakdown exposing the misleading claims surrounding carbon sequestration safety and efficacy.",
         date: "January 2026"
     }
