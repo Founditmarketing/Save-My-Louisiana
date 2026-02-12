@@ -107,31 +107,27 @@ export const Documentation: React.FC = () => {
                             </div>
                         </div>
 
-                        {/* PDF Viewer (Object/Embed) */}
-                        <div className="flex-grow bg-gray-100 relative">
-                            <object
-                                data={`/${selectedDoc}`}
-                                type="application/pdf"
-                                className="w-full h-full"
-                            >
-                                <embed
-                                    src={`/${selectedDoc}`}
-                                    type="application/pdf"
-                                    className="w-full h-full"
-                                />
-                                {/* Fallback content */}
-                                <div className="flex flex-col items-center justify-center h-full text-center p-8">
-                                    <p className="text-gray-600 mb-4">Unable to display PDF directly.</p>
-                                    <a
-                                        href={`/${selectedDoc}`}
-                                        download
-                                        className="bg-brand-blue text-white px-6 py-3 rounded-lg font-bold uppercase tracking-widest hover:bg-blue-800 transition-colors"
-                                    >
-                                        Download PDF
-                                    </a>
-                                </div>
-                            </object>
-                        </div>
+                        {/* PDF Viewer (Object) */}
+                        <object
+                            data={`/${selectedDoc}`}
+                            type="application/pdf"
+                            className="w-full h-full"
+                            aria-label="PDF Document"
+                        >
+                            {/* Fallback content for large files or unsupported browsers */}
+                            <div className="flex flex-col items-center justify-center h-full space-y-4 p-8 text-center bg-gray-50">
+                                <p className="text-lg font-medium text-gray-800">
+                                    This document is large and may not display directly in your browser.
+                                </p>
+                                <a
+                                    href={`/${selectedDoc}`}
+                                    download
+                                    className="px-6 py-3 bg-brand-blue hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md transition-colors"
+                                >
+                                    Download PDF to View
+                                </a>
+                            </div>
+                        </object>
                     </div>
                 </div>
             )}
