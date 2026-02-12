@@ -79,7 +79,7 @@ export const Home: React.FC = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {/* Card 1: Water in the Crosshairs */}
-                        <Link to="/water-in-crosshairs" className="group bg-white border border-gray-200 hover:border-brand-blue/30 transition-all duration-300 flex flex-col items-start relative overflow-hidden h-full shadow-sm hover:shadow-lg">
+                        <Link to="/water-in-crosshairs" className="group bg-white border border-gray-200 hover:border-brand-blue/30 transition-all duration-300 flex flex-col items-start relative overflow-hidden h-full shadow-sm hover:shadow-lg rounded-xl">
                             <div className="w-full h-56 overflow-hidden relative">
                                 <div className="absolute inset-0 bg-brand-blue/20 mix-blend-multiply group-hover:bg-transparent transition-all duration-500 z-10"></div>
                                 <img
@@ -105,7 +105,7 @@ export const Home: React.FC = () => {
                         </Link>
 
                         {/* Card 2: Real Dangers */}
-                        <Link to="/environmental-dangers" className="group bg-white border border-gray-200 hover:border-brand-red/30 transition-all duration-300 flex flex-col items-start relative overflow-hidden h-full shadow-sm hover:shadow-lg">
+                        <Link to="/environmental-dangers" className="group bg-white border border-gray-200 hover:border-brand-red/30 transition-all duration-300 flex flex-col items-start relative overflow-hidden h-full shadow-sm hover:shadow-lg rounded-xl">
                             <div className="w-full h-56 overflow-hidden relative">
                                 <div className="absolute inset-0 bg-brand-red/20 mix-blend-multiply group-hover:bg-transparent transition-all duration-500 z-10"></div>
                                 <img
@@ -131,7 +131,7 @@ export const Home: React.FC = () => {
                         </Link>
 
                         {/* Card 3: Wildlife Threats */}
-                        <Link to="/wildlife-threats" className="group bg-white border border-gray-200 hover:border-green-600/30 transition-all duration-300 flex flex-col items-start relative overflow-hidden h-full shadow-sm hover:shadow-lg">
+                        <Link to="/wildlife-threats" className="group bg-white border border-gray-200 hover:border-green-600/30 transition-all duration-300 flex flex-col items-start relative overflow-hidden h-full shadow-sm hover:shadow-lg rounded-xl">
                             <div className="w-full h-56 overflow-hidden relative">
                                 <div className="absolute inset-0 bg-green-600/20 mix-blend-multiply group-hover:bg-transparent transition-all duration-500 z-10"></div>
                                 <img
@@ -157,7 +157,7 @@ export const Home: React.FC = () => {
                         </Link>
 
                         {/* Card 4: Oversight Gaps */}
-                        <Link to="/oversight-gaps" className="group bg-white border border-gray-200 hover:border-gray-800/30 transition-all duration-300 flex flex-col items-start relative overflow-hidden h-full shadow-sm hover:shadow-lg">
+                        <Link to="/oversight-gaps" className="group bg-white border border-gray-200 hover:border-gray-800/30 transition-all duration-300 flex flex-col items-start relative overflow-hidden h-full shadow-sm hover:shadow-lg rounded-xl">
                             <div className="w-full h-56 overflow-hidden relative">
                                 <div className="absolute inset-0 bg-gray-800/20 mix-blend-multiply group-hover:bg-transparent transition-all duration-500 z-10"></div>
                                 <img
