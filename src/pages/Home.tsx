@@ -5,6 +5,10 @@ import { ArrowRight } from 'lucide-react';
 import { HERO_CONTENT, SITUATION_CONTENT } from '../constants';
 
 export const Home: React.FC = () => {
+    // Determine animation delay: if intro has been seen, 0s, otherwise 2.5s
+    const hasSeenIntro = sessionStorage.getItem('hasSeenIntro');
+    const animationDelay = hasSeenIntro ? '0s' : '2.5s';
+
     return (
         <div className="font-sans text-gray-900 bg-white">
             {/* Section A: Hero (The Hook) */}
@@ -21,7 +25,7 @@ export const Home: React.FC = () => {
                 </div>
 
                 {/* Content */}
-                <div className="relative z-10 max-w-7xl mx-auto px-6 text-center text-white space-y-8 opacity-0 animate-fade-in-up" style={{ animationDelay: '2.5s', animationFillMode: 'forwards' }}>
+                <div className="relative z-10 max-w-7xl mx-auto px-6 text-center text-white space-y-8 opacity-0 animate-fade-in-up" style={{ animationDelay, animationFillMode: 'forwards' }}>
                     <img
                         src="/LouisianaStateSeal Medium.png"
                         alt="Louisiana State Seal"

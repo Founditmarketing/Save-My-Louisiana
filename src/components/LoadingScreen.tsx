@@ -14,6 +14,7 @@ export const LoadingScreen: React.FC = () => {
         // Remove from DOM after transition (2s + 0.5s transition)
         const removeTimer = setTimeout(() => {
             setVisible(false);
+            sessionStorage.setItem('hasSeenIntro', 'true');
         }, 2500);
 
         return () => {
