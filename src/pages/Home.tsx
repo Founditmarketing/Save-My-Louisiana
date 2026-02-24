@@ -22,7 +22,7 @@ export const Home: React.FC = () => {
     return (
         <div className="font-sans text-gray-900 bg-white">
             {/* Section A: Hero (The Hook) */}
-            <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden py-24 md:py-32">
+            <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden py-16 md:py-32">
                 {/* Background Image Slider */}
                 <div className="absolute inset-0 z-0">
                     {heroImages.map((src, index) => (
@@ -47,10 +47,10 @@ export const Home: React.FC = () => {
                     <img
                         src="/louisiana-flag.gif"
                         alt="Louisiana Flag"
-                        className="w-24 h-auto mx-auto mb-6 opacity-80 filter drop-shadow-lg"
+                        className="w-16 md:w-24 h-auto mx-auto mb-6 opacity-80 filter drop-shadow-lg"
                     />
-                    <h1 className="text-4xl md:text-7xl font-heading font-bold leading-tight drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)]">
-                        Protect Louisiana's Land, Water, Future: <br />
+                    <h1 className="text-3xl md:text-7xl font-heading font-bold leading-tight drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)]">
+                        Protect Louisiana's Land, Water, Future: <br className="hidden md:block" />
                         <span className="text-brand-blue/90">The Hidden Threat Beneath Louisiana’s Soil</span>
                     </h1>
                     <p className="text-xl md:text-2xl font-serif italic max-w-3xl mx-auto text-gray-200">

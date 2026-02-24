@@ -8,20 +8,20 @@ export const FollowTheMoney: React.FC = () => {
         <div className="bg-white min-h-screen font-sans text-gray-900">
 
             {/* Hero Section */}
-            <section className="relative text-white py-24 px-6 overflow-hidden">
-                <div className="absolute inset-0 z-0">
-                    <img src="/realdangers.png" alt="Background" className="w-full h-full object-cover" />
-                    <div className="absolute inset-0 bg-yellow-900/85 mix-blend-multiply"></div>
+            <section className="bg-brand-dark text-white py-24 px-6 relative overflow-hidden">
+                <div className="absolute inset-0 opacity-10">
+                    <div className="absolute top-0 right-0 w-96 h-96 bg-brand-blue rounded-full filter blur-[100px]"></div>
+                    <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-red rounded-full filter blur-[100px]"></div>
                 </div>
 
                 <div className="relative z-10 max-w-4xl mx-auto text-center space-y-6">
-                    <Link to="/#know" className="inline-flex items-center text-white/80 hover:text-white mb-4 transition-colors uppercase tracking-widest text-xs font-bold">
+                    <Link to="/#know" className="inline-flex items-center text-white/50 hover:text-white mb-4 transition-colors uppercase tracking-widest text-xs font-bold">
                         <ArrowLeft size={16} className="mr-2" /> Back to Home
                     </Link>
-                    <h1 className="text-4xl md:text-6xl font-heading font-bold leading-tight">
+                    <h1 className="text-4xl md:text-7xl font-heading font-bold tracking-tight">
                         Follow The Money
                     </h1>
-                    <p className="text-xl md:text-2xl font-serif text-yellow-100 max-w-2xl mx-auto">
+                    <p className="text-xl md:text-2xl font-serif text-gray-300 max-w-3xl mx-auto leading-relaxed">
                         The explosion of CCS in Louisiana isn't about the environment—it's about a massive federal subsidy rush.
                     </p>
                 </div>
