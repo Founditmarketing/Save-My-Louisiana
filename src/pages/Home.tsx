@@ -50,11 +50,11 @@ export const Home: React.FC = () => {
                         className="w-24 h-auto mx-auto mb-6 opacity-80 filter drop-shadow-lg"
                     />
                     <h1 className="text-4xl md:text-7xl font-heading font-bold leading-tight drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)]">
-                        Louisiana's Most Precious Resource: <br />
-                        <span className="text-brand-blue/90">Its People</span>
+                        Protect Louisiana's Land, Water, Future: <br />
+                        <span className="text-brand-blue/90">The Hidden Threat Beneath Louisiana’s Soil</span>
                     </h1>
                     <p className="text-xl md:text-2xl font-serif italic max-w-3xl mx-auto text-gray-200">
-                        Our people are under threat from Carbon Capture & Sequestration—the permanent burial of industrial waste under our land and water, which affects future generations.
+                        "Louisiana's most precious resource — its people — is under threat from Carbon Capture & Sequestration (the permanent burial of industrial waste under our land and our water, which affects our future generations)."
                     </p>
                     <div className="pt-8 flex flex-col items-center">
                         <a href="#situation" className="inline-block bg-brand-red hover:bg-red-700 text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest transition-all shadow-xl hover:-translate-y-1 mb-12">
