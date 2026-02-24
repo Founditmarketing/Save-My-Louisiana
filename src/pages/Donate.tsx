@@ -1,12 +1,9 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { ArrowLeft, Check, ShieldCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const Donate: React.FC = () => {
-    const [selectedAmount, setSelectedAmount] = useState<number | 'custom'>(50);
-
-    const amounts = [25, 50, 100, 250, 500];
 
     return (
         <div className="bg-white min-h-screen font-sans text-gray-900">
@@ -32,8 +29,8 @@ export const Donate: React.FC = () => {
             {/* Main Content */}
             <div className="max-w-5xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-16">
 
-                {/* Left: Impact Info */}
-                <div className="space-y-8">
+                {/* Left: Impact Info (Sticky) */}
+                <div className="space-y-8 sticky top-32 self-start">
                     <div>
                         <h2 className="text-2xl font-heading font-bold text-gray-900 mb-4">Why Donate?</h2>
                         <div className="w-12 h-1 bg-brand-red mb-6"></div>
@@ -47,7 +44,7 @@ export const Donate: React.FC = () => {
 
                     <ul className="space-y-4">
                         {[
-                            "Hiring expert environmental attorneys.",
+                            "Expert Environmental Attorneys.",
                             "Commissioning independent geological studies.",
                             "Filing injunctions against unsafe permits.",
                             "Community outreach and town hall organization."
@@ -70,55 +67,22 @@ export const Donate: React.FC = () => {
                     </div>
                 </div>
 
-                {/* Right: Donation Form (Visual Only) */}
-                <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-8 h-fit relative overflow-hidden">
-                    {/* Decorative top border */}
-                    <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-brand-blue to-brand-red"></div>
+                {/* Right: Donation Widget (Live) */}
+                <div className="h-fit">
+                    <iframe
+                        src="https://secure.anedot.com/save-my-louisiana-2cabe2c0-de92-4c5a-9a77-4c52254a3cfe/87a89357-11ef-4038-9719-47a11dad5287?exitIntent=true"
+                        title="Donate to Save My Louisiana"
+                        className="w-full h-[1800px] border-none rounded-2xl shadow-xl overflow-hidden"
+                        allowFullScreen
+                        scrolling="no"
+                    ></iframe>
 
-                    <h3 className="text-xl font-bold text-gray-900 mb-6">Select Donation Amount</h3>
-
-                    <div className="grid grid-cols-3 gap-3 mb-6">
-                        {amounts.map((amount) => (
-                            <button
-                                key={amount}
-                                onClick={() => setSelectedAmount(amount)}
-                                className={`py-3 rounded-lg font-bold border transition-all ${selectedAmount === amount
-                                        ? 'bg-brand-blue text-white border-brand-blue shadow-md transform scale-105'
-                                        : 'bg-white text-gray-600 border-gray-200 hover:border-brand-blue hover:text-brand-blue'
-                                    }`}
-                            >
-                                ${amount}
-                            </button>
-                        ))}
-                        <button
-                            onClick={() => setSelectedAmount('custom')}
-                            className={`py-3 rounded-lg font-bold border transition-all ${selectedAmount === 'custom'
-                                    ? 'bg-brand-blue text-white border-brand-blue shadow-md'
-                                    : 'bg-white text-gray-600 border-gray-200 hover:border-brand-blue hover:text-brand-blue'
-                                }`}
-                        >
-                            Custom
-                        </button>
+                    <div className="mt-6 p-4 bg-gray-50 rounded-xl border border-gray-100 text-center">
+                        <p className="text-sm text-gray-500 font-serif">
+                            Payments are processed securely through <span className="font-bold">Anedot</span>.
+                            Your data is encrypted and protected.
+                        </p>
                     </div>
-
-                    <div className="space-y-4 mb-8">
-                        <div>
-                            <label className="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-2">Full Name</label>
-                            <input type="text" className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-blue/50 transition-all" placeholder="Jane Doe" />
-                        </div>
-                        <div>
-                            <label className="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-2">Email Address</label>
-                            <input type="email" className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-blue/50 transition-all" placeholder="jane@example.com" />
-                        </div>
-                    </div>
-
-                    <button className="w-full bg-brand-red hover:bg-red-700 text-white py-4 rounded-lg font-bold uppercase tracking-widest transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                        Donate {typeof selectedAmount === 'number' ? `$${selectedAmount}` : ''}
-                    </button>
-
-                    <p className="text-center text-xs text-gray-400 mt-4">
-                        By donating, you agree to our Terms of Service and Privacy Policy.
-                    </p>
                 </div>
 
             </div>

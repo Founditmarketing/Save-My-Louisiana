@@ -21,7 +21,6 @@ export const Header: React.FC = () => {
     { name: 'Water & Aquifers', href: '/water-in-crosshairs' },
     { name: 'Environmental Dangers', href: '/environmental-dangers' },
     { name: 'Wildlife & Wetlands', href: '/wildlife-threats' },
-    { name: 'Oversight Gaps', href: '/oversight-gaps' },
   ];
 
   const marqueeContent = [
@@ -77,13 +76,14 @@ export const Header: React.FC = () => {
           </div>
 
           {/* Center: Desktop Nav */}
-          <nav className="hidden lg:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 items-center gap-8">
-            <Link to="/" className="text-sm font-medium tracking-[0.1em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1">Home</Link>
-            <Link to="/mission" className="text-sm font-medium tracking-[0.1em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1">Our Mission</Link>
+          <nav className="hidden lg:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 items-center gap-6 whitespace-nowrap">
+            <Link to="/" className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Home</Link>
+            <Link to="/mission" className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Our Mission</Link>
+            <Link to="/purpose-of-government" className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Purpose of Government</Link>
 
             {/* Dropdown for Threats */}
             <div className="relative group">
-              <button className="text-sm font-medium tracking-[0.1em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative py-1 flex items-center gap-1">
+              <button className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative py-1 flex items-center gap-1 whitespace-nowrap">
                 The Threats <ChevronDown size={14} />
               </button>
               <div className="absolute top-full left-0 mt-2 w-56 bg-white shadow-xl rounded-lg overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 border border-gray-100">
@@ -99,9 +99,11 @@ export const Header: React.FC = () => {
               </div>
             </div>
 
-            <a href="https://www.youtube.com/@SAVEMYLOUISIANA-p4l" target="_blank" rel="noopener noreferrer" className="text-sm font-medium tracking-[0.1em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1">Videos</a>
-            <Link to="/documentation" className="text-sm font-medium tracking-[0.1em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1">Documentation</Link>
-            <Link to="/contact" className="text-sm font-medium tracking-[0.1em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1">Contact</Link>
+            <Link to="/oversight-gaps" className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Oversight Gaps</Link>
+            <Link to="/follow-the-money" className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Follow The Money</Link>
+            <a href="https://www.youtube.com/@SAVEMYLOUISIANA-p4l" target="_blank" rel="noopener noreferrer" className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Videos</a>
+            <Link to="/documentation" className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Documentation</Link>
+            <Link to="/contact" className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Contact</Link>
           </nav>
 
           {/* Right: Actions */}
@@ -169,6 +171,9 @@ export const Header: React.FC = () => {
                 </div>
               </div>
 
+              <Link to="/purpose-of-government" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Purpose of Government</Link>
+              <Link to="/oversight-gaps" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Oversight Gaps</Link>
+              <Link to="/follow-the-money" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Follow The Money</Link>
               <a href="https://www.youtube.com/@SAVEMYLOUISIANA-p4l" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Videos</a>
               <Link to="/documentation" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Documentation</Link>
               <Link to="/contact" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Contact</Link>

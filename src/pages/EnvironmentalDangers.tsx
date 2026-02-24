@@ -16,7 +16,7 @@ export const EnvironmentalDangers: React.FC = () => {
                 </div>
 
                 <div className="relative z-10 max-w-4xl mx-auto text-center space-y-6">
-                    <Link to="/" className="inline-flex items-center text-white/80 hover:text-white mb-4 transition-colors uppercase tracking-widest text-xs font-bold">
+                    <Link to="/#know" className="inline-flex items-center text-white/80 hover:text-white mb-4 transition-colors uppercase tracking-widest text-xs font-bold">
                         <ArrowLeft size={16} className="mr-2" /> Back to Home
                     </Link>
                     <h1 className="text-4xl md:text-6xl font-heading font-bold leading-tight">
@@ -82,25 +82,29 @@ export const EnvironmentalDangers: React.FC = () => {
                     </div>
                 </section>
 
-                {/* Economic Motive */}
-                <section className="bg-gray-900 text-white p-10 rounded-3xl shadow-xl relative overflow-hidden">
-                    <div className="absolute top-0 right-0 p-12 opacity-10">
-                        <DollarSign size={120} />
+                {/* Call to Action */}
+                <div className="text-center pt-8 border-t border-gray-100">
+                    <div className="bg-brand-blue/5 p-8 rounded-2xl mb-12 flex flex-col items-center">
+                        <AlertTriangle className="text-brand-blue mb-4" size={32} />
+                        <h3 className="text-xl font-bold text-gray-900 mb-2">Technical Deep Dive</h3>
+                        <p className="text-gray-600 mb-6 max-w-xl">
+                            For a comprehensive analysis of the environmental risks associated with Class VI injection wells, review our complete impact report.
+                        </p>
+                        <a
+                            href="/ccs-environmental-impact-report.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-brand-blue hover:bg-blue-800 text-white px-8 py-3 rounded-full font-bold uppercase tracking-widest transition-all shadow-md flex items-center gap-2"
+                        >
+                            View Environmental Impact Report (PDF)
+                        </a>
                     </div>
 
-                    <h2 className="text-2xl font-heading font-bold mb-6 text-brand-blue relative z-10">Why Here? Follow the Money.</h2>
-                    <p className="text-gray-300 text-lg leading-relaxed relative z-10 mb-6">
-                        This boom is driven by the <span className="font-bold text-white">45Q Tax Credit</span>, which offers companies up to <span className="font-bold text-white">$85 per ton</span> of CO₂ stored. It is a "market-driven" rush incentivized by federal subsidies, not purely environmental benevolence. Louisiana is being used as a profitable dumping ground.
-                    </p>
-                </section>
-
-                {/* Call to Action */}
-                <div className="text-center pt-8">
                     <p className="text-gray-500 italic mb-6 text-sm">
-                        Sources: <a href="https://www.phmsa.dot.gov" target="_blank" rel="noopener noreferrer" className="hover:text-brand-red underline decoration-dotted">PHMSA Pipeline Incident Database (2003–2024)</a>; <a href="https://environmentalintegrity.org" target="_blank" rel="noopener noreferrer" className="hover:text-brand-red underline decoration-dotted">Environmental Integrity Project (2023)</a>.
+                        Sources: <a href="https://www.phmsa.dot.gov" target="_blank" rel="noopener noreferrer" className="hover:text-brand-red underline decoration-dotted">PHMSA Pipeline Incident Database (2003–2024)</a>.
                     </p>
                     <Link to="/contact" className="inline-block bg-brand-red hover:bg-red-700 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest transition-all shadow-lg hover:-translate-y-1">
-                        Stop The Pipelines
+                        Join The Movement
                     </Link>
                 </div>
 

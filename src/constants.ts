@@ -205,6 +205,7 @@ export const SECTIONS: SectionData[] = [
         description: "We are a non-profit organization. Every dollar you give goes directly to advocacy, legal defense, and community education."
       }
     }
+  }
 ];
 
 export const NAV_LINKS = [
@@ -212,6 +213,8 @@ export const NAV_LINKS = [
   { name: 'Environmental Dangers', href: '/environmental-dangers' },
   { name: 'Wildlife & Wetlands', href: '/wildlife-threats' },
   { name: 'Oversight Gaps', href: '/oversight-gaps' },
+  { name: 'Purpose of Government', href: '/purpose-of-government' },
+  { name: 'Follow The Money', href: '/follow-the-money' },
   { name: 'Videos', href: 'https://www.youtube.com/@SAVEMYLOUISIANA-p4l', external: true },
   { name: 'Contact', href: '/contact' },
 ];
@@ -224,6 +227,7 @@ export const CONTACT_INFO = {
 
 export const SOCIAL_LINKS = [
   { platform: 'Facebook', url: 'https://www.facebook.com/savemylouisiana/photos' },
+  { platform: 'X', url: 'https://x.com/savemylouisiana' },
 ];
 
 export const HERO_CONTENT = {

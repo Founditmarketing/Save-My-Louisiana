@@ -43,10 +43,11 @@ export const Home: React.FC = () => {
 
                 {/* Content */}
                 <div className="relative z-10 max-w-7xl mx-auto px-6 text-center text-white space-y-8 opacity-0 animate-fade-in-up" style={{ animationDelay, animationFillMode: 'forwards' }}>
+                    {/* Animated Louisiana Flag */}
                     <img
-                        src="/LouisianaStateSeal Medium.png"
-                        alt="Louisiana State Seal"
-                        className="w-24 h-24 mx-auto mb-6 brightness-0 invert"
+                        src="/louisiana-flag.gif"
+                        alt="Louisiana Flag"
+                        className="w-24 h-auto mx-auto mb-6 opacity-80 filter drop-shadow-lg"
                     />
                     <h1 className="text-4xl md:text-7xl font-heading font-bold leading-tight drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)]">
                         Protect Louisiana's Land, Water, Future: <br />
@@ -78,11 +79,19 @@ export const Home: React.FC = () => {
                         </h2>
                         <div className="w-24 h-1 bg-brand-red mx-auto"></div>
                         <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-serif">
-                            Across Louisiana, energy companies are planning to inject millions of tons of carbon dioxide deep underground in so-called carbon capture and storage (CCS) projects. Many of these wells sit directly above the <a href="#know" className="font-bold text-brand-blue hover:underline">Chicot Aquifer</a>, the main drinking-water source for more than 700,000 residents across 15 parishes. If this experiment fails, acidified brine and toxic metals could rise into our water, soil, and crops.
+                            Across Louisiana, energy companies are planning to inject millions of tons of carbon dioxide deep underground in so-called carbon capture and storage (CCS) projects. Many of these wells sit directly above the <Link to="/water-in-crosshairs" className="font-bold text-brand-blue hover:underline">Chicot Aquifer</Link>, the main drinking-water source for more than 700,000 residents across 15 parishes. If this experiment fails, the CO2 forms carbonic acid—potentially acidifying brine and dissolving rock to release hazardous concentrations of lead, arsenic, and manganese into our water, soil, and crops.
                         </p>
                     </div>
                     <div className="w-full aspect-video rounded-xl overflow-hidden shadow-xl">
                         <iframe className="w-full h-full" src="https://www.youtube.com/embed/VqGIHbSprVk?si=u-5C_ofomPJ49CUS" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                    </div>
+                </div>
+
+                {/* Scroll Cue */}
+                <div className="mt-16 flex justify-center animate-bounce">
+                    <div className="flex flex-col items-center">
+                        <ChevronDown size={32} className="text-gray-400" />
+                        <ChevronDown size={32} className="text-gray-200 -mt-4" />
                     </div>
                 </div>
             </section>
@@ -225,7 +234,7 @@ export const Home: React.FC = () => {
                     </p>
                     <div className="pt-8 flex flex-col sm:flex-row gap-6 justify-center">
                         <Link to="/contact" className="bg-brand-red hover:bg-red-700 text-white px-10 py-5 rounded-full font-bold uppercase tracking-widest transition-all shadow-lg hover:shadow-red-500/30 transform hover:-translate-y-1">
-                            Join The Fight
+                            Join The Movement
                         </Link>
                         <Link to="/donate" className="bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/50 px-10 py-5 rounded-full font-bold uppercase tracking-widest transition-all shadow-lg transform hover:-translate-y-1">
                             Donate Now

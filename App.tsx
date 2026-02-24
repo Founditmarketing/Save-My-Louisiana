@@ -6,6 +6,8 @@ import { WaterInCrosshairs } from './src/pages/WaterInCrosshairs';
 import { EnvironmentalDangers } from './src/pages/EnvironmentalDangers';
 import { WildlifeThreats } from './src/pages/WildlifeThreats';
 import { OversightGaps } from './src/pages/OversightGaps';
+import { FollowTheMoney } from './src/pages/FollowTheMoney';
+import { PurposeOfGovernment } from './src/pages/PurposeOfGovernment';
 import { Donate } from './src/pages/Donate';
 import { Contact } from './src/pages/Contact';
 import { Mission } from './src/pages/Mission';
@@ -26,6 +28,8 @@ const App: React.FC = () => {
           <Route path="environmental-dangers" element={<EnvironmentalDangers />} />
           <Route path="wildlife-threats" element={<WildlifeThreats />} />
           <Route path="oversight-gaps" element={<OversightGaps />} />
+          <Route path="follow-the-money" element={<FollowTheMoney />} />
+          <Route path="purpose-of-government" element={<PurposeOfGovernment />} />
           <Route path="mission" element={<Mission />} />
           <Route path="donate" element={<Donate />} />
           <Route path="documentation" element={<Documentation />} />

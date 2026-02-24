@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Mail, MapPin, Phone, Twitter, Instagram, ArrowRight } from 'lucide-react';
+import { Facebook, Mail, MapPin, Phone, Instagram, ArrowRight } from 'lucide-react';
 import { CONTACT_INFO, SOCIAL_LINKS } from '../constants';
 
 export const ContactFooter: React.FC = () => {
@@ -18,7 +18,12 @@ export const ContactFooter: React.FC = () => {
                             Empowering citizens to protect our land, water, and constitutional rights against unchecked industrial expansion.
                         </p>
                         <div className="flex gap-4 pt-2">
-                            <a href="https://www.facebook.com/savemylouisiana/photos" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors"><Facebook size={20} /></a>
+                            <a href="https://www.facebook.com/savemylouisiana/photos" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" title="Facebook"><Facebook size={20} /></a>
+                            <a href="https://x.com/savemylouisiana" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" title="X">
+                                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932L18.901 1.153zM17.61 20.644h2.039L6.486 3.24H4.298L17.61 20.644z" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
 

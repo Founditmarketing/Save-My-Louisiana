@@ -74,9 +74,15 @@ export const Contact: React.FC = () => {
                         <div className="pt-8 border-t border-gray-100">
                             <h3 className="text-lg font-bold text-gray-900 mb-4">Follow The Fight</h3>
                             <div className="flex gap-4">
-                                <a href="https://www.facebook.com/savemylouisiana/photos" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-500 hover:bg-brand-blue hover:text-white transition-all">
+                                <a href="https://www.facebook.com/savemylouisiana/photos" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-500 hover:bg-brand-blue hover:text-white transition-all shadow-sm">
                                     <span className="sr-only">Facebook</span>
                                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" /></svg>
+                                </a>
+                                <a href="https://x.com/savemylouisiana" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-500 hover:bg-black hover:text-white transition-all shadow-sm" title="X">
+                                    <span className="sr-only">X</span>
+                                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932L18.901 1.153zM17.61 20.644h2.039L6.486 3.24H4.298L17.61 20.644z" />
+                                    </svg>
                                 </a>
                             </div>
                         </div>
@@ -84,7 +90,7 @@ export const Contact: React.FC = () => {
 
                     {/* Form (3 cols) */}
                     <div className="lg:col-span-3 bg-gray-50 p-8 md:p-12 rounded-3xl border border-gray-200">
-                        <h2 className="text-3xl font-heading font-bold text-gray-900 mb-2">Join The Fight</h2>
+                        <h2 className="text-3xl font-heading font-bold text-gray-900 mb-2">Join The Movement</h2>
                         <p className="text-gray-500 mb-8">Sign up for updates or send us a secure message.</p>
 
                         <form className="space-y-6">
