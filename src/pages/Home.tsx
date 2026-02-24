@@ -9,34 +9,19 @@ export const Home: React.FC = () => {
     const hasSeenIntro = sessionStorage.getItem('hasSeenIntro');
     const animationDelay = hasSeenIntro ? '0s' : '2.5s';
 
-    const heroImages = ['/LAheropic.jpg', '/LAheropic2.jpg', '/LAheropic3.jpg'];
-    const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
-
-    React.useEffect(() => {
-        const timer = setInterval(() => {
-            setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
-        }, 5000);
-        return () => clearInterval(timer);
-    }, []);
-
     return (
         <div className="font-sans text-gray-900 bg-white">
             {/* Section A: Hero (The Hook) */}
             <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden py-16 md:py-32">
-                {/* Background Image Slider */}
+                {/* Background Image */}
                 <div className="absolute inset-0 z-0">
-                    {heroImages.map((src, index) => (
-                        <div
-                            key={src}
-                            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}
-                        >
-                            <img
-                                src={src}
-                                alt={`Hero Slide ${index + 1}`}
-                                className={`w-full h-full object-cover ${index === currentImageIndex ? 'animate-zoom-slow' : ''}`}
-                            />
-                        </div>
-                    ))}
+                    <div className="absolute inset-0">
+                        <img
+                            src="/LAheropic.jpg"
+                            alt="Louisiana Hero"
+                            className="w-full h-full object-cover animate-zoom-slow"
+                        />
+                    </div>
                     <div className="absolute inset-0 bg-black/60"></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/30"></div>
                 </div>
