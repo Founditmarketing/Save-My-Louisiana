@@ -98,7 +98,7 @@ export const EnvironmentalDangers: React.FC = () => {
                         <div>
                             <h2 className="text-3xl font-heading font-bold text-gray-900 mb-4">The "Pincushion" Effect</h2>
                             <p className="text-lg text-gray-700 leading-relaxed font-serif">
-                                Louisiana has <span className="font-bold">250,000+ oil and gas wells</span>. Many were plugged before 1950 using outdated standards. These "legacy wells" act as straws, allowing injected CO₂ to puncture the containment zone and escape back to the surface.
+                                Louisiana has <span className="font-bold">over 400,000 oil and gas wells</span>. Many were plugged before 1950 using outdated standards. These "legacy wells" act as straws, allowing injected CO₂ to puncture the containment zone and escape back to the surface.
                             </p>
                         </div>
                     </div>
