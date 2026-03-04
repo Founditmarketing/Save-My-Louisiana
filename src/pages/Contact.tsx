@@ -132,7 +132,7 @@ export const Contact: React.FC = () => {
 
                 {/* Movement Calendar */}
                 <div className="mt-20">
-                    <div className="bg-white p-8 md:p-12 rounded-3xl border border-gray-200 shadow-sm overflow-hidden">
+                    <div className="bg-white p-4 md:p-12 rounded-3xl border border-gray-200 shadow-sm overflow-hidden">
                         <h2 className="text-3xl font-heading font-bold text-gray-900 mb-8 text-center uppercase tracking-tight">Movement Calendar</h2>
                         <div className="relative w-full overflow-hidden rounded-2xl border border-gray-100 shadow-inner bg-gray-50 h-[600px] md:h-auto md:aspect-video">
                             <iframe
