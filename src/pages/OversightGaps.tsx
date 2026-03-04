@@ -21,6 +21,9 @@ export const OversightGaps: React.FC = () => {
                     />
                 </div>
                 <div className="relative z-10 max-w-4xl mx-auto text-center space-y-6">
+                    <Link to="/#know" className="inline-flex items-center text-white/80 hover:text-white mb-4 transition-colors uppercase tracking-widest text-xs font-bold">
+                        <ArrowLeft size={16} className="mr-2" /> Back to Home
+                    </Link>
                     <h1 className="text-4xl md:text-7xl font-heading font-bold tracking-tight text-white">Closing the Oversight Gaps</h1>
                     <p className="text-xl md:text-2xl font-serif text-gray-200 leading-relaxed max-w-3xl mx-auto">
                         "The system is only as strong as its weakest link. We are here to ensure that link never breaks."
