@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { DollarSign, TrendingUp, Landmark, ShieldCheck } from 'lucide-react';
+// Final synchronization trigger
 import { Link } from 'react-router-dom';
 
 export const FollowTheMoney: React.FC = () => {
