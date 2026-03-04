@@ -1,13 +1,36 @@
-
-import React from 'react';
-import { ArrowLeft, Droplets, Activity, FlaskConical } from 'lucide-react';
+import React, { useState } from 'react';
+import { ArrowLeft, Droplets, Activity, FlaskConical, X, ZoomIn } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const WaterInCrosshairs: React.FC = () => {
+    const [isLightboxOpen, setIsLightboxOpen] = useState(false);
+
     return (
         <div className="bg-white min-h-screen font-sans text-gray-900">
+            {/* Lightbox Overlay */}
+            {isLightboxOpen && (
+                <div
+                    className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-sm flex items-center justify-center p-4 md:p-10 transition-all duration-300 animate-in fade-in"
+                    onClick={() => setIsLightboxOpen(false)}
+                >
+                    <button
+                        className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors p-2 bg-white/10 rounded-full hover:bg-white/20"
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            setIsLightboxOpen(false);
+                        }}
+                    >
+                        <X size={32} />
+                    </button>
+                    <img
+                        src="/chicot-aquifer.png"
+                        alt="Map of the Chicot Aquifer - Large View"
+                        className="max-w-full max-h-full object-contain rounded-lg shadow-2xl animate-in zoom-in-95 duration-300"
+                        onClick={(e) => e.stopPropagation()}
+                    />
+                </div>
+            )}
 
-            {/* Hero Section */}
             {/* Hero Section */}
             <section className="relative text-white py-24 px-6 overflow-hidden">
                 <div className="absolute inset-0 z-0">
@@ -40,6 +63,26 @@ export const WaterInCrosshairs: React.FC = () => {
                         The Chicot Aquifer isn't just a geographical feature—it's the lifeblood of Louisiana.
                         Nearly <span className="text-brand-red underline">half (48%)</span> of our state's residents depend on this freshwater source every single day.
                     </p>
+
+                    <div
+                        className="my-10 rounded-2xl overflow-hidden shadow-2xl border border-blue-100 relative group cursor-pointer"
+                        onClick={() => setIsLightboxOpen(true)}
+                    >
+                        <div className="absolute inset-0 bg-brand-blue/0 group-hover:bg-brand-blue/10 transition-colors duration-300 flex items-center justify-center">
+                            <div className="bg-white/90 p-3 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform scale-90 group-hover:scale-100">
+                                <ZoomIn className="text-brand-blue" size={24} />
+                            </div>
+                        </div>
+                        <img
+                            src="/chicot-aquifer.png"
+                            alt="Map of the Chicot Aquifer"
+                            className="w-full h-auto"
+                        />
+                        <div className="bg-blue-50/50 px-6 py-3 text-sm text-gray-600 italic border-t border-blue-100 flex justify-between items-center">
+                            <span>The Chicot Aquifer system spans 15 parishes and is vital to Louisiana's economy and health.</span>
+                            <span className="text-brand-blue font-bold text-xs uppercase tracking-widest hidden sm:block">Click to Enlarge</span>
+                        </div>
+                    </div>
                     <p className="text-lg text-gray-700 leading-relaxed font-serif">
                         The system spans <span className="font-bold">9,500 square miles</span> and supplies over <span className="font-bold">700,000 people</span> across 15 parishes. Because it is composed of highly permeable sands and gravels, any failure in CO₂ containment isn't just a "leak"—it's a <span className="font-bold text-brand-red uppercase">permanent contamination event</span> that could render our primary water source undrinkable for generations.
                     </p>

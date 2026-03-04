@@ -10,10 +10,10 @@ const DOCUMENTS = [
         date: "February 2026"
     },
     {
-        title: "Buried in Lies: Analysis",
-        filename: "buried-in-lies-compressed.pdf",
-        description: "An annotated breakdown exposing the misleading claims surrounding carbon sequestration safety and efficacy.",
-        date: "January 2026"
+        title: "Buried in Lies: Supplemented Refs",
+        filename: "buried-in-lies.pdf",
+        description: "An updated annotated breakdown exposing the misleading claims surrounding carbon sequestration safety and efficacy, now with supplementary references.",
+        date: "March 2026"
     }
 ];
 
@@ -89,14 +89,14 @@ export const Documentation: React.FC = () => {
                             <h3 className="font-heading font-bold text-lg truncate pr-4">
                                 {DOCUMENTS.find(d => d.filename === selectedDoc)?.title}
                             </h3>
-                            <div className="flex items-center gap-4">
+                            <div className="flex items-center gap-3 shrink-0">
                                 <a
                                     href={`/${selectedDoc}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="bg-brand-blue hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors flex items-center gap-2 text-xs uppercase tracking-widest font-bold shadow-sm"
+                                    className="bg-brand-blue hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg transition-colors flex items-center gap-3 text-xs uppercase tracking-widest font-bold shadow-sm whitespace-nowrap shrink-0"
                                 >
-                                    Open in New Tab <ExternalLink size={14} />
+                                    Open in New Tab <ExternalLink size={18} />
                                 </a>
                                 <button
                                     onClick={() => setSelectedDoc(null)}

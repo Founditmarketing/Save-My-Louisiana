@@ -1,29 +1,44 @@
-
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ChevronDown } from 'lucide-react';
 import { HERO_CONTENT, SITUATION_CONTENT } from '../constants';
 
+const HERO_IMAGES = ['/state-capital-hero.jpg', '/red-river.jpg', '/atchafalaya-basin.jpg'];
+
 export const Home: React.FC = () => {
+    const [currentSlide, setCurrentSlide] = useState(0);
     // Determine animation delay: if intro has been seen, 0s, otherwise 2.5s
     const hasSeenIntro = sessionStorage.getItem('hasSeenIntro');
     const animationDelay = hasSeenIntro ? '0s' : '2.5s';
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrentSlide((prev) => (prev + 1) % HERO_IMAGES.length);
+        }, 6000); // Change image every 6 seconds
+        return () => clearInterval(timer);
+    }, []);
 
     return (
         <div className="font-sans text-gray-900 bg-white">
             {/* Section A: Hero (The Hook) */}
             <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden py-16 md:py-32">
-                {/* Background Image */}
+                {/* Background Slider */}
                 <div className="absolute inset-0 z-0">
-                    <div className="absolute inset-0">
-                        <img
-                            src="/LAheropic.jpg"
-                            alt="Louisiana Hero"
-                            className="w-full h-full object-cover animate-zoom-slow"
-                        />
-                    </div>
-                    <div className="absolute inset-0 bg-black/60"></div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/30"></div>
+                    {HERO_IMAGES.map((img, index) => (
+                        <div
+                            key={img}
+                            className={`absolute inset-0 transition-opacity duration-[3000ms] ease-in-out ${index === currentSlide ? 'opacity-100' : 'opacity-0'
+                                }`}
+                        >
+                            <img
+                                src={img}
+                                alt={`Louisiana Hero ${index + 1}`}
+                                className="w-full h-full object-cover animate-zoom-slow"
+                            />
+                        </div>
+                    ))}
+                    <div className="absolute inset-0 bg-black/30"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20"></div>
                 </div>
 
                 {/* Content */}
@@ -32,13 +47,13 @@ export const Home: React.FC = () => {
                     <img
                         src="/louisiana-flag.gif"
                         alt="Louisiana Flag"
-                        className="w-16 md:w-24 h-auto mx-auto mb-6 opacity-80 filter drop-shadow-lg"
+                        className="w-16 md:w-24 h-auto mx-auto mb-6 opacity-90 filter drop-shadow-2xl"
                     />
-                    <h1 className="text-3xl md:text-7xl font-heading font-bold leading-tight drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)]">
+                    <h1 className="text-3xl md:text-7xl font-heading font-bold leading-tight">
                         Protect Louisiana's Land, Water, Future: <br className="hidden md:block" />
-                        <span className="text-brand-blue/90">The Hidden Threat Beneath Louisiana’s Soil</span>
+                        <span className="text-brand-blue drop-shadow-[3px_3px_0_rgba(0,0,0,1)]">The Hidden Threat Beneath Louisiana’s Soil</span>
                     </h1>
-                    <p className="text-xl md:text-2xl font-serif italic max-w-3xl mx-auto text-gray-200">
+                    <p className="text-xl md:text-2xl font-serif italic max-w-3xl mx-auto text-white font-medium">
                         "Louisiana's most precious resource — its people — is under threat from Carbon Capture & Sequestration (the permanent burial of industrial waste under our land and our water, which affects our future generations)."
                     </p>
                     <div className="pt-8 flex flex-col items-center">
@@ -100,7 +115,7 @@ export const Home: React.FC = () => {
                             <div className="w-full h-56 overflow-hidden relative">
                                 <div className="absolute inset-0 bg-brand-blue/20 mix-blend-multiply group-hover:bg-transparent transition-all duration-500 z-10"></div>
                                 <img
-                                    src="/watersincrosshairs.png"
+                                    src="/chicot-aquifer.png"
                                     alt="Water in Crosshairs"
                                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                                 />
@@ -126,7 +141,7 @@ export const Home: React.FC = () => {
                             <div className="w-full h-56 overflow-hidden relative">
                                 <div className="absolute inset-0 bg-brand-red/20 mix-blend-multiply group-hover:bg-transparent transition-all duration-500 z-10"></div>
                                 <img
-                                    src="/realdangers.png"
+                                    src="/co2-leak.jpg"
                                     alt="Real Dangers"
                                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                                 />

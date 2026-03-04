@@ -65,28 +65,29 @@ export const Header: React.FC = () => {
 
       {/* Main Header */}
       <header className="sticky top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md py-2 transition-all duration-300 shadow-md">
-        <div className="w-full pl-[10px] pr-[10px] lg:pr-8 relative flex items-center justify-between h-14">
+        <div className="w-full px-4 xl:px-6 flex items-center justify-between h-14 gap-4">
 
           {/* Left: Logo Area */}
           <div className="flex items-center gap-3 z-10 shrink-0">
-            <Link to="/" className="flex items-center gap-3 font-heading font-semibold text-xl md:text-xl tracking-tighter text-gray-900 uppercase leading-[0.85]">
+            <Link to="/" className="flex items-center gap-2 md:gap-3 font-heading font-semibold text-lg md:text-xl tracking-tighter text-gray-900 uppercase leading-[0.85]">
               <img src="/Save-My-LA-logo.png" alt="Logo" className="w-10 h-10 md:w-16 md:h-16 object-contain" />
-              <span>Save My<br /><span className="text-brand-blue">Louisiana</span></span>
+              <span className="hidden sm:inline">Save My<br /><span className="text-brand-blue">Louisiana</span></span>
+              <span className="sm:hidden text-sm">Save My<br /><span className="text-brand-blue">Louisiana</span></span>
             </Link>
           </div>
 
           {/* Center: Desktop Nav */}
-          <nav className="hidden lg:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 items-center gap-6 whitespace-nowrap">
-            <Link to="/" className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Home</Link>
-            <Link to="/mission" className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Our Mission</Link>
-            <Link to="/purpose-of-government" className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Purpose of Government</Link>
+          <nav className="hidden xl:flex flex-1 justify-center items-center gap-4 2xl:gap-6 whitespace-nowrap">
+            <Link to="/" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Home</Link>
+            <Link to="/mission" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Our Mission</Link>
+            <Link to="/purpose-of-government" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap text-center">Purpose of<br />Government</Link>
 
             {/* Dropdown for Threats */}
             <div className="relative group">
-              <button className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative py-1 flex items-center gap-1 whitespace-nowrap">
+              <button className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative py-1 flex items-center gap-1 whitespace-nowrap">
                 The Threats <ChevronDown size={14} />
               </button>
-              <div className="absolute top-full left-0 mt-2 w-56 bg-white shadow-xl rounded-lg overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 border border-gray-100">
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-56 bg-white shadow-xl rounded-lg overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 border border-gray-100">
                 {threatLinks.map((link) => (
                   <Link
                     key={link.name}
@@ -99,22 +100,22 @@ export const Header: React.FC = () => {
               </div>
             </div>
 
-            <Link to="/oversight-gaps" className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Oversight Gaps</Link>
-            <Link to="/follow-the-money" className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Follow The Money</Link>
-            <a href="https://www.youtube.com/@SAVEMYLOUISIANA-p4l" target="_blank" rel="noopener noreferrer" className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Videos</a>
-            <Link to="/documentation" className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Documentation</Link>
-            <Link to="/contact" className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Contact</Link>
+            <Link to="/oversight-gaps" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Oversight Gaps</Link>
+            <Link to="/follow-the-money" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Follow The Money</Link>
+            <a href="https://www.youtube.com/@SAVEMYLOUISIANA-p4l" target="_blank" rel="noopener noreferrer" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Videos</a>
+            <Link to="/documentation" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Documentation</Link>
+            <Link to="/contact" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Contact</Link>
           </nav>
 
           {/* Right: Actions */}
-          <div className="flex items-center gap-4 z-10 shrink-0">
-            <Link to="/donate" className="bg-brand-blue hover:bg-blue-800 text-white px-6 py-2 rounded-full font-medium transition-all uppercase text-[10px] tracking-widest shadow-md hover:shadow-lg transform hover:-translate-y-0.5 hidden sm:block animate-pulse-border">
+          <div className="flex items-center gap-2 md:gap-4 z-10 shrink-0">
+            <Link to="/donate" className="bg-brand-blue hover:bg-blue-800 text-white px-4 md:px-6 py-2 rounded-full font-medium transition-all uppercase text-[9px] md:text-[10px] tracking-widest shadow-md hover:shadow-lg transform hover:-translate-y-0.5 hidden sm:block animate-pulse-border">
               Donate
             </Link>
 
             <button
               onClick={() => setMenuOpen(true)}
-              className="p-2 hover:bg-gray-100 rounded-full transition-colors group lg:hidden"
+              className="p-2 hover:bg-gray-100 rounded-full transition-colors group xl:hidden"
               aria-label="Open Menu"
             >
               <div className="bg-gray-900 text-white p-2 rounded-full group-hover:bg-gray-700 transition-colors">

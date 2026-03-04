@@ -11,7 +11,7 @@ export const EnvironmentalDangers: React.FC = () => {
             {/* Hero Section */}
             <section className="relative text-white py-24 px-6 overflow-hidden">
                 <div className="absolute inset-0 z-0">
-                    <img src="/realdangers.png" alt="Background" className="w-full h-full object-cover" />
+                    <img src="/co2-leak.jpg" alt="Background" className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-brand-red/85 mix-blend-multiply"></div>
                 </div>
 
@@ -36,18 +36,55 @@ export const EnvironmentalDangers: React.FC = () => {
                     <h2 className="text-3xl font-heading font-bold text-gray-900 border-l-4 border-brand-red pl-4">
                         Proof of Failure
                     </h2>
-                    <div className="grid md:grid-cols-2 gap-6">
-                        <div className="bg-red-50 p-6 rounded-xl border border-red-100">
-                            <h3 className="font-bold text-xl text-red-900 mb-2">Decatur, Illinois</h3>
-                            <p className="text-gray-700 leading-relaxed">
-                                At the ADM site, often cited as a model project, authorized CO₂ migration occurred beyond the modeled limits, proving that even under federal oversight, containment is not guaranteed.
-                            </p>
+                    <div className="grid md:grid-cols-1 gap-8">
+                        <div className="bg-red-50 p-8 rounded-2xl border border-red-100 space-y-6">
+                            <div>
+                                <h3 className="font-bold text-2xl text-red-900 mb-2">Decatur, Illinois</h3>
+                                <p className="text-gray-700 leading-relaxed font-serif">
+                                    At the ADM site, often cited as a model project, unauthorized CO₂ migration occurred beyond the modeled limits, proving that even under federal oversight, containment is not guaranteed.
+                                </p>
+                            </div>
+                            <div className="grid md:grid-cols-2 gap-4">
+                                <div className="aspect-video rounded-xl overflow-hidden shadow-lg border border-red-200">
+                                    <iframe
+                                        className="w-full h-full"
+                                        src="https://www.youtube.com/embed/ckeoUanNgmU"
+                                        title="Decatur CO2 Leak Update"
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowFullScreen
+                                    ></iframe>
+                                </div>
+                                <div className="aspect-video rounded-xl overflow-hidden shadow-lg border border-red-200">
+                                    <iframe
+                                        className="w-full h-full"
+                                        src="https://www.youtube.com/embed/GRN-3RWCefk"
+                                        title="Decatur Incident Analysis"
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowFullScreen
+                                    ></iframe>
+                                </div>
+                            </div>
                         </div>
-                        <div className="bg-red-50 p-6 rounded-xl border border-red-100">
-                            <h3 className="font-bold text-xl text-red-900 mb-2">Satartia, Mississippi</h3>
-                            <p className="text-gray-700 leading-relaxed">
-                                A <a href="https://www.denbury.com" target="_blank" rel="noopener noreferrer" className="text-brand-red hover:underline">Denbury Inc.</a> pipeline rupture in 2020 released a massive cloud of CO₂, causing hospitalizations and widespread evacuations. It exposed serious gaps in safety protocols for CO₂ transport.
-                            </p>
+
+                        <div className="bg-red-50 p-8 rounded-2xl border border-red-100 space-y-6">
+                            <div>
+                                <h3 className="font-bold text-2xl text-red-900 mb-2">Satartia, Mississippi</h3>
+                                <p className="text-gray-700 leading-relaxed font-serif">
+                                    A <a href="https://www.denbury.com" target="_blank" rel="noopener noreferrer" className="text-brand-red hover:underline">Denbury Inc.</a> pipeline rupture in 2020 released a massive cloud of CO₂, causing hospitalizations and widespread evacuations. It exposed serious gaps in safety protocols for CO₂ transport.
+                                </p>
+                            </div>
+                            <div className="max-w-2xl mx-auto w-full aspect-video rounded-xl overflow-hidden shadow-lg border border-red-200">
+                                <iframe
+                                    className="w-full h-full"
+                                    src="https://www.youtube.com/embed/yGIXeWktiWU"
+                                    title="Satartia Incident Video"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowFullScreen
+                                ></iframe>
+                            </div>
                         </div>
                     </div>
                 </section>

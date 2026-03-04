@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowLeft, Mail, Phone, MapPin, ExternalLink } from 'lucide-react';
+import { ArrowLeft, Mail, Phone, MapPin, ExternalLink, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const Contact: React.FC = () => {
@@ -72,7 +72,7 @@ export const Contact: React.FC = () => {
                         </div>
 
                         <div className="pt-8 border-t border-gray-100">
-                            <h3 className="text-lg font-bold text-gray-900 mb-4">Follow The Fight</h3>
+                            <h3 className="text-lg font-bold text-gray-900 mb-4">Follow The Movement</h3>
                             <div className="flex gap-4">
                                 <a href="https://www.facebook.com/savemylouisiana/photos" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-500 hover:bg-brand-blue hover:text-white transition-all shadow-sm">
                                     <span className="sr-only">Facebook</span>
@@ -83,6 +83,10 @@ export const Contact: React.FC = () => {
                                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                         <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932L18.901 1.153zM17.61 20.644h2.039L6.486 3.24H4.298L17.61 20.644z" />
                                     </svg>
+                                </a>
+                                <a href="https://www.youtube.com/@SAVEMYLOUISIANA-p4l" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-500 hover:bg-[#FF0000] hover:text-white transition-all shadow-sm" title="YouTube">
+                                    <span className="sr-only">YouTube</span>
+                                    <Youtube size={20} />
                                 </a>
                             </div>
                         </div>
