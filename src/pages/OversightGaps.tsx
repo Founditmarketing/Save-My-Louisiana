@@ -15,7 +15,7 @@ export const OversightGaps: React.FC = () => {
             <section className="relative py-24 px-6 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/statecapital.jpg"
+                        src="/oversight-gaps-new.jpg"
                         alt="Louisiana State Capitol"
                         className="w-full h-full object-cover object-top brightness-50"
                     />

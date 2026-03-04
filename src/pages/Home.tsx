@@ -193,7 +193,7 @@ export const Home: React.FC = () => {
                             <div className="w-full h-56 overflow-hidden relative">
                                 <div className="absolute inset-0 bg-gray-800/20 mix-blend-multiply group-hover:bg-transparent transition-all duration-500 z-10"></div>
                                 <img
-                                    src="/statecapital.jpg"
+                                    src="/oversight-gaps-new.jpg"
                                     alt="Oversight Gaps"
                                     className="w-full h-full object-cover object-top transform group-hover:scale-110 transition-transform duration-700"
                                 />
