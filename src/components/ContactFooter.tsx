@@ -36,13 +36,13 @@ export const ContactFooter: React.FC = () => {
                             <li><Link to="/wildlife-threats" className="hover:text-white transition-colors">Wildlife & Wetlands</Link></li>
                             <li><Link to="/oversight-gaps" className="hover:text-white transition-colors">Oversight Gaps</Link></li>
                             <li><a href="https://www.youtube.com/@SAVEMYLOUISIANA-p4l" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Videos</a></li>
-                            <li><Link to="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
+                            <li><Link to="/contact" className="hover:text-white transition-colors">Take action</Link></li>
                         </ul>
                     </div>
 
                     {/* Contact Info */}
                     <div className="space-y-4">
-                        <h4 className="text-sm font-bold uppercase tracking-widest text-brand-blue">Contact</h4>
+                        <h4 className="text-sm font-bold uppercase tracking-widest text-brand-blue">Get Involved</h4>
                         <ul className="space-y-3 text-sm text-gray-300">
                             <li className="flex items-start gap-3">
                                 <MapPin size={16} className="text-brand-red mt-1 shrink-0" />

@@ -30,7 +30,7 @@ export const Contact: React.FC = () => {
                     {/* Contact Info (2 cols) */}
                     <div className="lg:col-span-2 space-y-10">
                         <div>
-                            <h2 className="text-3xl font-heading font-bold text-gray-900 mb-6">Contact Us</h2>
+                            <h2 className="text-3xl font-heading font-bold text-gray-900 mb-6">Take Action</h2>
                             <p className="text-gray-600 leading-relaxed mb-8">
                                 We are a grassroots organization run by dedicated volunteers and legal experts. We want to hear from you.
                             </p>
