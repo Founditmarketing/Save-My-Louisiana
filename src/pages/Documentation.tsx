@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowLeft, FileText, Download, X, ExternalLink } from 'lucide-react';
+import { FileText, Download, X, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const DOCUMENTS = [
@@ -26,9 +26,6 @@ export const Documentation: React.FC = () => {
             <section className="bg-gray-900 text-white py-20 px-6 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/40"></div>
                 <div className="relative z-10 max-w-4xl mx-auto text-center space-y-6">
-                    <Link to="/" className="inline-flex items-center text-white/80 hover:text-white mb-4 transition-colors uppercase tracking-widest text-xs font-bold">
-                        <ArrowLeft size={16} className="mr-2" /> Back to Home
-                    </Link>
                     <h1 className="text-4xl md:text-6xl font-heading font-bold leading-tight">
                         Documentation & Reports
                     </h1>
