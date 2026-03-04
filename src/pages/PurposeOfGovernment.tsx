@@ -14,8 +14,7 @@ export const PurposeOfGovernment: React.FC = () => {
             {/* Hero Section */}
             <section className="relative text-white py-24 px-6 overflow-hidden">
                 <div className="absolute inset-0 z-0">
-                    <img src="/statecapital.jpg" alt="Background" className="w-full h-full object-cover" />
-                    <div className="absolute inset-0 bg-brand-blue/85 mix-blend-multiply"></div>
+                    <img src="/statecapital.jpg" alt="Background" className="w-full h-full object-cover object-top" />
                 </div>
 
                 <div className="max-w-4xl mx-auto text-center space-y-6 relative z-10">
