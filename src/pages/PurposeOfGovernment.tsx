@@ -12,11 +12,12 @@ export const PurposeOfGovernment: React.FC = () => {
     return (
         <div className="bg-white font-sans text-gray-900">
             {/* Hero Section */}
-            <section className="bg-brand-dark text-white py-24 px-6 relative overflow-hidden">
-                <div className="absolute inset-0 opacity-10">
-                    <div className="absolute top-0 right-0 w-96 h-96 bg-brand-blue rounded-full filter blur-[100px]"></div>
-                    <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-red rounded-full filter blur-[100px]"></div>
+            <section className="relative text-white py-24 px-6 overflow-hidden">
+                <div className="absolute inset-0 z-0">
+                    <img src="/statecapital.jpg" alt="Background" className="w-full h-full object-cover" />
+                    <div className="absolute inset-0 bg-brand-blue/85 mix-blend-multiply"></div>
                 </div>
+
                 <div className="max-w-4xl mx-auto text-center space-y-6 relative z-10">
                     <h1 className="text-4xl md:text-7xl font-heading font-bold tracking-tight">The Purpose of Government</h1>
                     <p className="text-xl md:text-2xl font-serif text-gray-300 max-w-3xl mx-auto leading-relaxed">
