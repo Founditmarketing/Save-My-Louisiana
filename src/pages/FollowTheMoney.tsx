@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowLeft, DollarSign, TrendingUp, Landmark, ShieldCheck } from 'lucide-react';
+import { DollarSign, TrendingUp, Landmark, ShieldCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const FollowTheMoney: React.FC = () => {
@@ -15,9 +15,6 @@ export const FollowTheMoney: React.FC = () => {
                 </div>
 
                 <div className="relative z-10 max-w-4xl mx-auto text-center space-y-6">
-                    <Link to="/#know" className="inline-flex items-center text-white/50 hover:text-white mb-4 transition-colors uppercase tracking-widest text-xs font-bold">
-                        <ArrowLeft size={16} className="mr-2" /> Back to Home
-                    </Link>
                     <h1 className="text-4xl md:text-7xl font-heading font-bold tracking-tight">
                         Follow The Money
                     </h1>
