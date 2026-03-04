@@ -1,9 +1,21 @@
-
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Mail, Phone, MapPin, ExternalLink, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const Contact: React.FC = () => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
+    const calendarMode = isMobile ? 'AGENDA' : 'MONTH';
+
     return (
         <div className="bg-white min-h-screen font-sans text-gray-900">
 
@@ -136,7 +148,7 @@ export const Contact: React.FC = () => {
                         <h2 className="text-3xl font-heading font-bold text-gray-900 mb-8 text-center uppercase tracking-tight">Movement Calendar</h2>
                         <div className="relative w-full overflow-hidden rounded-2xl border border-gray-100 shadow-inner bg-gray-50 h-[600px] md:h-auto md:aspect-video">
                             <iframe
-                                src="https://calendar.google.com/calendar/embed?src=532b4f922a19c1f7006401dfcae37f1c81d08120edf0c1c1ee71baa1c9efd262%40group.calendar.google.com&ctz=America%2FChicago"
+                                src={`https://calendar.google.com/calendar/embed?src=532b4f922a19c1f7006401dfcae37f1c81d08120edf0c1c1ee71baa1c9efd262%40group.calendar.google.com&ctz=America%2FChicago&mode=${calendarMode}`}
                                 style={{ border: 0 }}
                                 className="absolute top-0 left-0 w-full h-full"
                                 frameBorder="0"
