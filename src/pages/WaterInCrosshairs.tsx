@@ -34,7 +34,7 @@ export const WaterInCrosshairs: React.FC = () => {
             {/* Hero Section */}
             <section className="relative text-white py-24 px-6 overflow-hidden">
                 <div className="absolute inset-0 z-0">
-                    <img src="/watersincrosshairs.png" alt="Background" className="w-full h-full object-cover" />
+                    <img src="/chicot-hero.jpg" alt="Background" className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-brand-blue/85 mix-blend-multiply"></div>
                 </div>
 
