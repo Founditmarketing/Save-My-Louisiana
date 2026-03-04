@@ -139,7 +139,7 @@ export const Contact: React.FC = () => {
                         <h2 className="text-3xl font-heading font-bold text-gray-900 mb-8 text-center uppercase tracking-tight">Movement Calendar</h2>
                         <div className="relative w-full overflow-hidden rounded-2xl border border-gray-100 shadow-inner bg-gray-50" style={{ paddingTop: '56.25%' }}>
                             <iframe
-                                src="https://calendar.google.com/calendar/embed?src=c_baf756dcc3035e52fbf7e949d26ce7523a9a978b117fc65f7c3310acb438c5f5%40group.calendar.google.com&ctz=America%2FChicago"
+                                src="https://calendar.google.com/calendar/embed?src=532b4f922a19c1f7006401dfcae37f1c81d08120edf0c1c1ee71baa1c9efd262%40group.calendar.google.com&ctz=America%2FChicago"
                                 style={{ border: 0 }}
                                 className="absolute top-0 left-0 w-full h-full"
                                 frameBorder="0"
