@@ -105,6 +105,7 @@ export const Header: React.FC = () => {
             <Link to="/follow-the-money" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Follow The Money</Link>
             <a href="https://www.youtube.com/@SAVEMYLOUISIANA-p4l" target="_blank" rel="noopener noreferrer" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Videos</a>
             <Link to="/documentation" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Documentation</Link>
+            <Link to="/calendar" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Calendar</Link>
             <Link to="/contact" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Take Action</Link>
           </nav>
 
@@ -178,6 +179,7 @@ export const Header: React.FC = () => {
               <Link to="/follow-the-money" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Follow The Money</Link>
               <a href="https://www.youtube.com/@SAVEMYLOUISIANA-p4l" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Videos</a>
               <Link to="/documentation" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Documentation</Link>
+              <Link to="/calendar" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Movement Calendar</Link>
               <Link to="/contact" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Take Action</Link>
             </nav>
 
