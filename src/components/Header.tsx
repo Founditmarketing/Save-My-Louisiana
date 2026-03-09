@@ -18,10 +18,10 @@ export const Header: React.FC = () => {
   }, [menuOpen]);
 
   const threatLinks = [
+    { name: 'Property Rights', href: '/property-rights' },
     { name: 'Water & Aquifers', href: '/water-in-crosshairs' },
     { name: 'Environmental Dangers', href: '/environmental-dangers' },
     { name: 'Wildlife & Wetlands', href: '/wildlife-threats' },
-    { name: 'Property Rights', href: '/property-rights' },
   ];
 
   const marqueeContent = [
