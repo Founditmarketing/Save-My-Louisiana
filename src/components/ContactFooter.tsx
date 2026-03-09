@@ -35,6 +35,7 @@ export const ContactFooter: React.FC = () => {
                             <li><Link to="/water-in-crosshairs" className="hover:text-white transition-colors">Water & Aquifers</Link></li>
                             <li><Link to="/environmental-dangers" className="hover:text-white transition-colors">Environmental Dangers</Link></li>
                             <li><Link to="/legislative-betrayal" className="hover:text-white transition-colors">Legislative Betrayal</Link></li>
+                            <li><Link to="/follow-the-money" className="hover:text-white transition-colors">Follow The Money</Link></li>
                         </ul>
                     </div>
 
