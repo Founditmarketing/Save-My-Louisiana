@@ -209,12 +209,13 @@ export const SECTIONS: SectionData[] = [
 ];
 
 export const NAV_LINKS = [
+  { name: 'Property Rights', href: '/property-rights' },
   { name: 'Water & Aquifers', href: '/water-in-crosshairs' },
   { name: 'Environmental Dangers', href: '/environmental-dangers' },
   { name: 'Wildlife & Wetlands', href: '/wildlife-threats' },
   { name: 'Oversight Gaps', href: '/oversight-gaps' },
-  { name: 'Purpose of Government', href: '/purpose-of-government' },
   { name: 'Legislative Betrayal', href: '/legislative-betrayal' },
+  { name: 'Purpose of Government', href: '/purpose-of-government' },
   { name: 'Legal Action', href: '/legal-action' },
   { name: 'Follow The Money', href: '/follow-the-money' },
   { name: 'Videos', href: 'https://www.youtube.com/@SAVEMYLOUISIANA-p4l', external: true },

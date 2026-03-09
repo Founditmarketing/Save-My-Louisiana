@@ -29,14 +29,12 @@ export const ContactFooter: React.FC = () => {
 
                     {/* Quick Links */}
                     <div className="space-y-4">
-                        <h4 className="text-sm font-bold uppercase tracking-widest text-brand-blue">Navigation</h4>
+                        <h4 className="text-sm font-bold uppercase tracking-widest text-brand-blue">The Threats</h4>
                         <ul className="space-y-2 text-sm text-gray-300">
+                            <li><Link to="/property-rights" className="hover:text-white transition-colors">Property Rights</Link></li>
                             <li><Link to="/water-in-crosshairs" className="hover:text-white transition-colors">Water & Aquifers</Link></li>
                             <li><Link to="/environmental-dangers" className="hover:text-white transition-colors">Environmental Dangers</Link></li>
-                            <li><Link to="/wildlife-threats" className="hover:text-white transition-colors">Wildlife & Wetlands</Link></li>
-                            <li><Link to="/oversight-gaps" className="hover:text-white transition-colors">Oversight Gaps</Link></li>
-                            <li><a href="https://www.youtube.com/@SAVEMYLOUISIANA-p4l" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Videos</a></li>
-                            <li><Link to="/contact" className="hover:text-white transition-colors">Take action</Link></li>
+                            <li><Link to="/legislative-betrayal" className="hover:text-white transition-colors">Legislative Betrayal</Link></li>
                         </ul>
                     </div>
 
