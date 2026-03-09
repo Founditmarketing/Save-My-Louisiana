@@ -231,7 +231,7 @@ export const Mission: React.FC = () => {
                     <div className="space-y-6">
                         <h2 className="text-3xl md:text-5xl font-heading font-bold text-gray-900">Right to Property</h2>
                         <p className="text-lg text-gray-700 font-serif leading-relaxed">
-                            Of the three foundational Rights our government was formed to protect, Property is among them. The ownership and control of Property is essential to true independence, and independence is essential to one’s Life and Liberty. Our Property is the best guarantor of our freedom and it represents our generational wealth.
+                            Of the three foundational Rights our government was formed to protect, Property is among them. The ownership and control of Property is essential to true independence, and independence is essential to one’s Life and Liberty. Our Property is the best guarantor of our freedom and it represents our generational wealth. Learn more about the <Link to="/purpose-of-government" className="text-brand-blue hover:underline font-bold italic">Purpose of Government</Link>.
                         </p>
                     </div>
 

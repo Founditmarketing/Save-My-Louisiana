@@ -30,7 +30,7 @@ export const PropertyRights: React.FC = () => {
             <section className="py-20 px-6">
                 <div className="max-w-4xl mx-auto space-y-6 text-lg text-gray-700 font-serif leading-relaxed">
                     <p>
-                        Of the three foundational Rights our government was formed to protect, Property is among them. Why would the Will of the People specifically name a Right to Property? The ownership and control of Property is essential to true independence, and independence is essential to one's Life and Liberty. Our Property is the best guarantor of our freedom and it represents our generational wealth.
+                        Of the three foundational Rights our government was formed to protect, Property is among them. Why would the Will of the People specifically name a Right to Property? The ownership and control of Property is essential to true independence, and independence is essential to one's Life and Liberty. Our Property is the best guarantor of our freedom and it represents our generational wealth. This is a core part of the <Link to="/purpose-of-government" className="text-brand-blue hover:underline font-semibold italic">Purpose of Government</Link>.
                     </p>
                     <p>
                         Because of the importance of the "Right to Property", our Louisiana Constitution is very clear as to protections and limits on government power in relation to that Right. Below are excerpts from{' '}
@@ -129,16 +129,16 @@ export const PropertyRights: React.FC = () => {
                     </p>
                     <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center">
                         <Link
+                            to="/purpose-of-government"
+                            className="inline-flex items-center justify-center gap-2 bg-white/10 border border-white/30 text-white px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-white/20 transition-all shadow-xl text-lg"
+                        >
+                            Back to Purpose of Government
+                        </Link>
+                        <Link
                             to="/contact"
                             className="inline-block bg-brand-red text-white px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-brand-red/90 transition-all shadow-xl text-lg"
                         >
                             Join the Movement
-                        </Link>
-                        <Link
-                            to="/donate"
-                            className="inline-block bg-white/10 border border-white/30 text-white px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-white/20 transition-all shadow-xl text-lg"
-                        >
-                            Donate Today
                         </Link>
                     </div>
                 </div>
