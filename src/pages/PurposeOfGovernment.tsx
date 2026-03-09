@@ -31,10 +31,13 @@ export const PurposeOfGovernment: React.FC = () => {
                 <div className="max-w-4xl mx-auto space-y-12">
                     <div className="space-y-6 text-lg text-gray-700 font-serif leading-relaxed">
                         <p>
-                            The sole purpose of government is to protect the Rights of men and those Rights are Life, Liberty and Property. Every law created, policy enacted and action taken by a government must find its origin and result in obtaining these ends. If laws, policies and actions do not support these ends, then the government has fallen short of the Will of the People.
+                            The sole purpose of government is to protect the Rights of men and those Rights are Life, Liberty and Property.
                         </p>
                         <p>
-                            Our Louisiana Constitution established the Louisiana government, authorized its powers and set limits on those powers. It must be understood that the Constitution is superior to the government and therefore the government is subordinate to the Constitution’s authority. The Constitution’s authority is found in the Will of the People. This means neither the Legislature, the Executive, nor the Judicial can extend their power beyond the Will of the People as defined and limited in the Constitution.
+                            Every law created, policy enacted and action taken by a government must find its origin and result in obtaining these ends. If laws, policies and actions do not support these ends, then the government has fallen short of the Will of the People.
+                        </p>
+                        <p>
+                            Our Louisiana Constitution established the Louisiana government, authorized it’s powers and set limits on those powers. It must be understood that the Constitution is superior to the government and therefore the government is subordinate to the Constitution’s authority. The Constitution’s authority is found in the Will of the People. Neither the Legislature, the Executive, nor the Judicial branches of government can extend their authority beyond the powers granted and limited by the Will of the People as codified in the Constitution.
                         </p>
                     </div>
 
@@ -45,7 +48,7 @@ export const PurposeOfGovernment: React.FC = () => {
                             </div>
                             <h3 className="text-xl font-bold font-heading">Constitutional Supremacy</h3>
                             <p className="text-gray-600 font-serif leading-relaxed">
-                                The Constitution is the supreme law of Louisiana, subject only to the US Constitution. All government branches must operate within its limits.
+                                The Constitution is superior to the government. All branches—Legislature, Executive, and Judicial—are subordinate to its authority.
                             </p>
                         </div>
                         <div className="p-8 bg-brand-blue/5 rounded-3xl border border-brand-blue/10 space-y-4">
@@ -54,7 +57,7 @@ export const PurposeOfGovernment: React.FC = () => {
                             </div>
                             <h3 className="text-xl font-bold font-heading">The Will of the People</h3>
                             <p className="text-gray-600 font-serif leading-relaxed">
-                                Government power originates with the people and is founded on their will alone, as instituted to protect individual rights.
+                                Constitutional authority is found in the Will of the People. No branch can extend its authority beyond powers granted by the People.
                             </p>
                         </div>
                     </div>
@@ -72,25 +75,44 @@ export const PurposeOfGovernment: React.FC = () => {
                             <p className="text-2xl font-serif italic text-gray-800 border-l-4 border-brand-red pl-6 leading-relaxed">
                                 “We, the people of Louisiana, ….desiring to protect individual rights to life, liberty, and property….do ordain and establish this constitution.”
                             </p>
-                            <a href="https://legis.la.gov/legis/Law.aspx?d=206274" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline text-sm font-sans block mt-4 px-10">Source: legis.la.gov</a>
+                            <div className="space-y-4 text-gray-700 font-serif leading-relaxed">
+                                <p>
+                                    The first sentence of the Constitution tells us exactly what the purpose of the government would be.
+                                </p>
+                            </div>
+                            <a href="https://legis.la.gov/legis/Law.aspx?d=206274" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline text-sm font-sans block mt-4">Source: legis.la.gov</a>
                         </div>
 
-                        <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-200 space-y-6">
-                            <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm">Article 1, Section 1</h4>
-                            <h3 className="text-xl font-bold font-heading">Origin and Purpose of Government</h3>
-                            <p className="text-gray-700 font-serif leading-relaxed italic border-l-4 border-brand-red pl-6">
-                                "All government, of right, originates with the people, is founded on their will alone, and is instituted to protect the rights of the individual and for the good of the whole. Its only legitimate ends are to secure justice for all, preserve peace, protect the rights, and promote the happiness and general welfare of the people. The rights enumerated in this Article are inalienable by the state and shall be preserved inviolate by the state."
-                            </p>
-                            <a href="https://legis.la.gov/legis/Law.aspx?d=206274" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline text-sm font-sans block mt-4 px-10">Source: legis.la.gov</a>
-                        </div>
+                        <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-200 space-y-8">
+                            <div className="space-y-4">
+                                <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm">Article 1, Section 1</h4>
+                                <h3 className="text-xl font-bold font-heading">Origin and Purpose of Government</h3>
+                                <p className="text-gray-700 font-serif leading-relaxed italic border-l-4 border-brand-red pl-6 bg-gray-50 p-6 rounded-r-xl">
+                                    "All government, of right, originates with the people, is founded on their will alone, and is instituted to protect the rights of the individual and for the good of the whole. Its only legitimate ends are to secure justice for all, preserve peace, protect the rights, and promote the happiness and general welfare of the people. <span className="text-brand-red font-bold">The rights enumerated in this Article are inalienable by the state and shall be preserved inviolate by the state.</span>"
+                                </p>
+                            </div>
 
-                        <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-200 space-y-6">
-                            <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm">Article 1, Section 2</h4>
-                            <h3 className="text-xl font-bold font-heading">Due Process of Law</h3>
-                            <p className="text-gray-700 font-serif leading-relaxed italic border-l-4 border-brand-red pl-6">
-                                "No person shall be deprived of life, liberty, or property, except by due process of law."
-                            </p>
-                            <a href="https://legis.la.gov/legis/Law.aspx?d=206285" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline text-sm font-sans block mt-4 px-10">Source: legis.la.gov</a>
+                            <div className="space-y-6">
+                                <p className="text-lg text-gray-700 font-serif leading-relaxed">
+                                    Note that Article 1, Section 1 says, “The rights enumerated in this Article are inalienable by the state and shall be preserved inviolate by the state.”
+                                </p>
+
+                                <div className="grid md:grid-cols-2 gap-6">
+                                    <div className="p-6 bg-brand-blue/5 rounded-2xl border border-brand-blue/10">
+                                        <h5 className="font-bold text-brand-blue mb-2 font-heading uppercase tracking-widest text-sm">Inalienable</h5>
+                                        <p className="text-gray-700 font-serif">Your rights cannot be alienated or separated from you by the state.</p>
+                                    </div>
+                                    <div className="p-6 bg-brand-red/5 rounded-2xl border border-brand-red/10">
+                                        <h5 className="font-bold text-brand-red mb-2 font-heading uppercase tracking-widest text-sm">Inviolate</h5>
+                                        <p className="text-gray-700 font-serif">Your rights cannot be violated or broken by the state.</p>
+                                    </div>
+                                </div>
+
+                                <p className="text-gray-700 font-serif leading-relaxed">
+                                    This statement both restricts the power of the government to separate you from your Rights and obligates the government to ensure your Rights are not violated. The message is clear: <span className="font-bold">not even the government can separate or take away your rights guaranteed by this Constitution.</span>
+                                </p>
+                            </div>
+                            <a href="https://legis.la.gov/legis/Law.aspx?d=206274" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline text-sm font-sans block mt-4">Source: legis.la.gov</a>
                         </div>
                     </div>
                 </div>

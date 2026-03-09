@@ -16,6 +16,8 @@ import { PrivacyPolicy } from './src/pages/PrivacyPolicy';
 import { TermsOfService } from './src/pages/TermsOfService';
 import { PropertyRights } from './src/pages/PropertyRights';
 import { Calendar } from './src/pages/Calendar';
+import { LegislativeBetrayal } from './src/pages/LegislativeBetrayal';
+import { LegalAction } from './src/pages/LegalAction';
 
 import { ScrollToTop } from './src/components/ScrollToTop';
 
@@ -40,6 +42,8 @@ const App: React.FC = () => {
           <Route path="privacy" element={<PrivacyPolicy />} />
           <Route path="terms" element={<TermsOfService />} />
           <Route path="property-rights" element={<PropertyRights />} />
+          <Route path="legislative-betrayal" element={<LegislativeBetrayal />} />
+          <Route path="legal-action" element={<LegalAction />} />
         </Route>
       </Routes>
     </BrowserRouter>

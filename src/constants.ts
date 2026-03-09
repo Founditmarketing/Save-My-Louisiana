@@ -214,6 +214,8 @@ export const NAV_LINKS = [
   { name: 'Wildlife & Wetlands', href: '/wildlife-threats' },
   { name: 'Oversight Gaps', href: '/oversight-gaps' },
   { name: 'Purpose of Government', href: '/purpose-of-government' },
+  { name: 'Legislative Betrayal', href: '/legislative-betrayal' },
+  { name: 'Legal Action', href: '/legal-action' },
   { name: 'Follow The Money', href: '/follow-the-money' },
   { name: 'Videos', href: 'https://www.youtube.com/@SAVEMYLOUISIANA-p4l', external: true },
   { name: 'Calendar', href: '/calendar' },
