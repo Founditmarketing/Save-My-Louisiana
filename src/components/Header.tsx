@@ -22,9 +22,7 @@ export const Header: React.FC = () => {
     { name: 'Water & Aquifers', href: '/water-in-crosshairs' },
     { name: 'Environmental Dangers', href: '/environmental-dangers' },
     { name: 'Wildlife & Wetlands', href: '/wildlife-threats' },
-    { name: 'Oversight Gaps', href: '/oversight-gaps' },
     { name: 'Legislative Betrayal', href: '/legislative-betrayal' },
-    { name: 'Follow The Money', href: '/follow-the-money' },
   ];
 
   const marqueeContent = [
@@ -81,7 +79,7 @@ export const Header: React.FC = () => {
           </div>
 
           {/* Center: Desktop Nav */}
-          <nav className="hidden xl:flex flex-1 justify-center items-center gap-4 2xl:gap-6 whitespace-nowrap">
+          <nav className="hidden xl:flex flex-1 justify-center items-center gap-2 2xl:gap-4 whitespace-nowrap">
             <Link to="/" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Home</Link>
             <Link to="/mission" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Our Mission</Link>
             <Link to="/purpose-of-government" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap text-center">Purpose of<br />Government</Link>
@@ -104,6 +102,8 @@ export const Header: React.FC = () => {
               </div>
             </div>
 
+            <Link to="/oversight-gaps" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Oversight Gaps</Link>
+            <Link to="/follow-the-money" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Follow The Money</Link>
             <Link to="/legal-action" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Legal Action</Link>
             <a href="https://www.youtube.com/@SAVEMYLOUISIANA-p4l" target="_blank" rel="noopener noreferrer" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Videos</a>
             <Link to="/documentation" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Documentation</Link>
@@ -177,6 +177,8 @@ export const Header: React.FC = () => {
               </div>
 
               <Link to="/purpose-of-government" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Purpose of Government</Link>
+              <Link to="/oversight-gaps" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Oversight Gaps</Link>
+              <Link to="/follow-the-money" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Follow The Money</Link>
               <Link to="/legal-action" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Legal Action</Link>
               <a href="https://www.youtube.com/@SAVEMYLOUISIANA-p4l" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Videos</a>
               <Link to="/documentation" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Documentation</Link>
