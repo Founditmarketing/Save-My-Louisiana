@@ -216,6 +216,7 @@ export const NAV_LINKS = [
   { name: 'Purpose of Government', href: '/purpose-of-government' },
   { name: 'Follow The Money', href: '/follow-the-money' },
   { name: 'Videos', href: 'https://www.youtube.com/@SAVEMYLOUISIANA-p4l', external: true },
+  { name: 'Calendar', href: '/calendar' },
   { name: 'Contact', href: '/contact' },
 ];
 

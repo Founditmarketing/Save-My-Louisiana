@@ -15,6 +15,7 @@ import { Documentation } from './src/pages/Documentation';
 import { PrivacyPolicy } from './src/pages/PrivacyPolicy';
 import { TermsOfService } from './src/pages/TermsOfService';
 import { PropertyRights } from './src/pages/PropertyRights';
+import { Calendar } from './src/pages/Calendar';
 
 import { ScrollToTop } from './src/components/ScrollToTop';
 
@@ -35,6 +36,7 @@ const App: React.FC = () => {
           <Route path="donate" element={<Donate />} />
           <Route path="documentation" element={<Documentation />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="calendar" element={<Calendar />} />
           <Route path="privacy" element={<PrivacyPolicy />} />
           <Route path="terms" element={<TermsOfService />} />
           <Route path="property-rights" element={<PropertyRights />} />

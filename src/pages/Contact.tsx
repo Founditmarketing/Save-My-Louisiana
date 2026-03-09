@@ -142,25 +142,6 @@ export const Contact: React.FC = () => {
 
                 </div>
 
-                {/* Movement Calendar */}
-                <div className="mt-20">
-                    <div className="bg-white p-4 md:p-12 rounded-3xl border border-gray-200 shadow-sm overflow-hidden">
-                        <h2 className="text-3xl font-heading font-bold text-gray-900 mb-8 text-center uppercase tracking-tight">Movement Calendar</h2>
-                        <div className="relative w-full overflow-hidden rounded-2xl border border-gray-100 shadow-inner bg-gray-50 h-[600px] md:h-auto md:aspect-video">
-                            <iframe
-                                src={`https://calendar.google.com/calendar/embed?src=532b4f922a19c1f7006401dfcae37f1c81d08120edf0c1c1ee71baa1c9efd262%40group.calendar.google.com&ctz=America%2FChicago&mode=${calendarMode}`}
-                                style={{ border: 0 }}
-                                className="absolute top-0 left-0 w-full h-full"
-                                frameBorder="0"
-                                scrolling="no"
-                                title="Movement Calendar"
-                            ></iframe>
-                        </div>
-                        <p className="mt-6 text-center text-gray-500 font-serif italic">
-                            Stay updated with our upcoming town halls, community meetings, and legislative sessions.
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
     );
