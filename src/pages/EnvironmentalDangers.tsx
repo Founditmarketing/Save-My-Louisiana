@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowLeft, AlertTriangle, LandPlot, DollarSign, Activity } from 'lucide-react';
+import { ArrowLeft, AlertTriangle, LandPlot, DollarSign, Activity, ImageIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const EnvironmentalDangers: React.FC = () => {
@@ -89,6 +89,32 @@ export const EnvironmentalDangers: React.FC = () => {
                     </div>
                 </section>
 
+                {/* Devastating Louisiana Agriculture */}
+                <section className="space-y-6">
+                    <h2 className="text-3xl font-heading font-bold text-gray-900 border-l-4 border-green-600 pl-4">
+                        Devastating Louisiana Agriculture
+                    </h2>
+                    <p className="text-lg text-gray-700 leading-relaxed font-serif">
+                        Louisiana's agricultural heritage is directly threatened by CCS projects. Crawfish farms, rice fields, and nurseries all depend on clean water and uncontaminated soil — resources that CCS operations put at risk.
+                    </p>
+                    <div className="grid md:grid-cols-3 gap-6">
+                        {['Crawfish Farmers', 'Rice Farm', 'Nursery'].map((title) => (
+                            <div key={title} className="rounded-2xl overflow-hidden border border-gray-200 shadow-sm bg-gray-50">
+                                <div className="h-48 flex items-center justify-center bg-gray-200">
+                                    <div className="text-center p-4">
+                                        <ImageIcon size={40} className="mx-auto text-gray-400 mb-2" />
+                                        <p className="text-gray-500 font-bold uppercase tracking-widest text-xs">[PLACEHOLDER]</p>
+                                        <p className="text-gray-400 text-xs mt-1">{title} image pending</p>
+                                    </div>
+                                </div>
+                                <div className="p-4 bg-white text-center">
+                                    <p className="font-bold text-gray-900 text-sm">{title}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+
                 {/* Legacy Wells */}
                 <section className="space-y-6">
                     <div className="flex items-start gap-4">
@@ -101,6 +127,23 @@ export const EnvironmentalDangers: React.FC = () => {
                                 Louisiana has <span className="font-bold">over 400,000 oil and gas wells</span>. Many were plugged before 1950 using outdated standards. These "legacy wells" act as straws, allowing injected CO₂ to puncture the containment zone and escape back to the surface.
                             </p>
                         </div>
+                    </div>
+                    {/* Pin Cushion image placeholder */}
+                    <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-sm bg-gray-50 max-w-2xl mx-auto">
+                        <div className="h-56 flex items-center justify-center bg-gray-200">
+                            <div className="text-center p-4">
+                                <ImageIcon size={40} className="mx-auto text-gray-400 mb-2" />
+                                <p className="text-gray-500 font-bold uppercase tracking-widest text-xs">[PLACEHOLDER]</p>
+                                <p className="text-gray-400 text-xs mt-1">Pin Cushion image pending</p>
+                            </div>
+                        </div>
+                        <div className="p-4 bg-white text-center">
+                            <p className="font-bold text-gray-900 text-sm">The Pin Cushion Effect</p>
+                        </div>
+                    </div>
+                    <div className="bg-amber-50 p-6 rounded-2xl border border-amber-200">
+                        <p className="text-amber-800 text-sm font-bold uppercase tracking-widest mb-2">📌 Pending Text Update</p>
+                        <p className="text-amber-700 text-sm">Section text will be updated using content from the "Pin Cushion 2" image once provided.</p>
                     </div>
                 </section>
 
@@ -115,6 +158,19 @@ export const EnvironmentalDangers: React.FC = () => {
                             <p className="text-lg text-gray-700 leading-relaxed font-serif">
                                 More than <span className="font-bold">700 miles</span> of new pipelines are planned, many crossing the fragile Atchafalaya Basin. A rupture in these remote wetlands would be devastating and difficult to contain.
                             </p>
+                        </div>
+                    </div>
+                    {/* Denbury Pipelines image placeholder */}
+                    <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-sm bg-gray-50 max-w-2xl mx-auto">
+                        <div className="h-56 flex items-center justify-center bg-gray-200">
+                            <div className="text-center p-4">
+                                <ImageIcon size={40} className="mx-auto text-gray-400 mb-2" />
+                                <p className="text-gray-500 font-bold uppercase tracking-widest text-xs">[PLACEHOLDER]</p>
+                                <p className="text-gray-400 text-xs mt-1">Denbury Pipelines image pending</p>
+                            </div>
+                        </div>
+                        <div className="p-4 bg-white text-center">
+                            <p className="font-bold text-gray-900 text-sm">Denbury Pipelines</p>
                         </div>
                     </div>
                 </section>

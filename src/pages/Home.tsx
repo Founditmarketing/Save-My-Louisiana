@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, ChevronDown } from 'lucide-react';
 import { HERO_CONTENT, SITUATION_CONTENT } from '../constants';
 
-const HERO_IMAGES = ['/state-capital-hero.jpg', '/red-river.jpg', '/atchafalaya-basin.jpg'];
+const HERO_IMAGES = ['/louisiana-bayou-hero.png', '/state-capital-hero.jpg', '/atchafalaya-basin.jpg'];
 
 export const Home: React.FC = () => {
     const [currentSlide, setCurrentSlide] = useState(0);

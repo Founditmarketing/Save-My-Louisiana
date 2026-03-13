@@ -56,25 +56,19 @@ export const Contact: React.FC = () => {
                                 </div>
 
                                 <div className="flex items-start gap-4">
-                                    <div className="bg-blue-50 p-3 rounded-full text-brand-blue">
-                                        <Phone size={20} />
+                                    <div className="bg-green-50 p-3 rounded-full text-green-600">
+                                        <ExternalLink size={20} />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-gray-900">Call Us</h4>
-                                        <span className="text-gray-600">318.542.6856</span>
-                                    </div>
-                                </div>
-
-                                <div className="flex items-start gap-4">
-                                    <div className="bg-blue-50 p-3 rounded-full text-brand-blue">
-                                        <MapPin size={20} />
-                                    </div>
-                                    <div>
-                                        <h4 className="font-bold text-gray-900">Mailing Address</h4>
-                                        <p className="text-gray-600">
-                                            123 Bayou Road<br />
-                                            Lafayette, LA 70501
-                                        </p>
+                                        <h4 className="font-bold text-gray-900">Support Our Cause</h4>
+                                        <a
+                                            href="https://www.gofundme.com/u/savemylouisiana"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-5 py-2.5 rounded-full font-bold uppercase tracking-widest text-xs transition-all shadow-md hover:shadow-lg mt-2"
+                                        >
+                                            Donate on GoFundMe
+                                        </a>
                                     </div>
                                 </div>
                             </div>

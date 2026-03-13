@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Gavel } from 'lucide-react';
+import { Gavel, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const PropertyRights: React.FC = () => {
@@ -117,6 +117,77 @@ export const PropertyRights: React.FC = () => {
                             </p>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            {/* Image Gallery — State Capitol & Constitution */}
+            <section className="py-16 px-6 bg-gray-50">
+                <div className="max-w-4xl mx-auto space-y-8">
+                    <h2 className="text-3xl font-heading font-bold text-gray-900 text-center">Our Heritage Under Threat</h2>
+                    <div className="grid md:grid-cols-2 gap-8">
+                        <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-200">
+                            <img src="/statecapital.jpg" alt="Louisiana State Capitol" className="w-full h-64 object-cover object-[center_80%]" />
+                            <div className="p-4 bg-white text-center">
+                                <p className="font-bold text-gray-900">Louisiana State Capitol</p>
+                            </div>
+                        </div>
+                        <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-200 bg-gray-100 flex flex-col items-center justify-center">
+                            <div className="w-full h-64 flex items-center justify-center bg-gray-200">
+                                <div className="text-center p-6">
+                                    <FileText size={48} className="mx-auto text-gray-400 mb-3" />
+                                    <p className="text-gray-500 font-bold uppercase tracking-widest text-sm">[PLACEHOLDER]</p>
+                                    <p className="text-gray-400 text-xs mt-1">Constitution image pending</p>
+                                </div>
+                            </div>
+                            <div className="p-4 bg-white text-center w-full">
+                                <p className="font-bold text-gray-900">Louisiana State Constitution</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Mark Guillory Videos */}
+            <section className="py-16 px-6">
+                <div className="max-w-4xl mx-auto space-y-8">
+                    <h2 className="text-3xl font-heading font-bold text-gray-900">Videos by Mark Guillory</h2>
+                    <p className="text-lg text-gray-600 font-serif">Watch these important discussions on property rights and the CCS threat to Louisiana.</p>
+                    <div className="grid md:grid-cols-3 gap-6">
+                        {[
+                            { url: "https://www.facebook.com/share/v/17CL9MRomG/", title: "Property Rights Discussion — Part 1" },
+                            { url: "https://www.facebook.com/share/v/18jRAek4Ph/", title: "Property Rights Discussion — Part 2" },
+                            { url: "https://www.facebook.com/share/v/1PczMXjQbR/", title: "Property Rights Discussion — Part 3" },
+                        ].map((video, i) => (
+                            <a
+                                key={i}
+                                href={video.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all"
+                            >
+                                <div className="h-40 bg-gradient-to-br from-brand-blue/20 to-brand-red/20 flex items-center justify-center">
+                                    <div className="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                        <svg className="w-8 h-8 text-brand-blue ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+                                    </div>
+                                </div>
+                                <div className="p-4">
+                                    <p className="font-bold text-gray-900 text-sm mb-1">{video.title}</p>
+                                    <p className="text-brand-blue text-xs font-bold uppercase tracking-widest group-hover:underline">Watch on Facebook →</p>
+                                </div>
+                            </a>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Legislative Betrayal Link */}
+            <section className="py-12 px-6 bg-brand-red/5 border-y border-brand-red/10">
+                <div className="max-w-4xl mx-auto text-center space-y-4">
+                    <h3 className="text-2xl font-heading font-bold text-gray-900">Legislative Betrayal</h3>
+                    <p className="text-gray-700 font-serif">See how the Louisiana Legislature has passed laws that violate your constitutional property rights.</p>
+                    <Link to="/legislative-betrayal" className="inline-flex items-center gap-2 bg-brand-red text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-red-700 transition-all shadow-lg">
+                        View Legislative Record
+                    </Link>
                 </div>
             </section>
 

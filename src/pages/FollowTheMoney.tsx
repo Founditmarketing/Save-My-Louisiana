@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { DollarSign, TrendingUp, Landmark, ShieldCheck } from 'lucide-react';
+import { DollarSign, TrendingUp, Landmark, ShieldCheck, ImageIcon } from 'lucide-react';
 // Final synchronization trigger
 import { Link } from 'react-router-dom';
 
@@ -42,6 +42,20 @@ export const FollowTheMoney: React.FC = () => {
                         </div>
                     </div>
                 </section>
+
+                {/* CO2 Cycle Image Placeholder */}
+                <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-sm bg-gray-50 max-w-2xl mx-auto">
+                    <div className="h-56 flex items-center justify-center bg-gray-200">
+                        <div className="text-center p-4">
+                            <ImageIcon size={40} className="mx-auto text-gray-400 mb-2" />
+                            <p className="text-gray-500 font-bold uppercase tracking-widest text-xs">[PLACEHOLDER]</p>
+                            <p className="text-gray-400 text-xs mt-1">CO2 Cycle image pending</p>
+                        </div>
+                    </div>
+                    <div className="p-4 bg-white text-center">
+                        <p className="font-bold text-gray-900 text-sm">The CO₂ Cycle</p>
+                    </div>
+                </div>
 
                 {/* Corporate Incentives */}
                 <section className="grid md:grid-cols-2 gap-8">

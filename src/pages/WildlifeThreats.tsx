@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowLeft, Fish, DollarSign, Skull, Droplets } from 'lucide-react';
+import { ArrowLeft, Fish, DollarSign, Skull, Droplets, ImageIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const WildlifeThreats: React.FC = () => {
@@ -91,6 +91,19 @@ export const WildlifeThreats: React.FC = () => {
                             <p className="text-gray-700 font-serif leading-relaxed">
                                 Shrimp and oysters are the cornerstones of our coastal economy. They require specific pH levels and clean water to thrive. Carbonic acid from CCS leaks can <span className="font-bold">decimate larval populations</span> and erode the very shells that oysters need to survive, effectively killing the harvest before it even begins.
                             </p>
+                            {/* Shrimp Farmers image placeholder */}
+                            <div className="rounded-2xl overflow-hidden border border-green-200 shadow-sm bg-green-50/30 mt-4">
+                                <div className="h-48 flex items-center justify-center bg-green-100/50">
+                                    <div className="text-center p-4">
+                                        <ImageIcon size={40} className="mx-auto text-green-300 mb-2" />
+                                        <p className="text-green-600 font-bold uppercase tracking-widest text-xs">[PLACEHOLDER]</p>
+                                        <p className="text-green-500 text-xs mt-1">Shrimp Farmers image pending</p>
+                                    </div>
+                                </div>
+                                <div className="p-3 bg-white text-center">
+                                    <p className="font-bold text-green-900 text-sm">Shrimp Farmers</p>
+                                </div>
+                            </div>
                         </div>
 
                         <div className="bg-green-50/50 p-8 rounded-3xl border border-green-100 space-y-4">
@@ -100,6 +113,19 @@ export const WildlifeThreats: React.FC = () => {
                             <p className="text-gray-700 font-serif leading-relaxed">
                                 Our swamp lands are nature's filter, but they cannot handle the chemical assault of acidified water. Soil degradation and the loss of wetland vegetation to corrosion weaken our <span className="font-bold">natural hurricane protection</span>, leaving inland communities more vulnerable to storm surges and coastal erosion.
                             </p>
+                            {/* Bayou image placeholder */}
+                            <div className="rounded-2xl overflow-hidden border border-green-200 shadow-sm bg-green-50/30 mt-4">
+                                <div className="h-48 flex items-center justify-center bg-green-100/50">
+                                    <div className="text-center p-4">
+                                        <ImageIcon size={40} className="mx-auto text-green-300 mb-2" />
+                                        <p className="text-green-600 font-bold uppercase tracking-widest text-xs">[PLACEHOLDER]</p>
+                                        <p className="text-green-500 text-xs mt-1">Bayou image pending</p>
+                                    </div>
+                                </div>
+                                <div className="p-3 bg-white text-center">
+                                    <p className="font-bold text-green-900 text-sm">Bayou</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 

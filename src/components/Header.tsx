@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronRight, ChevronDown } from 'lucide-react';
-import { NAV_LINKS } from '../constants';
-import { NavLink } from '../types';
+import { Link } from 'react-router-dom';
+import { Menu, X, ChevronDown, Youtube } from 'lucide-react';
 
 export const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [homeOpen, setHomeOpen] = useState(false);
   const [threatsOpen, setThreatsOpen] = useState(false);
 
-  // Prevent scrolling when menu is open
   useEffect(() => {
     if (menuOpen) {
       document.body.style.overflow = 'hidden';
@@ -17,12 +15,27 @@ export const Header: React.FC = () => {
     }
   }, [menuOpen]);
 
+  const homeLinks = [
+    { name: 'About Us', href: '/mission' },
+    { name: 'Our Mission', href: '/mission' },
+    { name: 'The Purpose of Government', href: '/purpose-of-government' },
+    { name: 'Our Constitutionally Guaranteed Rights to Property', href: '/property-rights' },
+    { name: 'What the Legislature has done', href: '/legislative-betrayal' },
+    { name: 'What Save My Louisiana is doing', href: '/mission#what-we-are-doing' },
+  ];
+
+  const homeSubLinks = [
+    { parent: 'What the Legislature has done', items: [
+      { name: 'How did this happen?', href: '/legislative-betrayal#how-did-this-happen' },
+      { name: 'Who voted for this?', href: 'https://www.LaCag.org', external: true },
+    ]},
+  ];
+
   const threatLinks = [
     { name: 'Property Rights', href: '/property-rights' },
     { name: 'Water & Aquifers', href: '/water-in-crosshairs' },
     { name: 'Environmental Dangers', href: '/environmental-dangers' },
     { name: 'Wildlife & Wetlands', href: '/wildlife-threats' },
-    { name: 'Legislative Betrayal', href: '/legislative-betrayal' },
   ];
 
   const marqueeContent = [
@@ -78,18 +91,58 @@ export const Header: React.FC = () => {
             </Link>
           </div>
 
-          {/* Center: Desktop Nav */}
+          {/* Center: Desktop Nav — 6 items */}
           <nav className="hidden xl:flex flex-1 justify-center items-center gap-2 2xl:gap-4 whitespace-nowrap">
-            <Link to="/" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Home</Link>
-            <Link to="/mission" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Our Mission</Link>
-            <Link to="/purpose-of-government" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap text-center">Purpose of<br />Government</Link>
 
-            {/* Dropdown for Threats */}
+            {/* Home Dropdown */}
             <div className="relative group">
-              <button className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative py-1 flex items-center gap-1 whitespace-nowrap">
+              <Link to="/" className="text-[11px] 2xl:text-[12px] font-bold tracking-[0.05em] uppercase text-gray-900 hover:text-brand-blue transition-colors relative py-1 flex items-center gap-1 whitespace-nowrap">
+                Home <ChevronDown size={14} />
+              </Link>
+              <div className="absolute top-full left-0 mt-2 w-72 bg-white shadow-xl rounded-lg overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 border border-gray-100 z-50">
+                {homeLinks.map((link) => (
+                  <React.Fragment key={link.name}>
+                    <Link
+                      to={link.href}
+                      className="block px-4 py-3 text-sm text-gray-600 hover:bg-gray-50 hover:text-brand-blue transition-colors border-b border-gray-50 last:border-0"
+                    >
+                      {link.name}
+                    </Link>
+                    {/* Sub-items for "What the Legislature has done" */}
+                    {homeSubLinks.filter(s => s.parent === link.name).map(sub => (
+                      sub.items.map(item => (
+                        item.external ? (
+                          <a
+                            key={item.name}
+                            href={item.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block pl-8 pr-4 py-2 text-xs text-gray-500 hover:bg-gray-50 hover:text-brand-blue transition-colors border-b border-gray-50"
+                          >
+                            ↳ {item.name}
+                          </a>
+                        ) : (
+                          <Link
+                            key={item.name}
+                            to={item.href}
+                            className="block pl-8 pr-4 py-2 text-xs text-gray-500 hover:bg-gray-50 hover:text-brand-blue transition-colors border-b border-gray-50"
+                          >
+                            ↳ {item.name}
+                          </Link>
+                        )
+                      ))
+                    ))}
+                  </React.Fragment>
+                ))}
+              </div>
+            </div>
+
+            {/* The Threats Dropdown */}
+            <div className="relative group">
+              <button className="text-[11px] 2xl:text-[12px] font-bold tracking-[0.05em] uppercase text-gray-900 hover:text-brand-blue transition-colors relative py-1 flex items-center gap-1 whitespace-nowrap">
                 The Threats <ChevronDown size={14} />
               </button>
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-56 bg-white shadow-xl rounded-lg overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 border border-gray-100">
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-56 bg-white shadow-xl rounded-lg overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 border border-gray-100 z-50">
                 {threatLinks.map((link) => (
                   <Link
                     key={link.name}
@@ -102,17 +155,32 @@ export const Header: React.FC = () => {
               </div>
             </div>
 
-            <Link to="/oversight-gaps" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Oversight Gaps</Link>
-            <Link to="/follow-the-money" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Follow The Money</Link>
-            <Link to="/legal-action" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Legal Action</Link>
-            <a href="https://www.youtube.com/@SAVEMYLOUISIANA-p4l" target="_blank" rel="noopener noreferrer" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Videos</a>
-            <Link to="/documentation" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Documentation</Link>
-            <Link to="/calendar" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Calendar</Link>
-            <Link to="/contact" className="text-[11px] 2xl:text-[12px] font-medium tracking-[0.05em] uppercase text-brand-red hover:text-red-700 font-bold transition-colors relative group py-1 whitespace-nowrap">Take Action</Link>
+            <Link to="/follow-the-money" className="text-[11px] 2xl:text-[12px] font-bold tracking-[0.05em] uppercase text-gray-900 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Follow The Money</Link>
+            <Link to="/documentation" className="text-[11px] 2xl:text-[12px] font-bold tracking-[0.05em] uppercase text-gray-900 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Document Reports</Link>
+            <Link to="/contact" className="text-[11px] 2xl:text-[12px] font-bold tracking-[0.05em] uppercase text-brand-red hover:text-red-700 font-bold transition-colors relative group py-1 whitespace-nowrap">Take Action</Link>
+            <Link to="/calendar" className="text-[11px] 2xl:text-[12px] font-bold tracking-[0.05em] uppercase text-gray-900 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Calendar</Link>
           </nav>
 
-          {/* Right: Actions */}
-          <div className="flex items-center gap-2 md:gap-4 z-10 shrink-0">
+          {/* Right: Actions + Social Icons */}
+          <div className="flex items-center gap-2 md:gap-3 z-10 shrink-0">
+            {/* Social Media Icons — Desktop */}
+            <div className="hidden xl:flex items-center gap-2">
+              <a href="https://www.facebook.com/savemylouisiana/photos" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center text-gray-500 hover:bg-brand-blue hover:text-white transition-all" title="Facebook">
+                <span className="sr-only">Facebook</span>
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" /></svg>
+              </a>
+              <a href="https://x.com/savemylouisiana" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center text-gray-500 hover:bg-black hover:text-white transition-all" title="X (Twitter)">
+                <span className="sr-only">X</span>
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932L18.901 1.153zM17.61 20.644h2.039L6.486 3.24H4.298L17.61 20.644z" />
+                </svg>
+              </a>
+              <a href="https://www.youtube.com/@SAVEMYLOUISIANA-p4l" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center text-gray-500 hover:bg-[#FF0000] hover:text-white transition-all" title="YouTube">
+                <span className="sr-only">YouTube</span>
+                <Youtube size={16} />
+              </a>
+            </div>
+
             <Link to="/donate" className="bg-brand-blue hover:bg-blue-800 text-white px-4 md:px-6 py-2 rounded-full font-medium transition-all uppercase text-[9px] md:text-[10px] tracking-widest shadow-md hover:shadow-lg transform hover:-translate-y-0.5 hidden sm:block animate-pulse-border">
               Donate
             </Link>
@@ -155,10 +223,32 @@ export const Header: React.FC = () => {
 
           <div className="flex-1 overflow-y-auto p-8 flex flex-col gap-8">
             <nav className="flex flex-col gap-4">
-              <Link to="/" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Home</Link>
-              <Link to="/mission" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Our Mission</Link>
 
-              <div className="border-t border-b border-gray-100 py-4">
+              {/* Home Dropdown (Mobile) */}
+              <div className="border-b border-gray-100 pb-4">
+                <button onClick={() => setHomeOpen(!homeOpen)} className="flex items-center justify-between w-full text-2xl font-heading font-light text-gray-900">
+                  Home <ChevronDown size={20} className={`transform transition-transform ${homeOpen ? 'rotate-180' : ''}`} />
+                </button>
+                <div className={`mt-4 space-y-3 pl-4 border-l-2 border-gray-100 transition-all duration-300 ${homeOpen ? 'block' : 'hidden'}`}>
+                  {homeLinks.map((link) => (
+                    <Link
+                      key={link.name}
+                      to={link.href}
+                      onClick={() => setMenuOpen(false)}
+                      className="block text-lg text-gray-600 hover:text-brand-blue"
+                    >
+                      {link.name}
+                    </Link>
+                  ))}
+                  <div className="pl-4 space-y-2 border-l-2 border-gray-200">
+                    <Link to="/legislative-betrayal#how-did-this-happen" onClick={() => setMenuOpen(false)} className="block text-base text-gray-500 hover:text-brand-blue">↳ How did this happen?</Link>
+                    <a href="https://www.LaCag.org" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="block text-base text-gray-500 hover:text-brand-blue">↳ Who voted for this?</a>
+                  </div>
+                </div>
+              </div>
+
+              {/* The Threats Dropdown (Mobile) */}
+              <div className="border-b border-gray-100 pb-4">
                 <button onClick={() => setThreatsOpen(!threatsOpen)} className="flex items-center justify-between w-full text-2xl font-heading font-light text-gray-900">
                   The Threats <ChevronDown size={20} className={`transform transition-transform ${threatsOpen ? 'rotate-180' : ''}`} />
                 </button>
@@ -176,22 +266,38 @@ export const Header: React.FC = () => {
                 </div>
               </div>
 
-              <Link to="/purpose-of-government" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Purpose of Government</Link>
-              <Link to="/oversight-gaps" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Oversight Gaps</Link>
               <Link to="/follow-the-money" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Follow The Money</Link>
-              <Link to="/legal-action" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Legal Action</Link>
-              <a href="https://www.youtube.com/@SAVEMYLOUISIANA-p4l" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Videos</a>
-              <Link to="/documentation" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Documentation</Link>
-              <Link to="/calendar" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Movement Calendar</Link>
+              <Link to="/documentation" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Document Reports</Link>
               <Link to="/contact" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Take Action</Link>
+              <Link to="/calendar" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Calendar</Link>
             </nav>
+
+            {/* Social Media Links — Mobile */}
+            <div className="pt-4 border-t border-gray-100">
+              <h3 className="text-sm font-bold text-gray-900 mb-3 uppercase tracking-widest">Follow Us</h3>
+              <div className="flex gap-4">
+                <a href="https://www.facebook.com/savemylouisiana/photos" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-500 hover:bg-brand-blue hover:text-white transition-all shadow-sm">
+                  <span className="sr-only">Facebook</span>
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" /></svg>
+                </a>
+                <a href="https://x.com/savemylouisiana" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-500 hover:bg-black hover:text-white transition-all shadow-sm" title="X">
+                  <span className="sr-only">X</span>
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932L18.901 1.153zM17.61 20.644h2.039L6.486 3.24H4.298L17.61 20.644z" />
+                  </svg>
+                </a>
+                <a href="https://www.youtube.com/@SAVEMYLOUISIANA-p4l" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-500 hover:bg-[#FF0000] hover:text-white transition-all shadow-sm" title="YouTube">
+                  <span className="sr-only">YouTube</span>
+                  <Youtube size={20} />
+                </a>
+              </div>
+            </div>
 
             <div className="mt-auto space-y-4 text-sm text-gray-500">
               <Link to="/donate" onClick={() => setMenuOpen(false)} className="block w-full bg-brand-blue text-white py-4 rounded-full font-bold text-center uppercase tracking-wider shadow-lg hover:bg-blue-800 transition-colors">
                 Donate Now
               </Link>
               <p className="pt-4">
-                318.542.6856<br />
                 info@savemylouisiana.org
               </p>
             </div>

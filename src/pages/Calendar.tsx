@@ -21,7 +21,7 @@ export const Calendar: React.FC = () => {
                 <div className="absolute inset-0 bg-black/40"></div>
                 <div className="relative z-10 max-w-4xl mx-auto text-center space-y-6">
                     <h1 className="text-4xl md:text-6xl font-heading font-bold leading-tight">
-                        Movement Calendar
+                        Events Calendar
                     </h1>
                     <p className="text-xl md:text-2xl font-serif text-gray-300 max-w-2xl mx-auto">
                         Stay updated with our upcoming town halls, community meetings, and legislative sessions.
@@ -39,7 +39,7 @@ export const Calendar: React.FC = () => {
                             className="absolute top-0 left-0 w-full h-full"
                             frameBorder="0"
                             scrolling="no"
-                            title="Movement Calendar"
+                            title="Events Calendar"
                         ></iframe>
                     </div>
                 </div>
