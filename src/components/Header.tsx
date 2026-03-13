@@ -24,9 +24,8 @@ export const Header: React.FC = () => {
   ];
 
   const marqueeContent = [
-    "Official Advocacy for Louisiana's Future",
-    "Protect Our Land. Protect Our Water. Protect Our Future.",
-    "Donate Today to Support the Legal Defense Fund."
+    "Protect Our Land, Water, Future.",
+    "Donate today to support saving my Louisiana."
   ];
 
   return (
