@@ -24,8 +24,8 @@ export const Header: React.FC = () => {
 
   const threatLinks = [
     { name: 'Property Rights', href: '/property-rights' },
-    { name: 'Water & Aquifers', href: '/water-in-crosshairs' },
     { name: 'Environmental Danger', href: '/environmental-dangers' },
+    { name: 'Water & Aquifers', href: '/water-in-crosshairs' },
   ];
 
   const marqueeContent = [
