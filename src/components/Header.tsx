@@ -77,7 +77,7 @@ export const Header: React.FC = () => {
           </div>
 
           {/* Center: Desktop Nav — 6 items */}
-          <nav className="hidden xl:flex flex-1 justify-center items-center gap-2 2xl:gap-4 whitespace-nowrap">
+          <nav className="hidden xl:flex flex-1 justify-center items-center gap-6 2xl:gap-10 whitespace-nowrap">
 
             <Link to="/about" className="text-[11px] 2xl:text-[12px] font-bold tracking-[0.05em] uppercase text-gray-900 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">About Us</Link>
 
@@ -99,10 +99,10 @@ export const Header: React.FC = () => {
               </div>
             </div>
 
-            <Link to="/follow-the-money" className="text-[11px] 2xl:text-[12px] font-bold tracking-[0.05em] uppercase text-gray-900 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Follow The Money</Link>
-            <Link to="/documentation" className="text-[11px] 2xl:text-[12px] font-bold tracking-[0.05em] uppercase text-gray-900 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Reports and Documents</Link>
-            <Link to="/contact" className="text-[11px] 2xl:text-[12px] font-bold tracking-[0.05em] uppercase text-brand-red hover:text-red-700 font-bold transition-colors relative group py-1 whitespace-nowrap">Take Action</Link>
-            <Link to="/calendar" className="text-[11px] 2xl:text-[12px] font-bold tracking-[0.05em] uppercase text-gray-900 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Calendar</Link>
+            <Link to="/follow-the-money" className="text-[11px] 2xl:text-[12px] font-bold tracking-widest uppercase text-gray-900 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Follow The Money</Link>
+            <Link to="/documentation" className="text-[11px] 2xl:text-[12px] font-bold tracking-widest uppercase text-gray-900 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Reports and Documents</Link>
+            <Link to="/contact" className="text-[11px] 2xl:text-[12px] font-bold tracking-widest uppercase text-brand-red hover:text-red-700 font-bold transition-colors relative group py-1 whitespace-nowrap">Take Action</Link>
+            <Link to="/calendar" className="text-[11px] 2xl:text-[12px] font-bold tracking-widest uppercase text-gray-900 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Calendar</Link>
           </nav>
 
           {/* Right: Actions + Social Icons */}
@@ -166,7 +166,7 @@ export const Header: React.FC = () => {
           </div>
 
           <div className="flex-1 overflow-y-auto p-8 flex flex-col gap-8">
-            <nav className="flex flex-col gap-4">
+            <nav className="flex flex-col gap-6">
 
               <Link to="/about" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">About Us</Link>
 
