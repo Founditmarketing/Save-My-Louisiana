@@ -51,7 +51,7 @@ export const Home: React.FC = () => {
                     />
                     <h1 className="text-3xl md:text-7xl font-heading font-bold leading-tight drop-shadow-[3px_3px_0_rgba(0,0,0,1)]">
                         <span className="text-white">Protect Louisiana's Land, Water, Future:</span>
-                        <span className="text-brand-blue"> against carbon capture and sequestration</span>
+                        <span className="text-blue-400"> against carbon capture and sequestration</span>
                     </h1>
                     <div className="space-y-4">
                         <p className="text-xl md:text-2xl font-serif italic max-w-3xl mx-auto text-white font-medium leading-relaxed">
