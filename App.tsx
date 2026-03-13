@@ -8,7 +8,7 @@ import { OversightGaps } from './src/pages/OversightGaps';
 import { FollowTheMoney } from './src/pages/FollowTheMoney';
 import { Donate } from './src/pages/Donate';
 import { Contact } from './src/pages/Contact';
-import { Mission } from './src/pages/Mission';
+import { About } from './src/pages/About';
 import { Documentation } from './src/pages/Documentation';
 import { PrivacyPolicy } from './src/pages/PrivacyPolicy';
 import { TermsOfService } from './src/pages/TermsOfService';
@@ -29,7 +29,7 @@ const App: React.FC = () => {
           <Route path="environmental-dangers" element={<EnvironmentalDangers />} />
           <Route path="oversight-gaps" element={<OversightGaps />} />
           <Route path="follow-the-money" element={<FollowTheMoney />} />
-          <Route path="mission" element={<Mission />} />
+          <Route path="about" element={<About />} />
           <Route path="donate" element={<Donate />} />
           <Route path="documentation" element={<Documentation />} />
           <Route path="contact" element={<Contact />} />

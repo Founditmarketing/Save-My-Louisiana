@@ -15,12 +15,7 @@ export const Header: React.FC = () => {
     }
   }, [menuOpen]);
 
-  const homeLinks = [
-    { name: 'About Us', href: '/mission' },
-    { name: 'Our Mission', href: '/mission' },
-  ];
 
-  const homeSubLinks: { parent: string; items: { name: string; href: string; external?: boolean }[] }[] = [];
 
   const threatLinks = [
     { name: 'Property Rights', href: '/property-rights' },
@@ -84,48 +79,7 @@ export const Header: React.FC = () => {
           {/* Center: Desktop Nav — 6 items */}
           <nav className="hidden xl:flex flex-1 justify-center items-center gap-2 2xl:gap-4 whitespace-nowrap">
 
-            {/* Home Dropdown */}
-            <div className="relative group">
-              <Link to="/" className="text-[11px] 2xl:text-[12px] font-bold tracking-[0.05em] uppercase text-gray-900 hover:text-brand-blue transition-colors relative py-1 flex items-center gap-1 whitespace-nowrap">
-                Home <ChevronDown size={14} />
-              </Link>
-              <div className="absolute top-full left-0 mt-2 w-72 bg-white shadow-xl rounded-lg overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 border border-gray-100 z-50">
-                {homeLinks.map((link) => (
-                  <React.Fragment key={link.name}>
-                    <Link
-                      to={link.href}
-                      className="block px-4 py-3 text-sm text-gray-600 hover:bg-gray-50 hover:text-brand-blue transition-colors border-b border-gray-50 last:border-0"
-                    >
-                      {link.name}
-                    </Link>
-                    {/* Sub-items for "What the Legislature has done" */}
-                    {homeSubLinks.filter(s => s.parent === link.name).map(sub => (
-                      sub.items.map(item => (
-                        item.external ? (
-                          <a
-                            key={item.name}
-                            href={item.href}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="block pl-8 pr-4 py-2 text-xs text-gray-500 hover:bg-gray-50 hover:text-brand-blue transition-colors border-b border-gray-50"
-                          >
-                            ↳ {item.name}
-                          </a>
-                        ) : (
-                          <Link
-                            key={item.name}
-                            to={item.href}
-                            className="block pl-8 pr-4 py-2 text-xs text-gray-500 hover:bg-gray-50 hover:text-brand-blue transition-colors border-b border-gray-50"
-                          >
-                            ↳ {item.name}
-                          </Link>
-                        )
-                      ))
-                    ))}
-                  </React.Fragment>
-                ))}
-              </div>
-            </div>
+            <Link to="/about" className="text-[11px] 2xl:text-[12px] font-bold tracking-[0.05em] uppercase text-gray-900 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">About Us</Link>
 
             {/* The Threats Dropdown */}
             <div className="relative group">
@@ -214,25 +168,7 @@ export const Header: React.FC = () => {
           <div className="flex-1 overflow-y-auto p-8 flex flex-col gap-8">
             <nav className="flex flex-col gap-4">
 
-              {/* Home Dropdown (Mobile) */}
-              <div className="border-b border-gray-100 pb-4">
-                <button onClick={() => setHomeOpen(!homeOpen)} className="flex items-center justify-between w-full text-2xl font-heading font-light text-gray-900">
-                  Home <ChevronDown size={20} className={`transform transition-transform ${homeOpen ? 'rotate-180' : ''}`} />
-                </button>
-                <div className={`mt-4 space-y-3 pl-4 border-l-2 border-gray-100 transition-all duration-300 ${homeOpen ? 'block' : 'hidden'}`}>
-                  {homeLinks.map((link) => (
-                    <Link
-                      key={link.name}
-                      to={link.href}
-                      onClick={() => setMenuOpen(false)}
-                      className="block text-lg text-gray-600 hover:text-brand-blue"
-                    >
-                      {link.name}
-                    </Link>
-                  ))}
-
-                </div>
-              </div>
+              <Link to="/about" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">About Us</Link>
 
               {/* The Threats Dropdown (Mobile) */}
               <div className="border-b border-gray-100 pb-4">
