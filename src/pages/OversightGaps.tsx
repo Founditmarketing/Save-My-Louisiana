@@ -66,7 +66,7 @@ export const OversightGaps: React.FC = () => {
                             <p className="text-gray-700 font-serif leading-relaxed mb-6">
                                 Recent legislation attempts to transfer long-term liability for CCS sites from private companies to the taxpayers of Louisiana after a certain number of years.
                             </p>
-                            <Link to="/mission" className="font-bold text-brand-blue hover:underline uppercase tracking-widest text-sm flex items-center gap-2">
+                            <Link to="/about" className="font-bold text-brand-blue hover:underline uppercase tracking-widest text-sm flex items-center gap-2">
                                 Read our full analysis <Scale size={16} />
                             </Link>
                         </div>
