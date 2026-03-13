@@ -17,7 +17,7 @@ export const About: React.FC = () => {
                     <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-red rounded-full filter blur-[100px]"></div>
                 </div>
                 <div className="max-w-4xl mx-auto text-center space-y-6 relative z-10">
-                    <h1 className="text-4xl md:text-7xl font-heading font-bold tracking-tight">Know the Mission</h1>
+                    <h1 className="text-4xl md:text-7xl font-heading font-bold tracking-tight">About Us</h1>
                     <p className="text-xl md:text-2xl font-serif text-gray-300 max-w-3xl mx-auto leading-relaxed">
                         Defending foundational rights and the life-sustaining environment of Louisiana.
                     </p>
