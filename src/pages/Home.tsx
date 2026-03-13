@@ -136,24 +136,24 @@ export const Home: React.FC = () => {
                             </div>
                         </Link>
 
-                        {/* Card 2: Real Dangers */}
+                        {/* Card 2: Environmental Danger */}
                         <Link to="/environmental-dangers" className="group bg-white border border-gray-200 hover:border-brand-red/30 transition-all duration-300 flex flex-col items-start relative overflow-hidden h-full shadow-sm hover:shadow-lg rounded-xl">
                             <div className="w-full h-56 overflow-hidden relative">
                                 <div className="absolute inset-0 bg-brand-red/20 mix-blend-multiply group-hover:bg-transparent transition-all duration-500 z-10"></div>
                                 <img
                                     src="/co2-leak.jpg"
-                                    alt="Real Dangers"
+                                    alt="Environmental Danger"
                                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                                 />
                             </div>
 
                             <div className="p-6 flex flex-col h-full w-full">
                                 <h3 className="text-xl font-bold mb-4 font-heading uppercase tracking-widest text-gray-900 group-hover:text-brand-red transition-colors">
-                                    Real Dangers
+                                    Environmental Danger
                                 </h3>
 
                                 <p className="text-gray-900 text-base leading-relaxed mb-6 font-medium">
-                                    Documented failures in Decatur and Satartia prove that "safe containment" is a myth, not a guarantee.
+                                    Documented failures and acidification risks to our $2.4B fisheries and fragile wetlands ecosystem.
                                 </p>
 
                                 <span className="text-xs font-bold uppercase tracking-widest text-gray-900 group-hover:text-brand-red transition-colors flex items-center border-b-2 border-transparent group-hover:border-brand-red pb-1 mt-auto">
@@ -162,33 +162,7 @@ export const Home: React.FC = () => {
                             </div>
                         </Link>
 
-                        {/* Card 3: Wildlife Threats */}
-                        <Link to="/wildlife-threats" className="group bg-white border border-gray-200 hover:border-green-600/30 transition-all duration-300 flex flex-col items-start relative overflow-hidden h-full shadow-sm hover:shadow-lg rounded-xl">
-                            <div className="w-full h-56 overflow-hidden relative">
-                                <div className="absolute inset-0 bg-green-600/20 mix-blend-multiply group-hover:bg-transparent transition-all duration-500 z-10"></div>
-                                <img
-                                    src="/wildlifethreats.png"
-                                    alt="Wildlife Threats"
-                                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-                                />
-                            </div>
-
-                            <div className="p-6 flex flex-col h-full w-full">
-                                <h3 className="text-xl font-bold mb-4 font-heading uppercase tracking-widest text-gray-900 group-hover:text-green-600 transition-colors">
-                                    Wildlife Threats
-                                </h3>
-
-                                <p className="text-gray-900 text-base leading-relaxed mb-6 font-medium">
-                                    Acidification risks to our $2.4B fisheries industry and the toxic mobilization of heavy metals in wetlands.
-                                </p>
-
-                                <span className="text-xs font-bold uppercase tracking-widest text-gray-900 group-hover:text-green-600 transition-colors flex items-center border-b-2 border-transparent group-hover:border-green-600 pb-1 mt-auto">
-                                    View Analysis <ArrowRight size={14} className="ml-2 group-hover:translate-x-1 transition-transform" />
-                                </span>
-                            </div>
-                        </Link>
-
-                        {/* Card 4: Oversight Gaps */}
+                        {/* Card 3: Oversight Gaps */}
                         <Link to="/oversight-gaps" className="group bg-white border border-gray-200 hover:border-gray-800/30 transition-all duration-300 flex flex-col items-start relative overflow-hidden h-full shadow-sm hover:shadow-lg rounded-xl">
                             <div className="w-full h-56 overflow-hidden relative">
                                 <div className="absolute inset-0 bg-gray-800/20 mix-blend-multiply group-hover:bg-transparent transition-all duration-500 z-10"></div>
@@ -210,6 +184,32 @@ export const Home: React.FC = () => {
 
                                 <span className="text-xs font-bold uppercase tracking-widest text-gray-900 group-hover:text-gray-800 transition-colors flex items-center border-b-2 border-transparent group-hover:border-gray-800 pb-1 mt-auto">
                                     View Evidence <ArrowRight size={14} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                                </span>
+                            </div>
+                        </Link>
+
+                        {/* Card 4: Follow The Money */}
+                        <Link to="/follow-the-money" className="group bg-white border border-gray-200 hover:border-brand-blue/30 transition-all duration-300 flex flex-col items-start relative overflow-hidden h-full shadow-sm hover:shadow-lg rounded-xl">
+                            <div className="w-full h-56 overflow-hidden relative">
+                                <div className="absolute inset-0 bg-brand-blue/20 mix-blend-multiply group-hover:bg-transparent transition-all duration-500 z-10"></div>
+                                <img
+                                    src="/atchafalaya-basin.jpg"
+                                    alt="Follow The Money"
+                                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                                />
+                            </div>
+
+                            <div className="p-6 flex flex-col h-full w-full">
+                                <h3 className="text-xl font-bold mb-4 font-heading uppercase tracking-widest text-gray-900 group-hover:text-brand-blue transition-colors">
+                                    Follow The Money
+                                </h3>
+
+                                <p className="text-gray-900 text-base leading-relaxed mb-6 font-medium">
+                                    See how corporate lobbying and political contributions are driving the CCS expansion in Louisiana.
+                                </p>
+
+                                <span className="text-xs font-bold uppercase tracking-widest text-gray-900 group-hover:text-brand-blue transition-colors flex items-center border-b-2 border-transparent group-hover:border-brand-blue pb-1 mt-auto">
+                                    Track Funds <ArrowRight size={14} className="ml-2 group-hover:translate-x-1 transition-transform" />
                                 </span>
                             </div>
                         </Link>

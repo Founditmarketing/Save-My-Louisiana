@@ -1,11 +1,113 @@
 import React, { useEffect } from 'react';
-import { Gavel, FileText } from 'lucide-react';
+import { Gavel, FileText, Shield, Scale, Landmark, Ban, ShieldAlert, ExternalLink, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const PropertyRights: React.FC = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    const violations = [
+        "Subordinating your property rights to private corporations",
+        "Removing your right to a trial by jury over eminent domain",
+        "Redefining how compensation is to be addressed",
+        "Usurping Judicial authority to decide \"public purpose\"",
+        "Granting eminent domain power to foreign corporations",
+        "Perverting mineral \"unitization\" into a \"taking\" power",
+        "Passing laws granting special privileges",
+        "Granting immunity from liability to the carbon capture industry",
+        "Granting eventual state ownership of expropriated property"
+    ];
+
+    const votingRecords = [
+        {
+            year: "2008",
+            act: "ACT 315",
+            bill: "HB 1117",
+            author: "Rep. Jim Morris",
+            description: "provides for the use of eminent domain for the storage of carbon dioxide.",
+            houseVote: { yes: 95, no: 0, absent: 10 },
+            houseLink: "https://www.legis.la.gov/legis/ViewDocument.aspx?d=483670",
+            senateVote: { yes: 33, no: 0, absent: 5 },
+            senateLink: "https://www.legis.la.gov/legis/ViewDocument.aspx?d=492264",
+        },
+        {
+            year: "2009",
+            act: "ACT 517",
+            bill: "HB 661",
+            author: "Rep. Jim Morris",
+            description: "provides for the use of eminent domain for CCS pipelines and injections wells.",
+            houseVote: { yes: 97, no: 0, absent: 7 },
+            houseLink: null,
+            houseLinkNote: "Document link pending — original reference was a local file path",
+            senateVote: { yes: 39, no: 0, absent: 0 },
+            senateLink: null,
+            senateLinkNote: "Document link pending — original reference was a local file path",
+        },
+        {
+            year: "2020",
+            act: "ACT 61",
+            bill: "SB 353",
+            author: "Sen. Sharon Hewitt",
+            description: "provides that CCS is a public good as a matter of Louisiana public policy, and provides for eminent domain by private companies for CCS pipelines and injection wells.",
+            senateVote: { yes: 36, no: 0, absent: 3 },
+            senateLink: "https://www.legis.la.gov/legis/ViewDocument.aspx?d=1171202",
+            houseVote: { yes: 98, no: 0, absent: 7 },
+            houseLink: "https://www.legis.la.gov/legis/ViewDocument.aspx?d=1177407",
+        },
+        {
+            year: "2021",
+            act: "ACT 326",
+            bill: "HB 572",
+            author: "Rep. Malinda White",
+            description: "adds hydrogen, nitrogen, ammonia, compressed air, and noble gases to the list of substances for which eminent domain may be used for underground storage.",
+            houseVote: { yes: 92, no: 0, absent: 12 },
+            houseLink: "https://www.legis.la.gov/legis/ViewDocument.aspx?d=1221342",
+            senateVote: { yes: 37, no: 0, absent: 1 },
+            senateLink: "https://www.legis.la.gov/legis/ViewDocument.aspx?d=1232462",
+        },
+        {
+            year: "2024",
+            act: "ACT 620",
+            bill: "HB 492",
+            author: "Rep. Brett Geymann",
+            description: "expands eminent domain authority by private corporations for CCS pipelines.",
+            houseVote: { yes: 94, no: 4, absent: 7 },
+            houseLink: "https://www.legis.la.gov/legis/ViewDocument.aspx?d=1366250",
+            senateVote: { yes: 38, no: 0, absent: 1 },
+            senateLink: "https://www.legis.la.gov/legis/ViewDocument.aspx?d=1377374",
+        },
+        {
+            year: "2024",
+            act: "ACT 645",
+            bill: "HB 966",
+            author: "Rep. Brett Geymann",
+            description: 'authorizes "unitization" for CCS projects, if 75% of the affected landowners agree. Unitization would allow eminent domain to acquire the other 25%.',
+            houseVote: { yes: 92, no: 6, absent: 7 },
+            houseLink: "https://www.legis.la.gov/legis/ViewDocument.aspx?d=1366351",
+            senateVote: { yes: 36, no: 0, absent: 3 },
+            senateLink: null,
+            senateLinkNote: "Document link pending — full URL needed",
+        },
+    ];
+
+    const VoteBlock = ({ chamber, vote, link, linkNote }: { chamber: string; vote: { yes: number; no: number; absent: number }; link: string | null; linkNote?: string }) => (
+        <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+            <span className="text-sm font-bold text-gray-500 uppercase tracking-widest w-20 shrink-0">{chamber}:</span>
+            <div className="flex items-center gap-3 flex-wrap">
+                <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-bold">YES-{vote.yes}</span>
+                <span className="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-bold">NO-{vote.no}</span>
+                <span className="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-bold">ABSENT-{vote.absent}</span>
+                {link ? (
+                    <a href={link} target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline text-xs font-bold uppercase tracking-widest inline-flex items-center gap-1">
+                        <ExternalLink size={12} /> View Vote Record
+                    </a>
+                ) : linkNote ? (
+                    <span className="text-amber-600 text-xs italic">[{linkNote}]</span>
+                ) : null}
+            </div>
+        </div>
+    );
 
     return (
         <div className="bg-white font-sans text-gray-900">
@@ -18,7 +120,7 @@ export const PropertyRights: React.FC = () => {
                 </div>
                 <div className="max-w-4xl mx-auto text-center space-y-6 relative z-10">
                     <span className="inline-block bg-brand-red/90 text-white text-[10px] font-bold uppercase tracking-[0.3em] px-4 py-2 rounded-full mb-4">
-                        The Threats
+                        Property Rights
                     </span>
                     <h1 className="text-4xl md:text-6xl font-heading font-bold tracking-tight leading-tight">
                         Our Constitutionally Guaranteed Right to Property
@@ -30,7 +132,7 @@ export const PropertyRights: React.FC = () => {
             <section className="py-20 px-6">
                 <div className="max-w-4xl mx-auto space-y-6 text-lg text-gray-700 font-serif leading-relaxed">
                     <p>
-                        Of the three foundational Rights our government was formed to protect, Property is among them. Why would the Will of the People specifically name a Right to Property? The ownership and control of Property is essential to true independence, and independence is essential to one's Life and Liberty. Our Property is the best guarantor of our freedom and it represents our generational wealth. This is a core part of the <Link to="/purpose-of-government" className="text-brand-blue hover:underline font-semibold italic">Purpose of Government</Link>.
+                        Of the three foundational Rights our government was formed to protect, Property is among them. Why would the Will of the People specifically name a Right to Property? The ownership and control of Property is essential to true independence, and independence is essential to one's Life and Liberty. Our Property is the best guarantor of our freedom and it represents our generational wealth. This is a core part of the purpose of our government.
                     </p>
                     <p>
                         Because of the importance of the "Right to Property", our Louisiana Constitution is very clear as to protections and limits on government power in relation to that Right. Below are excerpts from{' '}
@@ -180,14 +282,288 @@ export const PropertyRights: React.FC = () => {
                 </div>
             </section>
 
-            {/* Legislative Betrayal Link */}
-            <section className="py-12 px-6 bg-brand-red/5 border-y border-brand-red/10">
-                <div className="max-w-4xl mx-auto text-center space-y-4">
-                    <h3 className="text-2xl font-heading font-bold text-gray-900">Legislative Betrayal</h3>
-                    <p className="text-gray-700 font-serif">See how the Louisiana Legislature has passed laws that violate your constitutional property rights.</p>
-                    <Link to="/legislative-betrayal" className="inline-flex items-center gap-2 bg-brand-red text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-red-700 transition-all shadow-lg">
-                        View Legislative Record
-                    </Link>
+            {/* ═══════════════════════════════════════════════════ */}
+            {/* Purpose of Government Section (merged from PurposeOfGovernment) */}
+            {/* ═══════════════════════════════════════════════════ */}
+
+            <section className="py-20 px-6 bg-brand-dark text-white" id="purpose-of-government">
+                <div className="max-w-4xl mx-auto space-y-12">
+                    <div className="text-center space-y-6">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-white text-xs font-bold uppercase tracking-widest mb-4">
+                            <Landmark size={14} /> Governance
+                        </div>
+                        <h2 className="text-3xl md:text-5xl font-heading font-bold">The Purpose of Government</h2>
+                        <p className="text-xl font-serif text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                            To protect the individual rights to life, liberty, and property.
+                        </p>
+                    </div>
+
+                    <div className="space-y-6 text-lg text-gray-300 font-serif leading-relaxed">
+                        <p>
+                            The sole purpose of government is to protect the Rights of men and those Rights are Life, Liberty and Property.
+                        </p>
+                        <p>
+                            Every law created, policy enacted and action taken by a government must find its origin and result in obtaining these ends. If laws, policies and actions do not support these ends, then the government has fallen short of the Will of the People.
+                        </p>
+                        <p>
+                            Our Louisiana Constitution established the Louisiana government, authorized it's powers and set limits on those powers. It must be understood that the Constitution is superior to the government and therefore the government is subordinate to the Constitution's authority. The Constitution's authority is found in the Will of the People. Neither the Legislature, the Executive, nor the Judicial branches of government can extend their authority beyond the powers granted and limited by the Will of the People as codified in the Constitution.
+                        </p>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 gap-8">
+                        <div className="p-8 bg-white/5 rounded-3xl border border-white/10 space-y-4">
+                            <div className="p-3 bg-white/10 rounded-full w-fit">
+                                <Shield className="w-6 h-6 text-brand-blue" />
+                            </div>
+                            <h3 className="text-xl font-bold font-heading">Constitutional Supremacy</h3>
+                            <p className="text-gray-400 font-serif leading-relaxed">
+                                The Constitution is superior to the government. All branches—Legislature, Executive, and Judicial—are subordinate to its authority.
+                            </p>
+                        </div>
+                        <div className="p-8 bg-white/5 rounded-3xl border border-white/10 space-y-4">
+                            <div className="p-3 bg-white/10 rounded-full w-fit">
+                                <Scale className="w-6 h-6 text-brand-blue" />
+                            </div>
+                            <h3 className="text-xl font-bold font-heading">The Will of the People</h3>
+                            <p className="text-gray-400 font-serif leading-relaxed">
+                                Constitutional authority is found in the Will of the People. No branch can extend its authority beyond powers granted by the People.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Constitutional Guarantees */}
+            <section className="py-20 px-6 bg-gray-50">
+                <div className="max-w-4xl mx-auto space-y-12">
+                    <h2 className="text-3xl md:text-5xl font-heading font-bold text-gray-900 text-center">Constitutional Guarantees</h2>
+
+                    <div className="space-y-8">
+                        <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-200 space-y-6">
+                            <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm">The Preamble</h4>
+                            <p className="text-2xl font-serif italic text-gray-800 border-l-4 border-brand-red pl-6 leading-relaxed">
+                                "We, the people of Louisiana, ….desiring to protect individual rights to life, liberty, and property….do ordain and establish this constitution."
+                            </p>
+                            <div className="space-y-4 text-gray-700 font-serif leading-relaxed">
+                                <p>
+                                    The first sentence of the Constitution tells us exactly what the purpose of the government would be.
+                                </p>
+                            </div>
+                            <a href="https://legis.la.gov/legis/Law.aspx?d=206274" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline text-sm font-sans block mt-4">Source: legis.la.gov</a>
+                        </div>
+
+                        <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-200 space-y-8">
+                            <div className="space-y-4">
+                                <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm">Article 1, Section 1</h4>
+                                <h3 className="text-xl font-bold font-heading">Origin and Purpose of Government</h3>
+                                <p className="text-gray-700 font-serif leading-relaxed italic border-l-4 border-brand-red pl-6 bg-gray-50 p-6 rounded-r-xl">
+                                    "All government, of right, originates with the people, is founded on their will alone, and is instituted to protect the rights of the individual and for the good of the whole. Its only legitimate ends are to secure justice for all, preserve peace, protect the rights, and promote the happiness and general welfare of the people. <span className="text-brand-red font-bold">The rights enumerated in this Article are inalienable by the state and shall be preserved inviolate by the state.</span>"
+                                </p>
+                            </div>
+
+                            <div className="space-y-6">
+                                <p className="text-lg text-gray-700 font-serif leading-relaxed">
+                                    Note that Article 1, Section 1 says, "The rights enumerated in this Article are inalienable by the state and shall be preserved inviolate by the state."
+                                </p>
+
+                                <div className="grid md:grid-cols-2 gap-6">
+                                    <div className="p-6 bg-brand-blue/5 rounded-2xl border border-brand-blue/10">
+                                        <h5 className="font-bold text-brand-blue mb-2 font-heading uppercase tracking-widest text-sm">Inalienable</h5>
+                                        <p className="text-gray-700 font-serif">Your rights cannot be alienated or separated from you by the state.</p>
+                                    </div>
+                                    <div className="p-6 bg-brand-red/5 rounded-2xl border border-brand-red/10">
+                                        <h5 className="font-bold text-brand-red mb-2 font-heading uppercase tracking-widest text-sm">Inviolate</h5>
+                                        <p className="text-gray-700 font-serif">Your rights cannot be violated or broken by the state.</p>
+                                    </div>
+                                </div>
+
+                                <p className="text-gray-700 font-serif leading-relaxed">
+                                    This statement both restricts the power of the government to separate you from your Rights and obligates the government to ensure your Rights are not violated. The message is clear: <span className="font-bold">not even the government can separate or take away your rights guaranteed by this Constitution.</span>
+                                </p>
+                            </div>
+                            <a href="https://legis.la.gov/legis/Law.aspx?d=206274" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline text-sm font-sans block mt-4">Source: legis.la.gov</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* ═══════════════════════════════════════════════════ */}
+            {/* What the Legislature Has Done (merged from LegislativeBetrayal) */}
+            {/* ═══════════════════════════════════════════════════ */}
+
+            {/* Legislative Betrayal Hero Banner */}
+            <section className="bg-brand-red text-white py-6 px-6" id="legislative-betrayal">
+                <div className="max-w-4xl mx-auto text-center">
+                    <div className="flex items-center justify-center gap-3">
+                        <ShieldAlert size={24} className="shrink-0" />
+                        <p className="text-lg md:text-xl font-heading font-bold uppercase tracking-wide">
+                            To Learn How Your Legislator Voted, Click on the Link Under the Vote Count.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* Legislative Betrayal Content */}
+            <section className="py-20 px-6">
+                <div className="max-w-4xl mx-auto space-y-16">
+                    <div className="space-y-8">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-red/10 text-brand-red text-xs font-bold uppercase tracking-widest mb-4">
+                            <ShieldAlert size={14} /> The Betrayal
+                        </div>
+                        <h2 className="text-3xl md:text-5xl font-heading font-bold text-gray-900 leading-tight">
+                            What the Legislature Has Done
+                        </h2>
+                        <div className="text-lg text-gray-700 font-serif leading-relaxed space-y-6">
+                            <p>
+                                In 2020, the State Legislature passed a special law (<span className="font-bold text-brand-red">ACT 61</span>) that subverted the fundamental guarantee of the Right to Property by the Constitution and subordinated Louisiana citizen's right to property to private corporations.
+                            </p>
+                            <p className="bg-gray-50 p-8 rounded-3xl border border-gray-100 italic">
+                                In violation of the Constitution, the Legislature authorized "any storage operator is herby authorized…to exercise the power of eminent domain and to expropriate needed property to acquire surface and subsurface rights and property interests necessary…".
+                                <span className="block mt-4 font-sans font-bold text-sm not-italic uppercase tracking-widest">Codified in R.S. 30:1108</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="space-y-8">
+                        <div className="flex items-center gap-4">
+                            <Ban className="text-brand-red" size={32} />
+                            <h3 className="text-2xl font-bold font-heading">Constitutional Violations</h3>
+                        </div>
+                        <p className="text-lg text-gray-700 font-serif leading-relaxed">
+                            In passing this act, the Louisiana Legislature passed a special law in clear violation of the Constitution that gave PRIVATE companies the authority to declare eminent domain over your private property and take that property from you! No where in the Constitution is the Legislature given this power. As a matter of fact, the Legislature is specifically "prohibited" from such action in <span className="font-bold text-brand-red">Article 3, Section 12</span>.
+                        </p>
+
+                        <div className="bg-brand-dark text-white p-10 rounded-3xl shadow-xl space-y-6 relative overflow-hidden">
+                            <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm relative z-10">Article 3, Section 12. Prohibited Local and Special Laws</h4>
+                            <p className="text-xl font-serif italic border-l-2 border-brand-red pl-6 relative z-10 leading-relaxed">
+                                "Section 12.(A) Prohibitions. Except as otherwise provided in this constitution, the legislature shall not pass a local or special law: ... (7) Creating private corporations, or amending, renewing, extending, or explaining the charters thereof; granting to any private corporation, association, or individual any special or exclusive right, privilege, or immunity."
+                            </p>
+                            <a href="https://legis.la.gov/legis/Law.aspx?p=y&d=206408" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-brand-red font-bold hover:underline text-xs uppercase tracking-widest relative z-10">
+                                <ExternalLink size={14} /> Source: legis.la.gov
+                            </a>
+                        </div>
+                    </div>
+
+                    <div className="space-y-8">
+                        <p className="text-lg text-gray-700 font-serif leading-relaxed">
+                            Giving private corporations the the right, "to exercise the power of eminent domain and to expropriate needed property" is a "special law" granting a special "privilege". No other person or entity has such authority other than the state and its' political subdivisions under the authority of the Constitution and its prescribed limits. The Legislature even further extended this power to <span className="font-bold text-brand-blue">"foreign entities"</span>!
+                        </p>
+                        <div className="p-6 bg-blue-50 border border-blue-100 rounded-2xl">
+                            <h4 className="font-bold font-sans text-sm uppercase tracking-widest text-brand-blue mb-2">R.S. 19:2:11</h4>
+                            <p className="text-gray-700 font-serif italic">"Subject to any applicable limitations in this Section, any domestic or foreign corporation, limited liability company, or other legal entity created for the purpose of, or engaged in, any of the activities otherwise provided for in this Section."</p>
+                        </div>
+                    </div>
+
+                    <div className="space-y-8">
+                        <h3 className="text-2xl font-bold font-heading">A Legacy of Betrayal (2008-2024)</h3>
+                        <p className="text-lg text-gray-700 font-serif leading-relaxed">
+                            The above is just the surface. Between 2008 and 2024, the Louisiana Legislature passed a series of laws that violated your Right to Property by:
+                        </p>
+                        <div className="grid md:grid-cols-2 gap-4">
+                            {violations.map((v, i) => (
+                                <div key={i} className="flex gap-3 items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                                    <ShieldAlert size={18} className="text-brand-red mt-1 shrink-0" />
+                                    <span className="text-gray-800 font-serif text-sm">{v}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Carbon Capture Sequestration — Eminent Domain Voting Records */}
+                    <div className="space-y-8" id="ccs-voting-records">
+                        <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 border-l-4 border-brand-red pl-4">
+                            Carbon Capture Sequestration — Eminent Domain
+                        </h2>
+                        <p className="text-lg text-gray-700 font-serif leading-relaxed">
+                            Below is the complete record of legislative acts that have expanded eminent domain powers for Carbon Capture and Sequestration projects in Louisiana.
+                        </p>
+
+                        <div className="space-y-6">
+                            {votingRecords.map((record) => (
+                                <div key={`${record.act}-${record.year}`} className="bg-white p-6 md:p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow space-y-4">
+                                    <div className="flex flex-wrap items-start gap-3">
+                                        <span className="bg-brand-red text-white px-3 py-1 rounded-full text-xs font-bold">{record.year}</span>
+                                        <span className="bg-gray-900 text-white px-3 py-1 rounded-full text-xs font-bold">{record.act}</span>
+                                        <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-bold">({record.bill})</span>
+                                    </div>
+                                    <p className="text-gray-700 font-serif leading-relaxed">
+                                        <span className="font-bold">by {record.author}</span> — {record.description}
+                                    </p>
+                                    <div className="space-y-3 pt-2 border-t border-gray-100">
+                                        <VoteBlock chamber="House" vote={record.houseVote} link={record.houseLink || null} linkNote={(record as any).houseLinkNote} />
+                                        <VoteBlock chamber="Senate" vote={record.senateVote} link={record.senateLink || null} linkNote={(record as any).senateLinkNote} />
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* How did this happen? */}
+                    <div className="bg-brand-red/5 p-12 rounded-[40px] border border-brand-red/10 space-y-8 text-center" id="how-did-this-happen">
+                        <h3 className="text-3xl font-heading font-bold text-gray-900">How did this happen?</h3>
+                        <p className="text-xl text-gray-700 font-serif leading-relaxed">
+                            Who voted for this? Track the legislators who voted to subvert your constitutional rights.
+                        </p>
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a
+                                href="https://www.lacag.org"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-3 bg-brand-red text-white px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-red-700 transition-all shadow-xl active:scale-95"
+                            >
+                                <Users size={20} /> View LACAG Vote Counts
+                            </a>
+                            <a
+                                href="https://www.lacag.org/action-center?vvsrc=%2fscorecard"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-3 bg-gray-900 text-white px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-gray-800 transition-all shadow-xl active:scale-95"
+                            >
+                                <Landmark size={20} /> LACAG Scorecard
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* ═══════════════════════════════════════════════════ */}
+            {/* What SML Is Doing (merged from Mission) */}
+            {/* ═══════════════════════════════════════════════════ */}
+
+            <section className="py-24 px-6 bg-white" id="what-sml-is-doing">
+                <div className="max-w-4xl mx-auto space-y-12">
+                    <div className="text-center space-y-6">
+                        <h2 className="text-3xl md:text-5xl font-heading font-bold text-gray-900">What SML is Doing</h2>
+                        <p className="text-lg text-gray-700 font-serif leading-relaxed max-w-2xl mx-auto">
+                            We are challenging this unconstitutional law and others like it through the legal mechanisms available. We are petitioning the state's judicial branch to recognize and declare this law unconstitutional.
+                        </p>
+                    </div>
+
+                    <div className="bg-brand-blue/5 p-8 md:p-12 rounded-[40px] border border-brand-blue/10 relative">
+                        <div className="absolute top-0 right-0 p-12 opacity-5">
+                            <Gavel size={120} className="text-brand-blue" />
+                        </div>
+                        <div className="space-y-6 relative z-10 text-center">
+                            <h3 className="text-2xl font-bold font-heading text-brand-blue">Legal Petition Filed</h3>
+                            <p className="text-gray-600 font-serif leading-relaxed">
+                                Save My Louisiana filed a comprehensive petition in the <span className="font-bold">19th Judicial District Court in Baton Rouge on November 20, 2025</span>. This legal action targets the unconstitutional overreach of the legislature and seeks to restore property rights for all Louisianans.
+                            </p>
+                            <div className="pt-6">
+                                <a href="#" className="inline-flex items-center gap-2 bg-brand-blue text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-blue-800 transition-all shadow-lg active:scale-95">
+                                    <FileText size={20} /> View The Full Petition
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="text-center pt-8">
+                        <p className="font-bold text-gray-900 text-3xl font-heading leading-tight italic">
+                            "DEFENDING OUR RIGHTS!"
+                        </p>
+                        <p className="text-gray-500 mt-4 uppercase tracking-[0.2em] text-xs font-bold font-sans">
+                            Join the Movement. Secure the Future.
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -198,13 +574,7 @@ export const PropertyRights: React.FC = () => {
                     <p className="text-xl font-serif text-gray-300 leading-relaxed">
                         Join us in holding government accountable to the constitutional protections that every Louisianan deserves.
                     </p>
-                    <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center">
-                        <Link
-                            to="/purpose-of-government"
-                            className="inline-flex items-center justify-center gap-2 bg-white/10 border border-white/30 text-white px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-white/20 transition-all shadow-xl text-lg"
-                        >
-                            Back to Purpose of Government
-                        </Link>
+                    <div className="pt-4">
                         <Link
                             to="/contact"
                             className="inline-block bg-brand-red text-white px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-brand-red/90 transition-all shadow-xl text-lg"

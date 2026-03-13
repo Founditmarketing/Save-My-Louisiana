@@ -18,24 +18,13 @@ export const Header: React.FC = () => {
   const homeLinks = [
     { name: 'About Us', href: '/mission' },
     { name: 'Our Mission', href: '/mission' },
-    { name: 'The Purpose of Government', href: '/purpose-of-government' },
-    { name: 'Our Constitutionally Guaranteed Rights to Property', href: '/property-rights' },
-    { name: 'What the Legislature has done', href: '/legislative-betrayal' },
-    { name: 'What Save My Louisiana is doing', href: '/mission#what-we-are-doing' },
   ];
 
-  const homeSubLinks = [
-    { parent: 'What the Legislature has done', items: [
-      { name: 'How did this happen?', href: '/legislative-betrayal#how-did-this-happen' },
-      { name: 'Who voted for this?', href: 'https://www.LaCag.org', external: true },
-    ]},
-  ];
+  const homeSubLinks: { parent: string; items: { name: string; href: string; external?: boolean }[] }[] = [];
 
   const threatLinks = [
-    { name: 'Property Rights', href: '/property-rights' },
     { name: 'Water & Aquifers', href: '/water-in-crosshairs' },
-    { name: 'Environmental Dangers', href: '/environmental-dangers' },
-    { name: 'Wildlife & Wetlands', href: '/wildlife-threats' },
+    { name: 'Environmental Danger', href: '/environmental-dangers' },
   ];
 
   const marqueeContent = [
@@ -155,6 +144,7 @@ export const Header: React.FC = () => {
               </div>
             </div>
 
+            <Link to="/property-rights" className="text-[11px] 2xl:text-[12px] font-bold tracking-[0.05em] uppercase text-gray-900 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Property Rights</Link>
             <Link to="/follow-the-money" className="text-[11px] 2xl:text-[12px] font-bold tracking-[0.05em] uppercase text-gray-900 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Follow The Money</Link>
             <Link to="/documentation" className="text-[11px] 2xl:text-[12px] font-bold tracking-[0.05em] uppercase text-gray-900 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Document Reports</Link>
             <Link to="/contact" className="text-[11px] 2xl:text-[12px] font-bold tracking-[0.05em] uppercase text-brand-red hover:text-red-700 font-bold transition-colors relative group py-1 whitespace-nowrap">Take Action</Link>
@@ -240,10 +230,7 @@ export const Header: React.FC = () => {
                       {link.name}
                     </Link>
                   ))}
-                  <div className="pl-4 space-y-2 border-l-2 border-gray-200">
-                    <Link to="/legislative-betrayal#how-did-this-happen" onClick={() => setMenuOpen(false)} className="block text-base text-gray-500 hover:text-brand-blue">↳ How did this happen?</Link>
-                    <a href="https://www.LaCag.org" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="block text-base text-gray-500 hover:text-brand-blue">↳ Who voted for this?</a>
-                  </div>
+
                 </div>
               </div>
 
@@ -266,6 +253,7 @@ export const Header: React.FC = () => {
                 </div>
               </div>
 
+              <Link to="/property-rights" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Property Rights</Link>
               <Link to="/follow-the-money" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Follow The Money</Link>
               <Link to="/documentation" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Document Reports</Link>
               <Link to="/contact" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Take Action</Link>
