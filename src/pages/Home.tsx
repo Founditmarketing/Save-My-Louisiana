@@ -56,9 +56,10 @@ export const Home: React.FC = () => {
                         <p className="text-xl md:text-2xl font-serif italic max-w-3xl mx-auto text-white font-medium leading-relaxed">
                             "Louisiana's most precious resource — its people — is under threat from Carbon Capture & Sequestration (the permanent burial of industrial waste under our land and our water, which affects our future generations)."
                         </p>
-                        <p className="text-sm md:text-base font-sans uppercase tracking-[0.2em] font-bold text-white/90">
-                            — Gary Musgrove, President of Save My Louisiana
-                        </p>
+                        <div className="flex flex-col items-center gap-1">
+                            <span className="text-sm md:text-base font-bold text-white uppercase tracking-widest">— Gary Musgrove</span>
+                            <span className="text-[10px] md:text-xs font-semibold text-white/70 uppercase tracking-[0.2em]">President of Save My Louisiana</span>
+                        </div>
                     </div>
                     <div className="pt-8 flex flex-col items-center">
                         <a href="#situation" className="inline-block bg-brand-red hover:bg-red-700 text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest transition-all shadow-xl hover:-translate-y-1 mb-12">
