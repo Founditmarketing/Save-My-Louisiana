@@ -51,7 +51,7 @@ export const Home: React.FC = () => {
                     />
                     <h1 className="text-3xl md:text-7xl font-heading font-bold leading-tight">
                         Protect Louisiana's Land, Water, Future: <br className="hidden md:block" />
-                        <span className="text-brand-blue drop-shadow-[3px_3px_0_rgba(0,0,0,1)]">The Hidden Threat Beneath Louisiana’s Soil</span>
+                        <span className="text-brand-blue drop-shadow-[3px_3px_0_rgba(0,0,0,1)]">against carbon capture and sequestration</span>
                     </h1>
                     <p className="text-xl md:text-2xl font-serif italic max-w-3xl mx-auto text-white font-medium">
                         "Louisiana's most precious resource — its people — is under threat from Carbon Capture & Sequestration (the permanent burial of industrial waste under our land and our water, which affects our future generations)."
