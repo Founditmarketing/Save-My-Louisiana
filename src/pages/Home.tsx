@@ -49,12 +49,17 @@ export const Home: React.FC = () => {
                         alt="Louisiana Flag"
                         className="w-16 md:w-24 h-auto mx-auto mb-6 opacity-90 filter drop-shadow-2xl"
                     />
-                    <h1 className="text-3xl md:text-7xl font-heading font-bold leading-tight drop-shadow-[3px_3px_0_rgba(0,0,0,1)]">
+                    <h1 className="text-3xl md:text-7xl font-heading font-bold leading-tight drop-shadow-[3px_3px_0_rgba(0,0,0,1)] text-brand-blue">
                         Protect Louisiana's Land, Water, Future: against carbon capture and sequestration
                     </h1>
-                    <p className="text-xl md:text-2xl font-serif italic max-w-3xl mx-auto text-white font-medium">
-                        "Louisiana's most precious resource — its people — is under threat from Carbon Capture & Sequestration (the permanent burial of industrial waste under our land and our water, which affects our future generations)."
-                    </p>
+                    <div className="space-y-4">
+                        <p className="text-xl md:text-2xl font-serif italic max-w-3xl mx-auto text-white font-medium leading-relaxed">
+                            "Louisiana's most precious resource — its people — is under threat from Carbon Capture & Sequestration (the permanent burial of industrial waste under our land and our water, which affects our future generations)."
+                        </p>
+                        <p className="text-sm md:text-base font-sans uppercase tracking-[0.2em] font-bold text-white/90">
+                            — Gary Musgrove, President of Save My Louisiana
+                        </p>
+                    </div>
                     <div className="pt-8 flex flex-col items-center">
                         <a href="#situation" className="inline-block bg-brand-red hover:bg-red-700 text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest transition-all shadow-xl hover:-translate-y-1 mb-12">
                             Learn The Truth
