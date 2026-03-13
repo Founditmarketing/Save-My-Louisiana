@@ -23,6 +23,7 @@ export const Header: React.FC = () => {
   const homeSubLinks: { parent: string; items: { name: string; href: string; external?: boolean }[] }[] = [];
 
   const threatLinks = [
+    { name: 'Property Rights', href: '/property-rights' },
     { name: 'Water & Aquifers', href: '/water-in-crosshairs' },
     { name: 'Environmental Danger', href: '/environmental-dangers' },
   ];
@@ -144,7 +145,6 @@ export const Header: React.FC = () => {
               </div>
             </div>
 
-            <Link to="/property-rights" className="text-[11px] 2xl:text-[12px] font-bold tracking-[0.05em] uppercase text-gray-900 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Property Rights</Link>
             <Link to="/follow-the-money" className="text-[11px] 2xl:text-[12px] font-bold tracking-[0.05em] uppercase text-gray-900 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Follow The Money</Link>
             <Link to="/documentation" className="text-[11px] 2xl:text-[12px] font-bold tracking-[0.05em] uppercase text-gray-900 hover:text-brand-blue transition-colors relative group py-1 whitespace-nowrap">Document Reports</Link>
             <Link to="/contact" className="text-[11px] 2xl:text-[12px] font-bold tracking-[0.05em] uppercase text-brand-red hover:text-red-700 font-bold transition-colors relative group py-1 whitespace-nowrap">Take Action</Link>
@@ -253,7 +253,6 @@ export const Header: React.FC = () => {
                 </div>
               </div>
 
-              <Link to="/property-rights" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Property Rights</Link>
               <Link to="/follow-the-money" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Follow The Money</Link>
               <Link to="/documentation" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Document Reports</Link>
               <Link to="/contact" onClick={() => setMenuOpen(false)} className="text-2xl font-heading font-light text-gray-900 hover:text-brand-blue transition-colors">Take Action</Link>

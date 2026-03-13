@@ -123,169 +123,12 @@ export const PropertyRights: React.FC = () => {
                         Property Rights
                     </span>
                     <h1 className="text-4xl md:text-6xl font-heading font-bold tracking-tight leading-tight">
-                        Our Constitutionally Guaranteed Right to Property
+                        Property Rights & The Purpose of Government
                     </h1>
                 </div>
             </section>
 
-            {/* Introduction */}
-            <section className="py-20 px-6">
-                <div className="max-w-4xl mx-auto space-y-6 text-lg text-gray-700 font-serif leading-relaxed">
-                    <p>
-                        Of the three foundational Rights our government was formed to protect, Property is among them. Why would the Will of the People specifically name a Right to Property? The ownership and control of Property is essential to true independence, and independence is essential to one's Life and Liberty. Our Property is the best guarantor of our freedom and it represents our generational wealth. This is a core part of the purpose of our government.
-                    </p>
-                    <p>
-                        Because of the importance of the "Right to Property", our Louisiana Constitution is very clear as to protections and limits on government power in relation to that Right. Below are excerpts from{' '}
-                        <a
-                            href="https://legis.la.gov/legis/Law.aspx?d=206294"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-brand-blue hover:underline font-semibold"
-                        >
-                            Article 1, Section 4 Right to Property
-                        </a>.
-                    </p>
-                </div>
-            </section>
-
-            {/* Constitutional Excerpts */}
-            <section className="py-10 px-6 pb-20 bg-gray-50">
-                <div className="max-w-4xl mx-auto space-y-8">
-
-                    <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 pt-10">
-                        Article 1, Section 4. Right to Property.
-                    </h2>
-
-                    {/* Every person */}
-                    <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-200 space-y-4">
-                        <p className="text-gray-700 font-serif leading-relaxed italic border-l-4 border-brand-red pl-6">
-                            Every person has the right to acquire, own, control, use, enjoy, protect, and dispose of private property.
-                        </p>
-                    </div>
-
-                    {/* B(1) */}
-                    <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-200 space-y-4">
-                        <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm">(B)(1)</h4>
-                        <p className="text-gray-700 font-serif leading-relaxed italic border-l-4 border-brand-red pl-6">
-                            Property <strong className="not-italic text-gray-900">shall not be taken</strong> or damaged by the state or its political subdivisions except for public purposes and with just compensation paid to the owner or into court for his benefit. Except as specifically authorized by Article VI, Section 21 of this Constitution property shall not be taken or damaged by the state or its political subdivisions: (a) for predominant use by any private person or entity; or (b) for transfer of ownership to any private person or entity.
-                        </p>
-                    </div>
-
-                    {/* (3) */}
-                    <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-200 space-y-4">
-                        <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm">(3)</h4>
-                        <p className="text-gray-700 font-serif leading-relaxed italic border-l-4 border-brand-red pl-6">
-                            Neither economic development, enhancement of tax revenue, or any incidental benefit to the public shall be considered in determining whether the taking or damaging of property is for a public purpose pursuant to Subparagraph (1) of this Paragraph or Article VI, Section 23 of this Constitution.
-                        </p>
-                    </div>
-
-                    {/* (4) */}
-                    <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-200 space-y-4">
-                        <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm">(4)</h4>
-                        <p className="text-gray-700 font-serif leading-relaxed italic border-l-4 border-brand-red pl-6">
-                            Property <strong className="not-italic text-gray-900">shall not be taken</strong> or damaged by any private entity authorized by law to expropriate, except for a public and necessary purpose and with just compensation paid to the owner; in such proceedings, whether the purpose is public and necessary shall be a judicial question.
-                        </p>
-                    </div>
-
-                    {/* (5) */}
-                    <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-200 space-y-4">
-                        <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm">(5)</h4>
-                        <p className="text-gray-700 font-serif leading-relaxed italic border-l-4 border-brand-red pl-6">
-                            In every expropriation or action to take property pursuant to the provisions of this Section, a party has the right to trial by jury to determine whether the compensation is just, and the owner shall be compensated to the <strong className="not-italic text-gray-900">full extent of his loss</strong>. Except as otherwise provided in this Constitution, the full extent of loss shall include, but not be limited to, the appraised value of the property and all costs of relocation, inconvenience, and any other damages actually incurred by the owner because of the expropriation.
-                        </p>
-                        <a
-                            href="https://legis.la.gov/legis/Law.aspx?d=206294"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-brand-blue hover:underline text-sm font-sans block"
-                        >
-                            Source: legis.la.gov — Article 1, Section 4
-                        </a>
-                    </div>
-
-                </div>
-            </section>
-
-            {/* Summary & Analysis */}
-            <section className="py-20 px-6">
-                <div className="max-w-4xl mx-auto space-y-8">
-                    <div className="flex items-start gap-4">
-                        <div className="p-3 bg-brand-blue/10 rounded-full shrink-0 mt-1">
-                            <Gavel className="w-6 h-6 text-brand-blue" />
-                        </div>
-                        <div className="space-y-4 text-lg text-gray-700 font-serif leading-relaxed">
-                            <p>
-                                The Constitution is very clear in it's intent that property <strong>"shall not be taken"</strong> for use by a private person or entity, for economic development or tax revenue, and that if a "public purpose" requires property to be taken, "public purpose" would be a judicial question and that the owner must receive <strong>"just compensation to the full extent of his loss"</strong>. The owner is even guaranteed <strong>"the right to trial by jury to determine whether the compensation is just."</strong>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Image Gallery — State Capitol & Constitution */}
-            <section className="py-16 px-6 bg-gray-50">
-                <div className="max-w-4xl mx-auto space-y-8">
-                    <h2 className="text-3xl font-heading font-bold text-gray-900 text-center">Our Heritage Under Threat</h2>
-                    <div className="grid md:grid-cols-2 gap-8">
-                        <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-200">
-                            <img src="/statecapital.jpg" alt="Louisiana State Capitol" className="w-full h-64 object-cover object-[center_80%]" />
-                            <div className="p-4 bg-white text-center">
-                                <p className="font-bold text-gray-900">Louisiana State Capitol</p>
-                            </div>
-                        </div>
-                        <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-200 bg-gray-100 flex flex-col items-center justify-center">
-                            <div className="w-full h-64 flex items-center justify-center bg-gray-200">
-                                <div className="text-center p-6">
-                                    <FileText size={48} className="mx-auto text-gray-400 mb-3" />
-                                    <p className="text-gray-500 font-bold uppercase tracking-widest text-sm">[PLACEHOLDER]</p>
-                                    <p className="text-gray-400 text-xs mt-1">Constitution image pending</p>
-                                </div>
-                            </div>
-                            <div className="p-4 bg-white text-center w-full">
-                                <p className="font-bold text-gray-900">Louisiana State Constitution</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Mark Guillory Videos */}
-            <section className="py-16 px-6">
-                <div className="max-w-4xl mx-auto space-y-8">
-                    <h2 className="text-3xl font-heading font-bold text-gray-900">Videos by Mark Guillory</h2>
-                    <p className="text-lg text-gray-600 font-serif">Watch these important discussions on property rights and the CCS threat to Louisiana.</p>
-                    <div className="grid md:grid-cols-3 gap-6">
-                        {[
-                            { url: "https://www.facebook.com/share/v/17CL9MRomG/", title: "Property Rights Discussion — Part 1" },
-                            { url: "https://www.facebook.com/share/v/18jRAek4Ph/", title: "Property Rights Discussion — Part 2" },
-                            { url: "https://www.facebook.com/share/v/1PczMXjQbR/", title: "Property Rights Discussion — Part 3" },
-                        ].map((video, i) => (
-                            <a
-                                key={i}
-                                href={video.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="group bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all"
-                            >
-                                <div className="h-40 bg-gradient-to-br from-brand-blue/20 to-brand-red/20 flex items-center justify-center">
-                                    <div className="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                                        <svg className="w-8 h-8 text-brand-blue ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
-                                    </div>
-                                </div>
-                                <div className="p-4">
-                                    <p className="font-bold text-gray-900 text-sm mb-1">{video.title}</p>
-                                    <p className="text-brand-blue text-xs font-bold uppercase tracking-widest group-hover:underline">Watch on Facebook →</p>
-                                </div>
-                            </a>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* ═══════════════════════════════════════════════════ */}
-            {/* Purpose of Government Section (merged from PurposeOfGovernment) */}
-            {/* ═══════════════════════════════════════════════════ */}
-
+            {/* Section 1: Purpose of Government */}
             <section className="py-20 px-6 bg-brand-dark text-white" id="purpose-of-government">
                 <div className="max-w-4xl mx-auto space-y-12">
                     <div className="text-center space-y-6">
@@ -387,11 +230,155 @@ export const PropertyRights: React.FC = () => {
                 </div>
             </section>
 
-            {/* ═══════════════════════════════════════════════════ */}
-            {/* What the Legislature Has Done (merged from LegislativeBetrayal) */}
-            {/* ═══════════════════════════════════════════════════ */}
+            {/* Section 2: Our Rights (Article 1, Section 4) */}
+            <section className="py-20 px-6" id="our-rights">
+                <div className="max-w-4xl mx-auto space-y-12">
+                    <div className="space-y-6">
+                        <h2 className="text-3xl md:text-5xl font-heading font-bold text-gray-900">Our Constitutionally Guaranteed Rights to Property</h2>
+                        <p className="text-lg text-gray-700 font-serif leading-relaxed">
+                            Of the three foundational Rights our government was formed to protect, Property is among them. Why would the Will of the People specifically name a Right to Property? The ownership and control of Property is essential to true independence, and independence is essential to one's Life and Liberty. Our Property is the best guarantor of our freedom and it represents our generational wealth. This is a core part of the purpose of our government.
+                        </p>
+                        <p className="text-lg text-gray-700 font-serif leading-relaxed">
+                            Because of the importance of the "Right to Property", our Louisiana Constitution is very clear as to protections and limits on government power in relation to that Right. Below are excerpts from{' '}
+                            <a
+                                href="https://legis.la.gov/legis/Law.aspx?d=206294"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-brand-blue hover:underline font-semibold"
+                            >
+                                Article 1, Section 4 Right to Property
+                            </a>.
+                        </p>
+                    </div>
 
-            {/* Legislative Betrayal Hero Banner */}
+                    <div className="space-y-8">
+                        <h2 className="text-3xl font-heading font-bold text-gray-900">
+                            Article 1, Section 4. Right to Property.
+                        </h2>
+
+                        {/* Every person */}
+                        <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-200 space-y-4">
+                            <p className="text-gray-700 font-serif leading-relaxed italic border-l-4 border-brand-red pl-6">
+                                Every person has the right to acquire, own, control, use, enjoy, protect, and dispose of private property.
+                            </p>
+                        </div>
+
+                        {/* B(1) */}
+                        <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-200 space-y-4">
+                            <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm">(B)(1)</h4>
+                            <p className="text-gray-700 font-serif leading-relaxed italic border-l-4 border-brand-red pl-6">
+                                Property <strong className="not-italic text-gray-900">shall not be taken</strong> or damaged by the state or its political subdivisions except for public purposes and with just compensation paid to the owner or into court for his benefit. Except as specifically authorized by Article VI, Section 21 of this Constitution property shall not be taken or damaged by the state or its political subdivisions: (a) for predominant use by any private person or entity; or (b) for transfer of ownership to any private person or entity.
+                            </p>
+                        </div>
+
+                        {/* (3) */}
+                        <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-200 space-y-4">
+                            <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm">(3)</h4>
+                            <p className="text-gray-700 font-serif leading-relaxed italic border-l-4 border-brand-red pl-6">
+                                Neither economic development, enhancement of tax revenue, or any incidental benefit to the public shall be considered in determining whether the taking or damaging of property is for a public purpose pursuant to Subparagraph (1) of this Paragraph or Article VI, Section 23 of this Constitution.
+                            </p>
+                        </div>
+
+                        {/* (4) */}
+                        <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-200 space-y-4">
+                            <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm">(4)</h4>
+                            <p className="text-gray-700 font-serif leading-relaxed italic border-l-4 border-brand-red pl-6">
+                                Property <strong className="not-italic text-gray-900">shall not be taken</strong> or damaged by any private entity authorized by law to expropriate, except for a public and necessary purpose and with just compensation paid to the owner; in such proceedings, whether the purpose is public and necessary shall be a judicial question.
+                            </p>
+                        </div>
+
+                        {/* (5) */}
+                        <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-200 space-y-4">
+                            <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm">(5)</h4>
+                            <p className="text-gray-700 font-serif leading-relaxed italic border-l-4 border-brand-red pl-6">
+                                In every expropriation or action to take property pursuant to the provisions of this Section, a party has the right to trial by jury to determine whether the compensation is just, and the owner shall be compensated to the <strong className="not-italic text-gray-900">full extent of his loss</strong>. Except as otherwise provided in this Constitution, the full extent of loss shall include, but not be limited to, the appraised value of the property and all costs of relocation, inconvenience, and any other damages actually incurred by the owner because of the expropriation.
+                            </p>
+                            <a
+                                href="https://legis.la.gov/legis/Law.aspx?d=206294"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-brand-blue hover:underline text-sm font-sans block"
+                            >
+                                Source: legis.la.gov — Article 1, Section 4
+                            </a>
+                        </div>
+                    </div>
+
+                    {/* Summary & Analysis */}
+                    <div className="flex items-start gap-4 pt-10 border-t border-gray-100">
+                        <div className="p-3 bg-brand-blue/10 rounded-full shrink-0 mt-1">
+                            <Gavel className="w-6 h-6 text-brand-blue" />
+                        </div>
+                        <div className="space-y-4 text-lg text-gray-700 font-serif leading-relaxed">
+                            <p>
+                                The Constitution is very clear in it's intent that property <strong>"shall not be taken"</strong> for use by a private person or entity, for economic development or tax revenue, and that if a "public purpose" requires property to be taken, "public purpose" would be a judicial question and that the owner must receive <strong>"just compensation to the full extent of his loss"</strong>. The owner is even guaranteed <strong>"the right to trial by jury to determine whether the compensation is just."</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Image Gallery — Heritage */}
+            <section className="py-16 px-6 bg-gray-50">
+                <div className="max-w-4xl mx-auto space-y-8">
+                    <h2 className="text-3xl font-heading font-bold text-gray-900 text-center">Our Heritage Under Threat</h2>
+                    <div className="grid md:grid-cols-2 gap-8">
+                        <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-200">
+                            <img src="/statecapital.jpg" alt="Louisiana State Capitol" className="w-full h-64 object-cover object-[center_80%]" />
+                            <div className="p-4 bg-white text-center">
+                                <p className="font-bold text-gray-900">Louisiana State Capitol</p>
+                            </div>
+                        </div>
+                        <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-200 bg-gray-100 flex flex-col items-center justify-center">
+                            <div className="w-full h-64 flex items-center justify-center bg-gray-200">
+                                <div className="text-center p-6">
+                                    <FileText size={48} className="mx-auto text-gray-400 mb-3" />
+                                    <p className="text-gray-500 font-bold uppercase tracking-widest text-sm">[PLACEHOLDER]</p>
+                                    <p className="text-gray-400 text-xs mt-1">Constitution image pending</p>
+                                </div>
+                            </div>
+                            <div className="p-4 bg-white text-center w-full">
+                                <p className="font-bold text-gray-900">Louisiana State Constitution</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Mark Guillory Videos */}
+            <section className="py-16 px-6">
+                <div className="max-w-4xl mx-auto space-y-8">
+                    <h2 className="text-3xl font-heading font-bold text-gray-900">Videos by Mark Guillory</h2>
+                    <p className="text-lg text-gray-600 font-serif">Watch these important discussions on property rights and the CCS threat to Louisiana.</p>
+                    <div className="grid md:grid-cols-3 gap-6">
+                        {[
+                            { url: "https://www.facebook.com/share/v/17CL9MRomG/", title: "Property Rights Discussion — Part 1" },
+                            { url: "https://www.facebook.com/share/v/18jRAek4Ph/", title: "Property Rights Discussion — Part 2" },
+                            { url: "https://www.facebook.com/share/v/1PczMXjQbR/", title: "Property Rights Discussion — Part 3" },
+                        ].map((video, i) => (
+                            <a
+                                key={i}
+                                href={video.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all"
+                            >
+                                <div className="h-40 bg-gradient-to-br from-brand-blue/20 to-brand-red/20 flex items-center justify-center">
+                                    <div className="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                        <svg className="w-8 h-8 text-brand-blue ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+                                    </div>
+                                </div>
+                                <div className="p-4">
+                                    <p className="font-bold text-gray-900 text-sm mb-1">{video.title}</p>
+                                    <p className="text-brand-blue text-xs font-bold uppercase tracking-widest group-hover:underline">Watch on Facebook →</p>
+                                </div>
+                            </a>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Section 3: What the Legislature Has Done */}
             <section className="bg-brand-red text-white py-6 px-6" id="legislative-betrayal">
                 <div className="max-w-4xl mx-auto text-center">
                     <div className="flex items-center justify-center gap-3">
@@ -403,7 +390,6 @@ export const PropertyRights: React.FC = () => {
                 </div>
             </section>
 
-            {/* Legislative Betrayal Content */}
             <section className="py-20 px-6">
                 <div className="max-w-4xl mx-auto space-y-16">
                     <div className="space-y-8">
@@ -526,10 +512,7 @@ export const PropertyRights: React.FC = () => {
                 </div>
             </section>
 
-            {/* ═══════════════════════════════════════════════════ */}
-            {/* What SML Is Doing (merged from Mission) */}
-            {/* ═══════════════════════════════════════════════════ */}
-
+            {/* Section 4: What SML Is Doing (merged from Mission) */}
             <section className="py-24 px-6 bg-white" id="what-sml-is-doing">
                 <div className="max-w-4xl mx-auto space-y-12">
                     <div className="text-center space-y-6">
