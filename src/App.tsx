@@ -1,22 +1,22 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Layout } from './src/Layout';
-import { Home } from './src/pages/Home';
-import { WaterInCrosshairs } from './src/pages/WaterInCrosshairs';
-import { EnvironmentalDangers } from './src/pages/EnvironmentalDangers';
-import { OversightGaps } from './src/pages/OversightGaps';
-import { FollowTheMoney } from './src/pages/FollowTheMoney';
-import { Donate } from './src/pages/Donate';
-import { Contact } from './src/pages/Contact';
-import { About } from './src/pages/About';
-import { Documentation } from './src/pages/Documentation';
-import { PrivacyPolicy } from './src/pages/PrivacyPolicy';
-import { TermsOfService } from './src/pages/TermsOfService';
-import { PropertyRights } from './src/pages/PropertyRights';
-import { Calendar } from './src/pages/Calendar';
-import { LegalAction } from './src/pages/LegalAction';
+import { Layout } from './Layout';
+import { Home } from './pages/Home';
+import { WaterInCrosshairs } from './pages/WaterInCrosshairs';
+import { EnvironmentalDangers } from './pages/EnvironmentalDangers';
+import { OversightGaps } from './pages/OversightGaps';
+import { FollowTheMoney } from './pages/FollowTheMoney';
+import { Donate } from './pages/Donate';
+import { Contact } from './pages/Contact';
+import { About } from './pages/About';
+import { Documentation } from './pages/Documentation';
+import { PrivacyPolicy } from './pages/PrivacyPolicy';
+import { TermsOfService } from './pages/TermsOfService';
+import { PropertyRights } from './pages/PropertyRights';
+import { Calendar } from './pages/Calendar';
+import { LegalAction } from './pages/LegalAction';
 
-import { ScrollToTop } from './src/components/ScrollToTop';
+import { ScrollToTop } from './components/ScrollToTop';
 
 const App: React.FC = () => {
   return (
