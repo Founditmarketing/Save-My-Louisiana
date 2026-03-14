@@ -176,8 +176,8 @@ export const Home: React.FC = () => {
                 </div>
             </section>
 
-            {/* Section C: "What You Need to Know" (The Core Navigation) */}
-            <section id="know" className="py-24 px-6 bg-gray-50 relative">
+            {/* Section C: "THE THREATS" (The Core Navigation) */}
+            <section id="know" className="py-24 px-6 bg-gray-200 relative">
                 <div className="max-w-7xl mx-auto relative z-10">
                     <div className="text-center mb-10 space-y-6">
                         <img src="/Save-My-LA-logo.png" alt="Logo Stamp" className="w-20 mx-auto opacity-90" />
