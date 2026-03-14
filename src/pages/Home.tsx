@@ -277,8 +277,8 @@ export const Home: React.FC = () => {
                     {/* Left: Image aligned to the left */}
                     <div className="flex-1 w-full order-2 md:order-1">
                         <img 
-                            src="/shady_bribery.png" 
-                            alt="Shady financial exchange representing political lobbying" 
+                            src="/political_bribery.png" 
+                            alt="Political lobbying and corporate incentives fueling CCS expansion" 
                             className="w-full h-auto object-cover rounded-2xl shadow-2xl skew-y-1 transform transition-transform hover:skew-y-0 duration-500"
                         />
                     </div>
