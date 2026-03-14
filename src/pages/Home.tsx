@@ -182,36 +182,36 @@ export const Home: React.FC = () => {
                     <div className="text-center mb-10 space-y-6">
                         <img src="/Save-My-LA-logo.png" alt="Logo Stamp" className="w-20 mx-auto opacity-90" />
                         <h2 className="text-5xl md:text-7xl font-heading font-bold text-gray-900 tracking-tight leading-none uppercase">
-                            What You Need <br className="hidden md:block" /> to Know
+                            THE THREATS
                         </h2>
                         <p className="text-xl md:text-2xl text-gray-800 font-serif italic max-w-4xl mx-auto font-medium mt-4 inline-block">
                             The facts are clear. The risks are documented. The threat is real.
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {/* Card 1: Water in the Crosshairs */}
-                        <Link to="/water-in-crosshairs" className="group bg-white border border-gray-200 hover:border-brand-blue/30 transition-all duration-300 flex flex-col items-start relative overflow-hidden h-full shadow-sm hover:shadow-lg rounded-xl">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        {/* Card 1: Property Rights */}
+                        <Link to="/property-rights" className="group bg-white border border-gray-200 hover:border-brand-blue/30 transition-all duration-300 flex flex-col items-start relative overflow-hidden h-full shadow-sm hover:shadow-lg rounded-xl">
                             <div className="w-full h-56 overflow-hidden relative">
                                 <div className="absolute inset-0 bg-brand-blue/20 mix-blend-multiply group-hover:bg-transparent transition-all duration-500 z-10"></div>
                                 <img
-                                    src="/chicot-aquifer.png"
-                                    alt="Water in Crosshairs"
-                                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                                    src="/oversight-gaps-new.jpg"
+                                    alt="Property Rights"
+                                    className="w-full h-full object-cover object-top transform group-hover:scale-110 transition-transform duration-700"
                                 />
                             </div>
 
                             <div className="p-6 flex flex-col h-full w-full">
                                 <h3 className="text-xl font-bold mb-4 font-heading uppercase tracking-widest text-gray-900 group-hover:text-brand-blue transition-colors">
-                                    Water in the Crosshairs
+                                    Property Rights
                                 </h3>
 
                                 <p className="text-gray-900 text-base leading-relaxed mb-6 font-medium">
-                                    33 CCS projects and 107 wells targeting the Chicot Aquifer, threatening the water supply for 15 parishes.
+                                    Eminent domain is unconstitutionally being handed to private companies for CCS projects, threatening Louisiana land owners.
                                 </p>
 
                                 <span className="text-xs font-bold uppercase tracking-widest text-gray-900 group-hover:text-brand-blue transition-colors flex items-center border-b-2 border-transparent group-hover:border-brand-blue pb-1 mt-auto">
-                                    Read Report <ArrowRight size={14} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                                    Learn More <ArrowRight size={14} className="ml-2 group-hover:translate-x-1 transition-transform" />
                                 </span>
                             </div>
                         </Link>
@@ -237,59 +237,33 @@ export const Home: React.FC = () => {
                                 </p>
 
                                 <span className="text-xs font-bold uppercase tracking-widest text-gray-900 group-hover:text-brand-red transition-colors flex items-center border-b-2 border-transparent group-hover:border-brand-red pb-1 mt-auto">
-                                    Read Dossier <ArrowRight size={14} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                                    Learn More <ArrowRight size={14} className="ml-2 group-hover:translate-x-1 transition-transform" />
                                 </span>
                             </div>
                         </Link>
-
-                        {/* Card 3: Oversight Gaps */}
-                        <Link to="/oversight-gaps" className="group bg-white border border-gray-200 hover:border-gray-800/30 transition-all duration-300 flex flex-col items-start relative overflow-hidden h-full shadow-sm hover:shadow-lg rounded-xl">
+                        
+                        {/* Card 3: Water & Aquifers */}
+                        <Link to="/water-in-crosshairs" className="group bg-white border border-gray-200 hover:border-gray-800/30 transition-all duration-300 flex flex-col items-start relative overflow-hidden h-full shadow-sm hover:shadow-lg rounded-xl">
                             <div className="w-full h-56 overflow-hidden relative">
                                 <div className="absolute inset-0 bg-gray-800/20 mix-blend-multiply group-hover:bg-transparent transition-all duration-500 z-10"></div>
                                 <img
-                                    src="/oversight-gaps-new.jpg"
-                                    alt="Oversight Gaps"
-                                    className="w-full h-full object-cover object-top transform group-hover:scale-110 transition-transform duration-700"
-                                />
-                            </div>
-
-                            <div className="p-6 flex flex-col h-full w-full">
-                                <h3 className="text-xl font-bold mb-4 font-heading uppercase tracking-widest text-gray-900 group-hover:text-gray-800 transition-colors">
-                                    Oversight Gaps
-                                </h3>
-
-                                <p className="text-gray-900 text-base leading-relaxed mb-6 font-medium">
-                                    A look at "Primacy," the lack of state inspectors, and the unconstitutional use of Eminent Domain.
-                                </p>
-
-                                <span className="text-xs font-bold uppercase tracking-widest text-gray-900 group-hover:text-gray-800 transition-colors flex items-center border-b-2 border-transparent group-hover:border-gray-800 pb-1 mt-auto">
-                                    View Evidence <ArrowRight size={14} className="ml-2 group-hover:translate-x-1 transition-transform" />
-                                </span>
-                            </div>
-                        </Link>
-
-                        {/* Card 4: Follow The Money */}
-                        <Link to="/follow-the-money" className="group bg-white border border-gray-200 hover:border-brand-blue/30 transition-all duration-300 flex flex-col items-start relative overflow-hidden h-full shadow-sm hover:shadow-lg rounded-xl">
-                            <div className="w-full h-56 overflow-hidden relative">
-                                <div className="absolute inset-0 bg-brand-blue/20 mix-blend-multiply group-hover:bg-transparent transition-all duration-500 z-10"></div>
-                                <img
-                                    src="/atchafalaya-basin.jpg"
-                                    alt="Follow The Money"
+                                    src="/chicot-aquifer.png"
+                                    alt="Water & Aquifers"
                                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                                 />
                             </div>
 
                             <div className="p-6 flex flex-col h-full w-full">
-                                <h3 className="text-xl font-bold mb-4 font-heading uppercase tracking-widest text-gray-900 group-hover:text-brand-blue transition-colors">
-                                    Follow The Money
+                                <h3 className="text-xl font-bold mb-4 font-heading uppercase tracking-widest text-gray-900 group-hover:text-gray-800 transition-colors">
+                                    Water & Aquifers
                                 </h3>
 
                                 <p className="text-gray-900 text-base leading-relaxed mb-6 font-medium">
-                                    See how corporate lobbying and political contributions are driving the CCS expansion in Louisiana.
+                                    33 CCS projects and 107 wells targeting the Chicot Aquifer, threatening the water supply for 15 parishes.
                                 </p>
 
-                                <span className="text-xs font-bold uppercase tracking-widest text-gray-900 group-hover:text-brand-blue transition-colors flex items-center border-b-2 border-transparent group-hover:border-brand-blue pb-1 mt-auto">
-                                    Track Funds <ArrowRight size={14} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                                <span className="text-xs font-bold uppercase tracking-widest text-gray-900 group-hover:text-gray-800 transition-colors flex items-center border-b-2 border-transparent group-hover:border-gray-800 pb-1 mt-auto">
+                                    Learn More <ArrowRight size={14} className="ml-2 group-hover:translate-x-1 transition-transform" />
                                 </span>
                             </div>
                         </Link>
