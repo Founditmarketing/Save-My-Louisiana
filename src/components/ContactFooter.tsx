@@ -42,14 +42,7 @@ export const ContactFooter: React.FC = () => {
                     <div className="space-y-4">
                         <h4 className="text-sm font-bold uppercase tracking-widest text-brand-blue">Get Involved</h4>
                         <ul className="space-y-3 text-sm text-gray-300">
-                            <li className="flex items-start gap-3">
-                                <MapPin size={16} className="text-brand-red mt-1 shrink-0" />
-                                <span>123 Bayou Road,<br />Lafayette, LA 70501</span>
-                            </li>
-                            <li className="flex items-center gap-3">
-                                <Phone size={16} className="text-brand-red shrink-0" />
-                                <span>318.542.6856</span>
-                            </li>
+
                             <li className="flex items-center gap-3">
                                 <Mail size={16} className="text-brand-red shrink-0" />
                                 <a href="mailto:info@savemylouisiana.org" className="hover:text-white transition-colors">info@savemylouisiana.org</a>
