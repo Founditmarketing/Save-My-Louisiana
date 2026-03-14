@@ -387,6 +387,32 @@ export const PropertyRights: React.FC = () => {
                             ))}
                         </div>
                     </div>
+
+                    {/* How did this happen? */}
+                    <div className="bg-brand-red/5 p-12 rounded-[40px] border border-brand-red/10 space-y-8 text-center" id="how-did-this-happen">
+                        <h3 className="text-3xl font-heading font-bold text-gray-900">How did this happen?</h3>
+                        <p className="text-xl text-gray-700 font-serif leading-relaxed">
+                            Who voted for this? Track the legislators who voted to subvert your constitutional rights.
+                        </p>
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a
+                                href="https://www.lacag.org"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-3 bg-brand-red text-white px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-red-700 transition-all shadow-xl active:scale-95"
+                            >
+                                <Users size={20} /> View LACAG Vote Counts
+                            </a>
+                            <a
+                                href="https://www.lacag.org/action-center?vvsrc=%2fscorecard"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-3 bg-gray-900 text-white px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-gray-800 transition-all shadow-xl active:scale-95"
+                            >
+                                <Landmark size={20} /> LACAG Scorecard
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
 
