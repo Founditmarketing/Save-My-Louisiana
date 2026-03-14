@@ -303,6 +303,40 @@ export const Home: React.FC = () => {
                 </div>
             </section>
 
+            {/* Section C3: Documentation & Reporting */}
+            <section className="py-24 px-6 bg-gray-50 border-t border-gray-100 relative">
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+                    {/* Left Column: Text Content */}
+                    <div className="flex-1 space-y-8 text-left">
+                        <div className="space-y-4">
+                            <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 uppercase">
+                                Documentation & Reporting
+                            </h2>
+                            <div className="w-24 h-1 bg-brand-blue"></div>
+                        </div>
+                        <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-serif">
+                            Save My Louisiana, Inc. and several landowners have filed a lawsuit in the 19th Judicial District Court against the state of Louisiana. The petition seeks a declaratory judgment and injunctive relief to challenge the unconstitutional eminent domain and expropriation provisions related to Carbon Capture, Utilization, and Sequestration (CCUS). The litigation argues that storing third-party commercial waste for profit does not constitute a public use, and that the current laws violate due process while granting special privileges to carbon storage operators—ultimately transferring long-term risks back to the taxpayers.
+                        </p>
+                        <div className="pt-4">
+                            <Link to="/documentation" className="inline-block bg-brand-blue hover:bg-blue-700 text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest transition-all shadow-xl hover:-translate-y-1">
+                                View Legal Filing
+                            </Link>
+                        </div>
+                    </div>
+                    
+                    {/* Right Column: Image */}
+                    <div className="flex-1 w-full relative">
+                        {/* Decorative Background Element */}
+                        <div className="absolute -inset-4 bg-brand-blue/10 rounded-[2rem] transform -rotate-3 scale-105 z-0 hidden md:block"></div>
+                        <img 
+                            src="/court_documents.png" 
+                            alt="Legal documents and briefs presented in a court of law" 
+                            className="w-full h-auto object-cover rounded-2xl shadow-xl relative z-10"
+                        />
+                    </div>
+                </div>
+            </section>
+
             {/* Section D: The Closing (Pre-Footer) */}
             <section className="py-24 px-6 bg-brand-dark text-white relative overflow-hidden">
                 {/* Abstract Background Elements */}
