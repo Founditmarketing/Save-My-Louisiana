@@ -142,6 +142,24 @@ export const Home: React.FC = () => {
                 </div>
             </section>
 
+            {/* Section B2: Condensed About Us */}
+            <section className="py-24 px-6 bg-gray-50 border-t border-gray-100">
+                <div className="max-w-4xl mx-auto text-center space-y-8">
+                    <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 uppercase">
+                        ABOUT US
+                    </h2>
+                    <div className="w-24 h-1 bg-brand-blue mx-auto"></div>
+                    <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-serif">
+                        Save My Louisiana (SML) is a 501(c)(4) non-profit citizen volunteer organization dedicated to educating and empowering Louisianans to defend our foundational rights of Life, Liberty, and Property. We believe in protecting our life-sustaining environment—our land, lakes, bayous, aquifers, and coastal regions—for today and future generations. While we are strongly PRO-economic development and PRO-industry, we are actively fighting against any action that uses the force of law to undermine citizens' constitutionally guaranteed rights. SML is absolutely independent; we carry no messages for any other organizations and rely solely on the financial support of individual Louisiana citizens.
+                    </p>
+                    <div className="pt-4">
+                        <Link to="/about" className="inline-block bg-brand-blue hover:bg-blue-700 text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest transition-all shadow-xl hover:-translate-y-1">
+                            Learn More
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
             {/* Section C: "What You Need to Know" (The Core Navigation) */}
             <section id="know" className="py-24 px-6 bg-gray-50 relative">
                 <div className="max-w-7xl mx-auto relative z-10">
