@@ -390,41 +390,30 @@ export const PropertyRights: React.FC = () => {
                 </div>
             </section>
 
-            {/* Section 4: What SML Is Doing (merged from Mission) */}
+            {/* Section 4: What SML Is Doing */}
             <section className="py-24 px-6 bg-white" id="what-sml-is-doing">
-                <div className="max-w-4xl mx-auto space-y-12">
-                    <div className="text-center space-y-6">
-                        <h2 className="text-3xl md:text-5xl font-heading font-bold text-gray-900">What SML is Doing</h2>
-                        <p className="text-lg text-gray-700 font-serif leading-relaxed max-w-2xl mx-auto">
-                            We are challenging this unconstitutional law and others like it through the legal mechanisms available. We are petitioning the state's judicial branch to recognize and declare this law unconstitutional.
-                        </p>
+                <div className="max-w-4xl mx-auto space-y-8 text-lg text-gray-700 font-serif leading-relaxed">
+                    <h2 className="text-3xl md:text-5xl font-heading font-bold text-gray-900 text-center mb-12">What SML is Doing</h2>
+                    
+                    <p>
+                        As is clearly evident, our Constitutional Right to Property is in grave danger and that danger has come from our Legislature. If left unchallenged and unchecked, what other Rights will Legislators attempt to undermine and take from us? We MUST act and correct this negligence of our Legislature.
+                    </p>
+                    
+                    <p>
+                        Save My Louisiana is exercising our Rights and challenging this unconstitutional law and others like it through the legal mechanisms available. We are petitioning the state's judicial branch to recognize and declare this law and others like it unconstitutional. Below is the petition SML filed in the 19th Judicial District Court in Baton Rouge on 20 November 2025.
+                    </p>
+                    
+                    <div className="bg-brand-blue/5 p-8 md:p-12 rounded-[30px] border border-brand-blue/10 flex flex-col items-center justify-center text-center my-12 shadow-sm">
+                        <Gavel size={48} className="text-brand-blue mb-4" />
+                        <h3 className="text-2xl font-bold font-heading text-brand-blue mb-6">Legal Petition Filed</h3>
+                        <a href="#" className="inline-flex items-center gap-2 bg-brand-blue text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-blue-800 transition-all shadow-lg active:scale-95">
+                            <FileText size={20} /> View The Full Petition
+                        </a>
                     </div>
 
-                    <div className="bg-brand-blue/5 p-8 md:p-12 rounded-[40px] border border-brand-blue/10 relative">
-                        <div className="absolute top-0 right-0 p-12 opacity-5">
-                            <Gavel size={120} className="text-brand-blue" />
-                        </div>
-                        <div className="space-y-6 relative z-10 text-center">
-                            <h3 className="text-2xl font-bold font-heading text-brand-blue">Legal Petition Filed</h3>
-                            <p className="text-gray-600 font-serif leading-relaxed">
-                                Save My Louisiana filed a comprehensive petition in the <span className="font-bold">19th Judicial District Court in Baton Rouge on November 20, 2025</span>. This legal action targets the unconstitutional overreach of the legislature and seeks to restore property rights for all Louisianans.
-                            </p>
-                            <div className="pt-6">
-                                <a href="#" className="inline-flex items-center gap-2 bg-brand-blue text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-blue-800 transition-all shadow-lg active:scale-95">
-                                    <FileText size={20} /> View The Full Petition
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="text-center pt-8">
-                        <p className="font-bold text-gray-900 text-3xl font-heading leading-tight italic">
-                            "DEFENDING OUR RIGHTS!"
-                        </p>
-                        <p className="text-gray-500 mt-4 uppercase tracking-[0.2em] text-xs font-bold font-sans">
-                            Join the Movement. Secure the Future.
-                        </p>
-                    </div>
+                    <p className="font-bold">
+                        These are your Rights of which those you trusted to represent you in Baton Rouge have trampled and in so doing, failed to fulfill their basic oath of office to uphold the Constitution. Please join us to complete this incredibly important work in <span className="text-brand-red italic">DEFENDING OUR RIGHTS!</span>
+                    </p>
                 </div>
             </section>
 
