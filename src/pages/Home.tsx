@@ -271,6 +271,38 @@ export const Home: React.FC = () => {
                 </div>
             </section>
 
+            {/* Section C2: Follow The Money */}
+            <section className="py-24 px-6 bg-white relative">
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+                    {/* Left: Image aligned to the left */}
+                    <div className="flex-1 w-full order-2 md:order-1">
+                        <img 
+                            src="/shady_bribery.png" 
+                            alt="Shady financial exchange representing political lobbying" 
+                            className="w-full h-auto object-cover rounded-2xl shadow-2xl skew-y-1 transform transition-transform hover:skew-y-0 duration-500"
+                        />
+                    </div>
+
+                    {/* Right: Text Content */}
+                    <div className="flex-1 space-y-8 order-1 md:order-2 text-right">
+                        <div className="flex flex-col items-end space-y-4">
+                            <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 uppercase">
+                                Follow The Money
+                            </h2>
+                            <div className="w-24 h-1 bg-brand-red"></div>
+                        </div>
+                        <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-serif text-right">
+                            The explosion of CCS in Louisiana isn't about protecting the environment—it's about a massive federal subsidy rush. Driven by the 45Q Tax Credit, companies can collect up to $85 for every metric ton of CO₂ stored, equating to billions in corporate rewards at taxpayer expense. Meanwhile, lobbyists push legislation designed to shift long-term liability onto the public.
+                        </p>
+                        <div className="pt-4 flex justify-end">
+                            <Link to="/follow-the-money" className="inline-block bg-brand-red hover:bg-red-700 text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest transition-all shadow-xl hover:-translate-y-1">
+                                Read More
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Section D: The Closing (Pre-Footer) */}
             <section className="py-24 px-6 bg-brand-dark text-white relative overflow-hidden">
                 {/* Abstract Background Elements */}
