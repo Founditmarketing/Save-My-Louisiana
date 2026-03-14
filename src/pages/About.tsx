@@ -68,29 +68,13 @@ export const About: React.FC = () => {
                         <div className="w-24 h-1 bg-brand-red mx-auto"></div>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-12 pt-8">
-                        <div className="space-y-6">
-                            <div className="flex items-center gap-4">
-                                <div className="p-3 bg-white/10 rounded-full">
-                                    <Shield className="w-6 h-6 text-brand-blue" />
-                                </div>
-                                <h3 className="text-xl font-bold font-heading uppercase tracking-widest">Rights Defense</h3>
-                            </div>
-                            <p className="text-gray-300 font-serif leading-relaxed">
-                                SML’s mission is to educate and empower the citizens of Louisiana to understand, protect and defend our rights as guaranteed in the Constitution of The United States as well as the Constitution of the State of Louisiana. We will pursue all means lawfully available to challenge and defeat any and all unconstitutional actions of the State in violation of these guarantees.
-                            </p>
-                        </div>
-                        <div className="space-y-6">
-                            <div className="flex items-center gap-4">
-                                <div className="p-3 bg-white/10 rounded-full">
-                                    <Globe className="w-6 h-6 text-brand-blue" />
-                                </div>
-                                <h3 className="text-xl font-bold font-heading uppercase tracking-widest">Environmental Protection</h3>
-                            </div>
-                            <p className="text-gray-300 font-serif leading-relaxed">
-                                SML’s additional though equal mission is to educate and empower the citizens of Louisiana to understand, protect and defend our life giving and sustaining environment. We are dedicated to ensuring our fellow citizens are aware of potential environmental dangers and are informed on how to take action to prevent damage to our shared environment. We will pursue all means lawfully available to challenge and defeat any activities by the state or private industry that would place our environment in danger.
-                            </p>
-                        </div>
+                    <div className="space-y-6 pt-8 max-w-3xl mx-auto">
+                        <p className="text-xl text-gray-300 font-serif leading-relaxed text-center">
+                            SML’s mission is to educate and empower the citizens of Louisiana to understand, protect and defend our rights as guaranteed in the Constitution of The United States as well as the Constitution of the State of Louisiana. We will pursue all means lawfully available to challenge and defeat any and all unconstitutional actions of the State in violation of these guarantees.
+                        </p>
+                        <p className="text-xl text-gray-300 font-serif leading-relaxed text-center">
+                            SML’s additional though equal mission is to educate and empower the citizens of Louisiana to understand, protect and defend our life giving and sustaining environment. We are dedicated to ensuring our fellow citizens are aware of potential environmental dangers and are informed on how to take action to prevent damage to our shared environment. We will pursue all means lawfully available to challenge and defeat any activities by the state or private industry that would place our environment in danger.
+                        </p>
                     </div>
                 </div>
             </section>
