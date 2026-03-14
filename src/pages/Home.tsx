@@ -78,17 +78,57 @@ export const Home: React.FC = () => {
 
             {/* Section B: The Situation (Intro) */}
             <section id="situation" className="py-24 px-6 bg-white">
-                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    <div className="text-center space-y-8">
-                        <h2 className="text-4xl md:text-6xl font-heading font-bold text-gray-900 uppercase">
-                            The Situation
-                        </h2>
-                        <div className="w-24 h-1 bg-brand-red mx-auto"></div>
-                        <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-serif">
-                            Across Louisiana, energy companies are planning to inject millions of tons of carbon dioxide deep underground in so-called carbon capture and storage (CCS) projects. Many of these wells sit directly above the <Link to="/water-in-crosshairs" className="font-bold text-brand-blue hover:underline">Chicot Aquifer</Link>, the main drinking-water source for more than 700,000 residents across 15 parishes. If this experiment fails, the CO2 forms carbonic acid—potentially acidifying brine and dissolving rock to release hazardous concentrations of lead, arsenic, and manganese into our water, soil, and crops.
-                        </p>
+                <div className="max-w-5xl mx-auto flex flex-col gap-16 items-center">
+                    <div className="w-full space-y-8 text-left">
+                        <div className="space-y-4">
+                            <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 uppercase">
+                                THE SITUATION
+                            </h2>
+                            <div className="w-24 h-1 bg-brand-red"></div>
+                        </div>
+                        
+                        <div className="space-y-6 text-lg md:text-xl text-gray-800 leading-relaxed font-serif">
+                            <p>
+                                Carbon capture and sequestration (CCS) is brick one of the climate change hoax agenda. The climate change hoax claims that man-made CO2, primarily created from the burning of fossil fuels for energy, is destroying the planet and therefore it must be reduced, eliminated or captured and buried (sequestered). Numerous fossil fuel companies and other industries who produce massive amounts of man-made CO2 have paradoxically bought into the climate change hoax only because doing so creates a new stream of income through federal tax incentives payments. Its like committing a crime and then being paid as opposed to being held accountable. The problem of course is, burning fossil fuels is NOT a crime. Few other technologies have created more opportunities and advanced mankind than fossil fuels. Without fossil fuels, our modern world would simply not exist.
+                            </p>
+                            <p>
+                                Natural occurring CO2 makes up .04% of the total atmosphere and man-made CO2 accounts for only .11% of that .04%. CCS is a climate change scheme costing billions of our tax dollars to capture and bury that .11% of .04%. <a href="https://co2coalition.org" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline font-bold break-words">https://co2coalition.org</a>
+                            </p>
+                            <p>
+                                Across Louisiana, existing and emerging opportunist industries have bought into the climate change agenda hoax solely to profit from federal tax payments of the Biden Green New Deal. They intend to inject millions of tons of captured industrial carbon dioxide (CO2) waste deep underground in what is called carbon capture and storage (CCS) projects. These projects, made up of numerous injection wells, sit directly above the Chicot Aquifer, the main drinking-water source for more than 700,000 residents across 15 parishes. There are also numerous CCS storage projects slated across our lands, wetlands and lakes such as Lake Maurepas as well as many other locations. If this experiment fails and the industrial CO2 waste enters our water sources, it will form carbonic acid contaminating our drinking water forever.
+                            </p>
+                            <p>
+                                As you will learn through this website, in order to make make the climate change agenda hoax CCS scheme possible, our legislature and governor have not only failed to defend us against this threat, they have actively encouraged and empowered the threat through the passing of laws that violate our constitution and overtly subordinate our property rights to private industry through the force of law. On this site with multiple links to the state's official legislative website, you'll learn that the legislature granted the power of eminent domain to the CCS industry in order to take private land that private industry deems necessary for its private profits. Taking private property in the name of "economic development" is a clear violation of both the US Constitution and the Louisiana Constitution and constitutes an immoral and clear violation of traditional western governmental values to protect Life, Liberty and Property.
+                            </p>
+                        </div>
+
+                        <div className="space-y-4 pt-10">
+                            <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 uppercase">
+                                THE SOLUTION
+                            </h2>
+                            <div className="w-24 h-1 bg-brand-red"></div>
+                        </div>
+
+                        <div className="space-y-6 text-lg md:text-xl text-gray-800 leading-relaxed font-serif">
+                            <p>
+                                Louisiana citizens must take action. No one will stand up for us if we don't stand for ourselves. We must make our voices of disapproval of the CCS hoax heard by the Louisiana Legislature and the Governor.
+                            </p>
+                            <p>
+                                The first step SML took was to challenge this threat to constitutional authority by filing a suit against the state petitioning the Judicial branch to strike the unconstitutional laws from the state statutes thereby returning constitutionally guaranteed property rights to the citizens of Louisiana. The suit was filed on 20 November 2025 in the 19th Judicial District Court in Baton Rouge. <Link to="/legal-action" className="text-brand-blue hover:underline font-bold">(Link to law suit document)</Link>.
+                            </p>
+                            <p>
+                                Second, we must see with clear eyes what CCS is and understand its origins - it is brick one of the climate change hoax agenda. NATURAL CO2 is required for our world to live and thrive. It is the gas that fuels plant life from trees to the food we eat. It is an essential part of the circle of life. But when you capture industrial CO2 waste, compress it at high pressure levels and inject it into the ground, we take enormous risks to the stability of our amazing land and water ecosystem that sustains our lives. No amount of "economic development" is worth the risk of losing the land and water that sustains our lives.
+                            </p>
+                            <p>
+                                On this site you will learn about who we are, our position and explanations of the why we are anti-CCS. Our claims are explained and documented with independent sources.
+                            </p>
+                            <p>
+                                Finally, in-spite of false claims by those who have profits to make from CCS, SML is absolutely independent. We speak for ourselves alone and we carry no messages or purposes from and for any other organizations. The financial support SML receives comes from individual Louisiana citizens and Louisiana born organizations. We have not sought nor do we receive any financial support from any global or national affiliate groups.
+                            </p>
+                        </div>
                     </div>
-                    <div className="w-full aspect-video rounded-xl overflow-hidden shadow-xl">
+                    
+                    <div className="w-full max-w-4xl aspect-video rounded-xl overflow-hidden shadow-2xl flex-shrink-0">
                         <iframe className="w-full h-full" src="https://www.youtube.com/embed/VqGIHbSprVk?si=u-5C_ofomPJ49CUS" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                     </div>
                 </div>
