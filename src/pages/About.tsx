@@ -34,63 +34,23 @@ export const About: React.FC = () => {
                         <h2 className="text-3xl md:text-5xl font-heading font-bold text-gray-900 leading-tight">
                             Who is Save My Louisiana?
                         </h2>
-                        <p className="text-xl text-gray-700 font-serif leading-relaxed">
-                            Save My Louisiana (SML) is a <span className="font-bold text-brand-blue">501c4 non-profit citizen volunteer organization</span> dedicated to educating and empowering fellow Louisiana citizens to defend and protect our foundational rights of Life, Liberty and Property as well as our life sustaining environment for today and for future generations.
-                        </p>
-                        <p className="text-lg text-gray-700 font-serif leading-relaxed">
-                            SML is strongly committed to the constitutionally guaranteed rights of Louisiana citizens to Life, Liberty and Property. We believe the Louisiana Constitution is the supreme law of Louisiana subject only to the Constitution of the United States. We believe these two Constitutions by intention and in fact, guarantee no one citizen’s natural rights can be subverted by another citizen or any industry. We are all, citizen and industry, equal before the law.
-                        </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 gap-8 pt-8">
-                        <div className="p-8 bg-gray-50 rounded-3xl border border-gray-100 space-y-4">
-                            <h3 className="text-xl font-bold font-heading flex items-center gap-2">
-                                <Shield className="text-brand-blue" /> Unwavering Stance
-                            </h3>
-                            <p className="text-gray-600 font-serif leading-relaxed">
-                                SML is PRO-economic development, PRO-oil and gas, and PRO-industry. <span className="font-bold text-brand-red">BUT</span>, SML is ANTI any action that would use the power and force of law to undermine Louisiana citizen’s basic, constitutionally guaranteed rights to Life, Liberty and Property for any purpose whatsoever.
+                        <div className="space-y-6 text-lg text-gray-700 font-serif leading-relaxed mt-8">
+                            <p>
+                                Save My Louisiana (SML) is a <span className="font-bold text-brand-blue">501c4 non-profit citizen volunteer organization</span> dedicated to educating and empowering fellow Louisiana citizens to defend and protect our foundational rights of Life, Liberty and Property as well as our life sustaining environment for today and for future generations.
                             </p>
-                        </div>
-                        <div className="p-8 bg-brand-blue/5 rounded-3xl border border-brand-blue/10 space-y-4">
-                            <h3 className="text-xl font-bold font-heading flex items-center gap-2 text-brand-blue">
-                                <Users className="text-brand-blue" /> Harmony & Industry
-                            </h3>
-                            <p className="text-gray-600 font-serif leading-relaxed">
-                                This includes undermining guaranteed rights for the sake of economic development or industry of any kind. We strongly believe that citizen’s constitutionally protected rights can coexist in harmony under the law with both economic development and robust industry.
+                            <p>
+                                SML is strongly committed to the constitutionally guaranteed rights of Louisiana citizens to Life, Liberty and Property. We believe the Louisiana Constitution is the supreme law of Louisiana subject only to the Constitution of the United States. We believe these two Constitutions by intention and in fact, guarantee no one citizen’s natural rights can be subverted by another citizen or any industry. We are all, citizen and industry, equal before the law.
                             </p>
-                        </div>
-                    </div>
-
-                    <div className="space-y-12">
-                        <div className="flex flex-col md:flex-row gap-12 items-center">
-                            <div className="flex-1 space-y-6">
-                                <h3 className="text-2xl font-heading font-bold text-gray-900">A Vibrant Environment</h3>
-                                <p className="text-lg text-gray-700 font-serif leading-relaxed">
-                                    SML believes that a safe, clean and vibrant environment is essential to sustaining our lives and the lives of our posterity. Louisiana’s land, lakes, bayous, rivers, coastal regions, water aquifers and minerals beneath our surface all work together in a magnificent balance which enriches our lives with sustenance, provides opportunity for independence, and promises a secure future.
-                                </p>
-                                <p className="text-gray-700 font-serif leading-relaxed italic border-l-4 border-brand-red pl-8">
-                                    "If we protect this amazing yet fragile environment, we will prosper and so will our future generations."
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="bg-brand-blue/5 p-10 rounded-3xl border border-brand-blue/10 space-y-6">
-                            <h3 className="text-2xl font-bold font-heading">Coexistence & Mitigation</h3>
-                            <div className="space-y-4 text-gray-700 font-serif leading-relaxed">
-                                <p>
-                                    SML believes that economic development and industry can coexist with a safe, clean and vibrant environment. We believe that all legitimate dangers to our environment must be deeply considered and carefully mitigated, for once we lose the environment that sustains our very lives and livelihoods, no amount of economic development will matter.
-                                </p>
-                                <p>
-                                    We believe there are no legitimate environmental dangers that are beyond mitigation with carefully considered and implemented engineering solutions. We can have a protected environment AND robust industry.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="space-y-6 pt-8">
-                            <h3 className="text-2xl font-bold font-heading flex items-center gap-3 text-brand-red">
-                                <Globe size={24} /> Absolute Independence
-                            </h3>
-                            <p className="text-lg text-gray-700 font-serif leading-relaxed">
+                            <p>
+                                SML is PRO-economic development, PRO-oil and gas, and PRO-industry. <span className="font-bold text-brand-red">BUT</span>, SML is ANTI any action that would use the power and force of law to undermine Louisiana citizen’s basic, constitutionally guaranteed rights to Life, Liberty and Property for any purpose whatsoever. This includes undermining guaranteed rights for the sake of economic development or industry of any kind. We strongly believe that citizen’s constitutionally protected rights can coexist in harmony under the law with both economic development and robust industry.
+                            </p>
+                            <p>
+                                SML believes that a safe, clean and vibrant environment is essential to sustaining our lives and the lives of our posterity. Louisiana’s land, lakes, bayous, rivers, coastal regions, water aquifers and minerals beneath our surface all work together in a magnificent balance which enriches our lives with sustenance, provides opportunity for independence, and promises a secure future. If we protect this amazing yet fragile environment, we will prosper and so will our future generations.
+                            </p>
+                            <p>
+                                SML believes that economic development and industry can coexist with a safe, clean and vibrant environment. We believe that all legitimate dangers to our environment must be deeply considered and carefully mitigated, for once we lose the environment that sustains our very lives and livelihoods, no amount of economic development will matter. We believe there are no legitimate environmental dangers that are beyond mitigation with carefully considered and implemented engineering solutions. We can have a protected environment AND robust industry.
+                            </p>
+                            <p>
                                 Finally, SML is absolutely independent. We speak for ourselves alone and we carry no messages or purposes from and for any other organizations. The financial support SML receives comes from individual Louisiana citizens and Louisiana born organizations. We have not sought nor do we receive any financial support from any global or national affiliate groups.
                             </p>
                         </div>
