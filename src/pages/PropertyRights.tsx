@@ -318,32 +318,7 @@ export const PropertyRights: React.FC = () => {
                 </div>
             </section>
 
-            {/* Image Gallery — Heritage */}
-            <section className="py-16 px-6 bg-gray-50">
-                <div className="max-w-4xl mx-auto space-y-8">
-                    <h2 className="text-3xl font-heading font-bold text-gray-900 text-center">Our Heritage Under Threat</h2>
-                    <div className="grid md:grid-cols-2 gap-8">
-                        <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-200">
-                            <img src="/statecapital.jpg" alt="Louisiana State Capitol" className="w-full h-64 object-cover object-[center_80%]" />
-                            <div className="p-4 bg-white text-center">
-                                <p className="font-bold text-gray-900">Louisiana State Capitol</p>
-                            </div>
-                        </div>
-                        <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-200 bg-gray-100 flex flex-col items-center justify-center">
-                            <div className="w-full h-64 flex items-center justify-center bg-gray-200">
-                                <div className="text-center p-6">
-                                    <FileText size={48} className="mx-auto text-gray-400 mb-3" />
-                                    <p className="text-gray-500 font-bold uppercase tracking-widest text-sm">[PLACEHOLDER]</p>
-                                    <p className="text-gray-400 text-xs mt-1">Constitution image pending</p>
-                                </div>
-                            </div>
-                            <div className="p-4 bg-white text-center w-full">
-                                <p className="font-bold text-gray-900">Louisiana State Constitution</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
 
             {/* Mark Guillory Videos */}
             <section className="py-16 px-6">
