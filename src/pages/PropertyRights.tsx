@@ -299,11 +299,10 @@ export const PropertyRights: React.FC = () => {
                         </h2>
                         <div className="text-lg text-gray-700 font-serif leading-relaxed space-y-6">
                             <p>
-                                In 2020, the State Legislature passed a special law (<a href="https://www.legis.la.gov/legis/ViewDocument.aspx?d=1177407" target="_blank" rel="noopener noreferrer" className="font-bold text-brand-red hover:underline">ACT 61</a>) that subverted the fundamental guarantee of the Right to Property by the Constitution and subordinated Louisiana citizen's right to property to private corporations.
+                                In 2020, the State Legislature passed a special law (<a href="https://legis.la.gov/legis/ViewDocument.aspx?d=1180294" target="_blank" rel="noopener noreferrer" className="font-bold text-brand-red hover:underline">ACT 61</a>) that subverted the fundamental guarantee of the Right to Property by the Constitution and subordinated Louisiana citizen's right to property to private corporations.
                             </p>
-                            <p className="bg-gray-50 p-8 rounded-3xl border border-gray-100 italic">
-                                In violation of the Constitution, the Legislature authorized "any storage operator is herby authorized…to exercise the power of eminent domain and to expropriate needed property to acquire surface and subsurface rights and property interests necessary…".
-                                <span className="block mt-4 font-sans font-bold text-sm not-italic uppercase tracking-widest">Codified in R.S. 30:1108</span>
+                            <p>
+                                In violation of the Constitution, the Legislature authorized "any storage operator is herby authorized…to exercise the power of eminent domain and to expropriate needed property to acquire surface and subsurface rights and property interests necessary…". This was then codified in Louisiana law in Revised Statue, Title 30, Section 1108. (<a href="https://legis.la.gov/legis/Law.aspx?d=670794" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline font-bold">R.S. 30:1108</a>)
                             </p>
                         </div>
                     </div>
@@ -314,7 +313,7 @@ export const PropertyRights: React.FC = () => {
                             <h3 className="text-2xl font-bold font-heading">Constitutional Violations</h3>
                         </div>
                         <p className="text-lg text-gray-700 font-serif leading-relaxed">
-                            In passing this act, the Louisiana Legislature passed a special law in clear violation of the Constitution that gave PRIVATE companies the authority to declare eminent domain over your private property and take that property from you! No where in the Constitution is the Legislature given this power. As a matter of fact, the Legislature is specifically "prohibited" from such action in <span className="font-bold text-brand-red">Article 3, Section 12</span>.
+                            In passing this act, the Louisiana Legislature passed a special law in clear violation of the Constitution that gave PRIVATE companies the authority to declare eminent domain over your private property and take that property from you! No where in the Constitution is the Legislature given this power. As a matter of fact, the Legislature is specifically "prohibited" from such action in Article 3, Section 12.
                         </p>
 
                         <div className="bg-brand-dark text-white p-10 rounded-3xl shadow-xl space-y-6 relative overflow-hidden">
@@ -330,81 +329,62 @@ export const PropertyRights: React.FC = () => {
 
                     <div className="space-y-8">
                         <p className="text-lg text-gray-700 font-serif leading-relaxed">
-                            Giving private corporations the the right, "to exercise the power of eminent domain and to expropriate needed property" is a "special law" granting a special "privilege". No other person or entity has such authority other than the state and its' political subdivisions under the authority of the Constitution and its prescribed limits. The Legislature even further extended this power to <span className="font-bold text-brand-blue">"foreign entities"</span>!
+                            Giving private corporations the the right, "to exercise the power of eminent domain and to expropriate needed property" is a "special law" granting a special "privilege". No other person or entity has such authority other than the state and its' political subdivisions under the authority of the Constitution and its prescribed limits. The Legislature even further extended this power to "foreign entities"!
                         </p>
                         <div className="p-6 bg-blue-50 border border-blue-100 rounded-2xl">
                             <h4 className="font-bold font-sans text-sm uppercase tracking-widest text-brand-blue mb-2">R.S. 19:2:11</h4>
-                            <p className="text-gray-700 font-serif italic">"Subject to any applicable limitations in this Section, any domestic or foreign corporation, limited liability company, or other legal entity created for the purpose of, or engaged in, any of the activities otherwise provided for in this Section."</p>
+                            <p className="text-gray-700 font-serif italic mb-4">"Subject to any applicable limitations in this Section, any domestic or foreign corporation, limited liability company, or other legal entity created for the purpose of, or engaged in, any of the activities otherwise provided for in this Section.</p>
+                            <a href="https://legis.la.gov/legis/Law.aspx?d=81784" target="_blank" rel="noopener noreferrer" className="font-bold text-sm text-brand-blue uppercase tracking-widest hover:underline hover:text-blue-800 transition-colors">Source: legis.la.gov</a>
                         </div>
                     </div>
 
                     <div className="space-y-8">
-                        <h3 className="text-2xl font-bold font-heading">A Legacy of Betrayal (2008-2024)</h3>
+                        <h3 className="text-2xl font-bold font-heading">A Legacy of Betrayal (2020-2024)</h3>
                         <p className="text-lg text-gray-700 font-serif leading-relaxed">
-                            The above is just the surface. Between 2008 and 2024, the Louisiana Legislature passed a series of laws that violated your Right to Property by:
+                            The above is just the surface of the betrayal the Legislature has engaged. Between 2020 and 2024, the Louisiana Legislature passed a series of laws that violated your Right to Property by;
                         </p>
-                        <div className="grid md:grid-cols-2 gap-4">
-                            {violations.map((v, i) => (
-                                <div key={i} className="flex gap-3 items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                        <ul className="grid md:grid-cols-2 gap-4">
+                            {[
+                                "subordinating your property rights to private corporations,",
+                                "removing your right to a trial by jury over eminent domain,",
+                                "redefining how compensation is to be addressed,",
+                                "usurping Judicial authority to decide “public purpose”,",
+                                "granting eminent domain power to foreign corporations,",
+                                "perverting mineral “unitization” into a “taking\" power,",
+                                "passing laws granting special privileges,",
+                                "granting immunity from liability to the carbon capture industry,",
+                                "granting eventual state ownership of expropriated property,",
+                            ].map((v, i) => (
+                                <li key={i} className="flex gap-3 items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
                                     <ShieldAlert size={18} className="text-brand-red mt-1 shrink-0" />
                                     <span className="text-gray-800 font-serif text-sm">{v}</span>
-                                </div>
+                                </li>
                             ))}
-                        </div>
+                        </ul>
                     </div>
 
                     {/* Carbon Capture Sequestration — Eminent Domain Voting Records */}
                     <div className="space-y-8" id="ccs-voting-records">
-                        <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 border-l-4 border-brand-red pl-4">
-                            Carbon Capture Sequestration — Eminent Domain
-                        </h2>
-                        <p className="text-lg text-gray-700 font-serif leading-relaxed">
-                            Below is the complete record of legislative acts that have expanded eminent domain powers for Carbon Capture and Sequestration projects in Louisiana.
+                        <p className="text-lg text-gray-700 font-serif leading-relaxed font-bold">
+                            Shockingly, the list is longer. Below are the bills that subverted your Constitutional rights;
                         </p>
 
-                        <div className="space-y-6">
-                            {votingRecords.map((record) => (
-                                <div key={`${record.act}-${record.year}`} className="bg-white p-6 md:p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow space-y-4">
-                                    <div className="flex flex-wrap items-start gap-3">
-                                        <span className="bg-brand-red text-white px-3 py-1 rounded-full text-xs font-bold">{record.year}</span>
-                                        <span className="bg-gray-900 text-white px-3 py-1 rounded-full text-xs font-bold">{record.act}</span>
-                                        <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-bold">({record.bill})</span>
-                                    </div>
-                                    <p className="text-gray-700 font-serif leading-relaxed">
-                                        <span className="font-bold">by {record.author}</span> — {record.description}
-                                    </p>
-                                    <div className="space-y-3 pt-2 border-t border-gray-100">
-                                        <VoteBlock chamber="House" vote={record.houseVote} link={record.houseLink || null} linkNote={(record as any).houseLinkNote} />
-                                        <VoteBlock chamber="Senate" vote={record.senateVote} link={record.senateLink || null} linkNote={(record as any).senateLinkNote} />
-                                    </div>
+                        <div className="space-y-4">
+                            {[
+                                { act: "ACT 315 (H.B. 1117) in 2008", url: "https://legis.la.gov/legis/ViewDocument.aspx?d=499939" },
+                                { act: "ACT 517 (H.B. 661) in 2009", url: "https://legis.la.gov/legis/ViewDocument.aspx?d=668800" },
+                                { act: "ACT 61 (S.B. 353) in 2020", url: "https://legis.la.gov/legis/ViewDocument.aspx?d=1180294" },
+                                { act: "ACT 326 (H.B. 572) in 2021", url: "https://legis.la.gov/legis/ViewDocument.aspx?d=1235642" },
+                                { act: "ACT 620 (H.B 492) in 2024", url: "https://legis.la.gov/legis/ViewDocument.aspx?d=1382349" },
+                                { act: "ACT 645 (H.B. 966) in 2024", url: "https://legis.la.gov/legis/ViewDocument.aspx?d=1382374" }
+                            ].map((record, i) => (
+                                <div key={i} className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row md:items-center justify-between gap-4">
+                                    <span className="font-bold text-lg text-gray-900 font-heading">{record.act}</span>
+                                    <a href={record.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-brand-blue text-white px-6 py-3 rounded-full font-bold uppercase tracking-widest text-sm hover:bg-blue-800 transition-colors">
+                                        <FileText size={16} /> View Document
+                                    </a>
                                 </div>
                             ))}
-                        </div>
-                    </div>
-
-                    {/* How did this happen? */}
-                    <div className="bg-brand-red/5 p-12 rounded-[40px] border border-brand-red/10 space-y-8 text-center" id="how-did-this-happen">
-                        <h3 className="text-3xl font-heading font-bold text-gray-900">How did this happen?</h3>
-                        <p className="text-xl text-gray-700 font-serif leading-relaxed">
-                            Who voted for this? Track the legislators who voted to subvert your constitutional rights.
-                        </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a
-                                href="https://www.lacag.org"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-3 bg-brand-red text-white px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-red-700 transition-all shadow-xl active:scale-95"
-                            >
-                                <Users size={20} /> View LACAG Vote Counts
-                            </a>
-                            <a
-                                href="https://www.lacag.org/action-center?vvsrc=%2fscorecard"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-3 bg-gray-900 text-white px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-gray-800 transition-all shadow-xl active:scale-95"
-                            >
-                                <Landmark size={20} /> LACAG Scorecard
-                            </a>
                         </div>
                     </div>
                 </div>
