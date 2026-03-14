@@ -337,6 +337,38 @@ export const Home: React.FC = () => {
                 </div>
             </section>
 
+            {/* Section C4: Take Action */}
+            <section className="py-24 px-6 bg-white relative">
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+                    {/* Left Column: Image aligned to the left */}
+                    <div className="flex-1 w-full order-2 md:order-1">
+                        <img 
+                            src="/environmental_advocate.png" 
+                            alt="Concerned Louisiana parent advocating for better environmental regulations" 
+                            className="w-full h-auto object-cover rounded-2xl shadow-2xl skew-y-1 transform transition-transform hover:skew-y-0 duration-500"
+                        />
+                    </div>
+
+                    {/* Right Column: Text Content */}
+                    <div className="flex-1 space-y-8 order-1 md:order-2 text-right">
+                        <div className="flex flex-col items-end space-y-4">
+                            <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 uppercase">
+                                Take Action
+                            </h2>
+                            <div className="w-24 h-1 bg-brand-red"></div>
+                        </div>
+                        <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-serif text-right">
+                            You do not have to sit idly by while this happens. There is a path forward. Because this is a massive legal battle, sustained voter awareness and community support are our top priorities. Your financial contributions are critical to keeping SML in the courtroom and bringing this fight all the way to completion to secure a safer future for our children.
+                        </p>
+                        <div className="pt-4 flex justify-end">
+                            <Link to="/contact" className="inline-block bg-brand-red hover:bg-red-700 text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest transition-all shadow-xl hover:-translate-y-1">
+                                Get Involved Now
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Section D: The Closing (Pre-Footer) */}
             <section className="py-24 px-6 bg-brand-dark text-white relative overflow-hidden">
                 {/* Abstract Background Elements */}
