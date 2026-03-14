@@ -123,7 +123,7 @@ export const PropertyRights: React.FC = () => {
                         Property Rights
                     </span>
                     <h1 className="text-4xl md:text-6xl font-heading font-bold tracking-tight leading-tight">
-                        Property Rights & The Purpose of Government
+                        The purpose of Government & The protection of Private property rights
                     </h1>
                 </div>
             </section>
