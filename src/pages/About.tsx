@@ -98,43 +98,7 @@ export const About: React.FC = () => {
                 </div>
             </section>
 
-            {/* Environment Section */}
-            <section className="py-20 px-6 bg-gray-50">
-                <div className="max-w-4xl mx-auto space-y-12">
-                    <div className="flex flex-col md:flex-row gap-12 items-center">
-                        <div className="flex-1 space-y-6">
-                            <h2 className="text-3xl font-heading font-bold text-gray-900">A Vibrant Environment</h2>
-                            <p className="text-lg text-gray-700 font-serif leading-relaxed">
-                                SML believes that a safe, clean and vibrant environment is essential to sustaining our lives and the lives of our posterity. Louisiana’s land, lakes, bayous, rivers, coastal regions, water aquifers and minerals beneath our surface all work together in a magnificent balance which enriches our lives with sustenance, provides opportunity for independence, and promises a secure future.
-                            </p>
-                        </div>
-                        <div className="w-full md:w-1/3 bg-white p-6 rounded-2xl shadow-sm border border-gray-100 italic text-sm text-gray-500 font-serif">
-                            If we protect this amazing yet fragile environment, we will prosper and so will our future generations.
-                        </div>
-                    </div>
 
-                    <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-100 space-y-6">
-                        <h3 className="text-2xl font-bold font-heading">Coexistence & Mitigation</h3>
-                        <div className="space-y-4 text-gray-600 font-serif leading-relaxed">
-                            <p>
-                                SML believes that economic development and industry can coexist with a safe, clean and vibrant environment. We believe that all legitimate dangers to our environment must be deeply considered and carefully mitigated, for once we lose the environment that sustains our very lives and livelihoods, no amount of economic development will matter.
-                            </p>
-                            <p>
-                                We believe there are no legitimate environmental dangers that are beyond mitigation with carefully considered and implemented engineering solutions. We can have a protected environment AND robust industry.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="space-y-6 pt-8 border-t border-gray-200">
-                        <h3 className="text-2xl font-bold font-heading flex items-center gap-3 text-brand-red">
-                            <Globe size={24} /> Absolute Independence
-                        </h3>
-                        <p className="text-lg text-gray-700 font-serif leading-relaxed">
-                            Finally, SML is absolutely independent. We speak for ourselves alone and we carry no messages or purposes from and for any other organizations. The financial support SML receives comes from individual Louisiana citizens and Louisiana born organizations. We have not sought nor do we receive any financial support from any global or national affiliate groups.
-                        </p>
-                    </div>
-                </div>
-            </section>
 
             {/* Our Mission Section */}
             <section className="py-20 px-6 bg-brand-dark text-white">
