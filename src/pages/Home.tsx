@@ -343,8 +343,8 @@ export const Home: React.FC = () => {
                     {/* Left Column: Image aligned to the left */}
                     <div className="flex-1 w-full order-2 md:order-1">
                         <img 
-                            src="/environmental_advocate.png" 
-                            alt="Concerned Louisiana parent advocating for better environmental regulations" 
+                            src="/working_class_petition.png" 
+                            alt="Working class Louisianan signing a petition for political involvement" 
                             className="w-full h-auto object-cover rounded-2xl shadow-2xl skew-y-1 transform transition-transform hover:skew-y-0 duration-500"
                         />
                     </div>
@@ -358,7 +358,7 @@ export const Home: React.FC = () => {
                             <div className="w-24 h-1 bg-brand-red"></div>
                         </div>
                         <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-serif text-right">
-                            You do not have to sit idly by while this happens. There is a path forward. Because this is a massive legal battle, sustained voter awareness and community support are our top priorities. Your financial contributions are critical to keeping SML in the courtroom and bringing this fight all the way to completion to secure a safer future for our children.
+                            You do not have to sit idly by while this happens. There is a path forward. Because this is a massive legal battle, sustained voter awareness and community support are our top priorities. Your financial contributions are critical to keeping SML in the courtroom and bringing this fight all the way to completion to secure a safer future for the future generations of Louisiana.
                         </p>
                         <div className="pt-4 flex justify-end">
                             <Link to="/contact" className="inline-block bg-brand-red hover:bg-red-700 text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest transition-all shadow-xl hover:-translate-y-1">
