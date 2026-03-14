@@ -173,30 +173,21 @@ export const PropertyRights: React.FC = () => {
             <section className="py-20 px-6" id="our-rights">
                 <div className="max-w-4xl mx-auto space-y-12">
                     <div className="space-y-6">
-                        <h2 className="text-3xl md:text-5xl font-heading font-bold text-gray-900">Our Constitutionally Guaranteed Rights to Property</h2>
+                        <h2 className="text-3xl md:text-5xl font-heading font-bold text-gray-900">Our Constitutionally Guaranteed Right to Property</h2>
                         <p className="text-lg text-gray-700 font-serif leading-relaxed">
-                            Of the three foundational Rights our government was formed to protect, Property is among them. Why would the Will of the People specifically name a Right to Property? The ownership and control of Property is essential to true independence, and independence is essential to one's Life and Liberty. Our Property is the best guarantor of our freedom and it represents our generational wealth. This is a core part of the purpose of our government.
+                            Of the three foundational Rights our government was formed to protect, Property is among them. Why would the Will of the People specifically name a Right to Property? The ownership and control of Property is essential to true independence, and independence is essential to one's Life and Liberty. Our Property is the best guarantor of our freedom and it represents our generational wealth.
                         </p>
                         <p className="text-lg text-gray-700 font-serif leading-relaxed">
-                            Because of the importance of the "Right to Property", our Louisiana Constitution is very clear as to protections and limits on government power in relation to that Right. Below are excerpts from{' '}
-                            <a
-                                href="https://legis.la.gov/legis/Law.aspx?d=206294"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-brand-blue hover:underline font-semibold"
-                            >
-                                Article 1, Section 4 Right to Property
-                            </a>.
+                            Because of the importance of the "Right to Property", our Louisiana Constitution is very clear as to protections and limits on government power in relation to that Right. Below are excerpts from Article 1, Section 4 Right to Property. (<a href="https://legis.la.gov/legis/law.aspx?d=206294" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline font-semibold">https://legis.la.gov/legis/law.aspx?d=206294</a>)
                         </p>
                     </div>
 
                     <div className="space-y-8">
-                        <h2 className="text-3xl font-heading font-bold text-gray-900">
-                            Article 1, Section 4. Right to Property.
-                        </h2>
-
-                        {/* Every person */}
+                        {/* Article 1 Section 4 */}
                         <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-200 space-y-4">
+                            <h2 className="text-2xl font-heading font-bold text-gray-900">
+                                Article 1, Section 4. Right to Property.
+                            </h2>
                             <p className="text-gray-700 font-serif leading-relaxed italic border-l-4 border-brand-red pl-6">
                                 Every person has the right to acquire, own, control, use, enjoy, protect, and dispose of private property.
                             </p>
@@ -206,7 +197,7 @@ export const PropertyRights: React.FC = () => {
                         <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-200 space-y-4">
                             <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm">(B)(1)</h4>
                             <p className="text-gray-700 font-serif leading-relaxed italic border-l-4 border-brand-red pl-6">
-                                Property <strong className="not-italic text-gray-900">shall not be taken</strong> or damaged by the state or its political subdivisions except for public purposes and with just compensation paid to the owner or into court for his benefit. Except as specifically authorized by Article VI, Section 21 of this Constitution property shall not be taken or damaged by the state or its political subdivisions: (a) for predominant use by any private person or entity; or (b) for transfer of ownership to any private person or entity.
+                                Property shall not be taken or damaged by the state or its political subdivisions except for public purposes and with just compensation paid to the owner or into court for his benefit. Except as specifically authorized by Article VI, Section 21 of this Constitution property shall not be taken or damaged by the state or its political subdivisions: (a) for predominant use by any private person or entity; or (b) for transfer of ownership to any private person or entity.
                             </p>
                         </div>
 
@@ -222,7 +213,7 @@ export const PropertyRights: React.FC = () => {
                         <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-200 space-y-4">
                             <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm">(4)</h4>
                             <p className="text-gray-700 font-serif leading-relaxed italic border-l-4 border-brand-red pl-6">
-                                Property <strong className="not-italic text-gray-900">shall not be taken</strong> or damaged by any private entity authorized by law to expropriate, except for a public and necessary purpose and with just compensation paid to the owner; in such proceedings, whether the purpose is public and necessary shall be a judicial question.
+                                Property shall not be taken or damaged by any private entity authorized by law to expropriate, except for a public and necessary purpose and with just compensation paid to the owner; in such proceedings, whether the purpose is public and necessary shall be a judicial question.
                             </p>
                         </div>
 
@@ -230,16 +221,9 @@ export const PropertyRights: React.FC = () => {
                         <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-200 space-y-4">
                             <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm">(5)</h4>
                             <p className="text-gray-700 font-serif leading-relaxed italic border-l-4 border-brand-red pl-6">
-                                In every expropriation or action to take property pursuant to the provisions of this Section, a party has the right to trial by jury to determine whether the compensation is just, and the owner shall be compensated to the <strong className="not-italic text-gray-900">full extent of his loss</strong>. Except as otherwise provided in this Constitution, the full extent of loss shall include, but not be limited to, the appraised value of the property and all costs of relocation, inconvenience, and any other damages actually incurred by the owner because of the expropriation.
+                                In every expropriation or action to take property pursuant to the provisions of this Section, a party has the right to trial by jury to determine whether the compensation is just, and the owner shall be compensated to the full extent of his loss. Except as otherwise provided in this Constitution, the full extent of loss shall include, but not be limited to, the appraised value of the property and all costs of relocation, inconvenience, and any other damages actually incurred by the owner because of the expropriation.
+                                <a href="https://legis.la.gov/legis/Law.aspx?d=206294" target="_blank" rel="noopener noreferrer" className="block mt-4 text-brand-blue hover:underline text-sm font-sans not-italic uppercase tracking-widest font-bold">Source: legis.la.gov</a>
                             </p>
-                            <a
-                                href="https://legis.la.gov/legis/Law.aspx?d=206294"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-brand-blue hover:underline text-sm font-sans block"
-                            >
-                                Source: legis.la.gov — Article 1, Section 4
-                            </a>
                         </div>
                     </div>
 
@@ -250,7 +234,7 @@ export const PropertyRights: React.FC = () => {
                         </div>
                         <div className="space-y-4 text-lg text-gray-700 font-serif leading-relaxed">
                             <p>
-                                The Constitution is very clear in it's intent that property <strong>"shall not be taken"</strong> for use by a private person or entity, for economic development or tax revenue, and that if a "public purpose" requires property to be taken, "public purpose" would be a judicial question and that the owner must receive <strong>"just compensation to the full extent of his loss"</strong>. The owner is even guaranteed <strong>"the right to trial by jury to determine whether the compensation is just."</strong>
+                                The Constitution is very clear in it's intent that property "shall not be taken" for use by a private person or entity, for economic development or tax revenue, and that if a "public purpose" requires property to be taken, "public purpose" would be a judicial question and that the owner must receive "just compensation to the full extent of his loss". The owner is even guaranteed "the right to trial by jury to determine whether the compensation is just."
                             </p>
                         </div>
                     </div>
