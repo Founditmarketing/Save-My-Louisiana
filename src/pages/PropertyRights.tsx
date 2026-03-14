@@ -432,8 +432,8 @@ export const PropertyRights: React.FC = () => {
                     <div className="bg-brand-blue/5 p-8 md:p-12 rounded-[30px] border border-brand-blue/10 flex flex-col items-center justify-center text-center my-12 shadow-sm">
                         <Gavel size={48} className="text-brand-blue mb-4" />
                         <h3 className="text-2xl font-bold font-heading text-brand-blue mb-6">Legal Petition Filed</h3>
-                        <a href="#" className="inline-flex items-center gap-2 bg-brand-blue text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-blue-800 transition-all shadow-lg active:scale-95">
-                            <FileText size={20} /> View The Full Petition
+                        <a href="/20 NOV 2025 Property Rights vs CCS Eminent Domain Lawsuit (2).pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-brand-blue text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-blue-800 transition-all shadow-lg active:scale-95">
+                            <FileText size={20} /> View the Lawsuit
                         </a>
                     </div>
 
