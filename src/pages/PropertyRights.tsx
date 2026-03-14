@@ -376,7 +376,7 @@ export const PropertyRights: React.FC = () => {
                         </h2>
                         <div className="text-lg text-gray-700 font-serif leading-relaxed space-y-6">
                             <p>
-                                In 2020, the State Legislature passed a special law (<span className="font-bold text-brand-red">ACT 61</span>) that subverted the fundamental guarantee of the Right to Property by the Constitution and subordinated Louisiana citizen's right to property to private corporations.
+                                In 2020, the State Legislature passed a special law (<a href="https://www.legis.la.gov/legis/ViewDocument.aspx?d=1177407" target="_blank" rel="noopener noreferrer" className="font-bold text-brand-red hover:underline">ACT 61</a>) that subverted the fundamental guarantee of the Right to Property by the Constitution and subordinated Louisiana citizen's right to property to private corporations.
                             </p>
                             <p className="bg-gray-50 p-8 rounded-3xl border border-gray-100 italic">
                                 In violation of the Constitution, the Legislature authorized "any storage operator is herby authorized…to exercise the power of eminent domain and to expropriate needed property to acquire surface and subsurface rights and property interests necessary…".
