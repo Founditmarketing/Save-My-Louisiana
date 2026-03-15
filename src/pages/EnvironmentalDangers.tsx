@@ -103,10 +103,7 @@ export const EnvironmentalDangers: React.FC = () => {
                             <p>In 2020, a CO₂ pipeline rupture near Satartia, Mississippi released a large plume of carbon dioxide that spread through the surrounding area. Dozens of residents required medical attention, and vehicles stalled as oxygen levels in the air dropped.</p>
                         </div>
                         <div className="mt-6 rounded-2xl overflow-hidden shadow-md max-w-xl mx-auto border border-red-200">
-                            <div className="h-48 flex flex-col items-center justify-center bg-gray-200">
-                                <ImageIcon size={40} className="text-gray-400 mb-2" />
-                                <p className="text-gray-500 font-bold uppercase tracking-widest text-xs">[Pipeline Rupture Image Pending]</p>
-                            </div>
+                            <img src="/pipeline-rupture-bayou.png" alt="Gas Pipeline Rupture in Louisiana Bayou" className="w-full h-auto object-cover" />
                         </div>
                     </div>
 
