@@ -19,7 +19,7 @@ export const Header: React.FC = () => {
 
   const threatLinks = [
     { name: 'Property Rights', href: '/property-rights' },
-    { name: 'Environmental & Economic Dangers', href: '/environmental-dangers' },
+    { name: 'Environmental & Economic Dangers', label: <>Environmental & Economic<br />Dangers</>, href: '/environmental-dangers' },
     { name: 'Water & Aquifers', href: '/water-in-crosshairs' },
   ];
 
@@ -91,9 +91,9 @@ export const Header: React.FC = () => {
                   <Link
                     key={link.name}
                     to={link.href}
-                    className="block px-4 py-3 text-sm text-gray-600 hover:bg-gray-50 hover:text-brand-blue transition-colors border-b border-gray-50 last:border-0"
+                    className="block px-4 py-3 text-sm text-gray-600 hover:bg-gray-50 hover:text-brand-blue transition-colors border-b border-gray-50 last:border-0 whitespace-normal leading-snug"
                   >
-                    {link.name}
+                    {link.label || link.name}
                   </Link>
                 ))}
               </div>
@@ -182,9 +182,9 @@ export const Header: React.FC = () => {
                       key={link.name}
                       to={link.href}
                       onClick={() => setMenuOpen(false)}
-                      className="block text-lg text-gray-600 hover:text-brand-blue"
+                      className="block text-lg text-gray-600 hover:text-brand-blue whitespace-normal leading-snug"
                     >
-                      {link.name}
+                      {link.label || link.name}
                     </Link>
                   ))}
                 </div>
