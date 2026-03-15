@@ -277,10 +277,7 @@ export const EnvironmentalDangers: React.FC = () => {
                             <h3 className="text-2xl font-bold text-gray-900">CO₂ Pipeline Network in Louisiana</h3>
                             <p className="font-serif text-gray-700 text-lg">The map below illustrates the growing network of existing and proposed carbon dioxide pipelines across Louisiana. Many of these proposed routes pass through rural communities, forests, agricultural land, and environmentally sensitive areas such as the Atchafalaya Basin.</p>
                             <div className="rounded-2xl overflow-hidden shadow-md max-w-2xl mx-auto border border-gray-200 mt-4">
-                                <div className="h-64 flex flex-col items-center justify-center bg-gray-200">
-                                    <ImageIcon size={40} className="text-gray-400 mb-2" />
-                                    <p className="text-gray-500 font-bold uppercase tracking-widest text-xs">[Pipeline Map Image Pending]</p>
-                                </div>
+                                <img src="/louisiana-pipeline-map.png" alt="CO2 Pipeline Network Map in Louisiana" className="w-full h-auto object-cover" />
                             </div>
                         </div>
                     </div>
