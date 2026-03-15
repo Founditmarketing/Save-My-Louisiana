@@ -51,7 +51,7 @@ export const Home: React.FC = () => {
                     />
                     <h1 className="text-3xl md:text-7xl font-heading font-bold leading-tight drop-shadow-[3px_3px_0_rgba(0,0,0,1)]">
                         <span className="text-white">Protect Louisiana's Land, Water, Future</span>
-                        <span className="text-brand-red"> against carbon capture and sequestration (CCS)</span>
+                        <span className="text-blue-400"> against carbon capture and sequestration (CCS)</span>
                     </h1>
                     <div className="space-y-4">
                         <p className="text-xl md:text-2xl font-serif italic max-w-3xl mx-auto text-white font-medium leading-relaxed">
@@ -380,7 +380,7 @@ export const Home: React.FC = () => {
                 <div className="relative z-10 max-w-4xl mx-auto text-center space-y-10">
                     <h2 className="text-3xl md:text-5xl font-heading font-bold leading-tight">
                         The Chicot Aquifer is Louisiana's lifeline. <span className="text-brand-red">Once polluted, it cannot be restored.</span>
-                    </h2>
+                    </h2>https://open.spotify.com/track/4epWIVSZM9MLbBZE6hQNEh
                     <p className="text-xl text-gray-300 font-serif max-w-2xl mx-auto">
                         Join Save My Louisiana in demanding a moratorium on CO₂ injection beneath our water.
                     </p>
