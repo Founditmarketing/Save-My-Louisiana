@@ -248,10 +248,7 @@ export const EnvironmentalDangers: React.FC = () => {
                             <p>This situation is sometimes described as a “pincushion effect”—a landscape where thousands of old wellbores puncture the geologic layers that are supposed to contain injected CO₂. Each poorly sealed well represents a potential pathway through which gas could migrate upward toward groundwater zones or the surface.</p>
                         </div>
                         <div className="rounded-2xl overflow-hidden border border-orange-200 shadow-sm bg-white max-w-2xl mx-auto">
-                            <div className="h-64 flex flex-col items-center justify-center bg-gray-100">
-                                <ImageIcon size={40} className="text-gray-400 mb-2" />
-                                <p className="text-gray-500 font-bold uppercase tracking-widest text-xs">[Pin Cushion Image Pending]</p>
-                            </div>
+                            <img src="/pincushion-effect-diagram.png" alt="Pincushion Effect in Louisiana Geology" className="w-full h-auto object-cover" />
                         </div>
                     </div>
 
