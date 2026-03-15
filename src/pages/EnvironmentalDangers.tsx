@@ -33,7 +33,6 @@ export const EnvironmentalDangers: React.FC = () => {
                 <section className="space-y-8">
                     <div>
                         <h2 className="text-3xl font-heading font-bold text-gray-900 border-l-4 border-brand-red pl-4 mb-4">
-                            Opening Statement
                         </h2>
                         <div className="prose prose-lg prose-red font-serif text-gray-700 max-w-none space-y-4">
                             <p>Louisiana’s environment is one of its greatest treasures. Our forests, wetlands, farms, rivers, and aquifers support the livelihoods of families, provide drinking water to communities, and sustain the wildlife and natural beauty that define our state. Beneath this landscape lies a complex network of underground water systems that millions of people depend on every day.</p>
