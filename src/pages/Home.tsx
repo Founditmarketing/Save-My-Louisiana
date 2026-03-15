@@ -229,7 +229,7 @@ export const Home: React.FC = () => {
 
                             <div className="p-6 flex flex-col h-full w-full">
                                 <h3 className="text-xl font-bold mb-4 font-heading uppercase tracking-widest text-gray-900 group-hover:text-brand-red transition-colors">
-                                    Environmental Danger
+                                    Environmental & Economic Dangers
                                 </h3>
 
                                 <p className="text-gray-900 text-base leading-relaxed mb-6 font-medium">

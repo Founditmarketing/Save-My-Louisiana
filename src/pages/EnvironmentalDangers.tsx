@@ -20,7 +20,7 @@ export const EnvironmentalDangers: React.FC = () => {
                         <ArrowLeft size={16} className="mr-2" /> Back to Home
                     </Link>
                     <h1 className="text-4xl md:text-6xl font-heading font-bold leading-tight">
-                        Environmental Danger
+                        Environmental & Economic Dangers
                     </h1>
                     <p className="text-xl md:text-2xl font-serif text-red-100 max-w-2xl mx-auto">
                         This isn't theoretical. Containment failures have already happened, and Louisiana's landscape is uniquely vulnerable.

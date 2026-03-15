@@ -33,7 +33,7 @@ export const ContactFooter: React.FC = () => {
                         <ul className="space-y-2 text-sm text-gray-300">
                             <li><Link to="/property-rights" className="hover:text-white transition-colors">Property Rights</Link></li>
                             <li><Link to="/water-in-crosshairs" className="hover:text-white transition-colors">Water & Aquifers</Link></li>
-                            <li><Link to="/environmental-dangers" className="hover:text-white transition-colors">Environmental Danger</Link></li>
+                            <li><Link to="/environmental-dangers" className="hover:text-white transition-colors">Environmental & Economic Dangers</Link></li>
                             <li><Link to="/follow-the-money" className="hover:text-white transition-colors">Follow The Money</Link></li>
                         </ul>
                     </div>

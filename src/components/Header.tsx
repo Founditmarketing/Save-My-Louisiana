@@ -19,7 +19,7 @@ export const Header: React.FC = () => {
 
   const threatLinks = [
     { name: 'Property Rights', href: '/property-rights' },
-    { name: 'Environmental Danger', href: '/environmental-dangers' },
+    { name: 'Environmental & Economic Dangers', href: '/environmental-dangers' },
     { name: 'Water & Aquifers', href: '/water-in-crosshairs' },
   ];
 

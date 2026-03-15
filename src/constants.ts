@@ -211,7 +211,7 @@ export const SECTIONS: SectionData[] = [
 export const NAV_LINKS = [
   { name: 'Property Rights', href: '/property-rights' },
   { name: 'Water & Aquifers', href: '/water-in-crosshairs' },
-  { name: 'Environmental Dangers', href: '/environmental-dangers' },
+  { name: 'Environmental & Economic Dangers', href: '/environmental-dangers' },
   { name: 'Wildlife & Wetlands', href: '/wildlife-threats' },
   { name: 'Oversight Gaps', href: '/oversight-gaps' },
   { name: 'Legislative Betrayal', href: '/legislative-betrayal' },
