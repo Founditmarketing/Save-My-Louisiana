@@ -357,8 +357,7 @@ export const EnvironmentalDangers: React.FC = () => {
                         {/* Rice */}
                         <div className="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-lg flex flex-col">
                             <div className="h-48 bg-gray-200 relative">
-                                <ImageIcon size={40} className="absolute inset-0 m-auto text-gray-400" />
-                                <div className="absolute inset-0 flex items-end justify-center pb-4 text-xs font-bold text-gray-500 uppercase tracking-widest">[Rice Field Image Pending]</div>
+                                <img src="/rice-production-field.png" alt="Louisiana Rice Production Field" className="w-full h-full object-cover" />
                             </div>
                             <div className="p-6 flex flex-col flex-1">
                                 <h4 className="text-xl font-bold text-gray-900 mb-2">Rice Production</h4>
