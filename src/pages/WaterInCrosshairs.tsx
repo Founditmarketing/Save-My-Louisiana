@@ -344,7 +344,7 @@ export const WaterInCrosshairs: React.FC = () => {
 
                             <div className="bg-white rounded-[2rem] overflow-hidden shadow-2xl border border-gray-100 flex flex-col group hover:-translate-y-2 transition-transform duration-300">
                                 <div className="h-64 relative overflow-hidden bg-gray-100 flex-shrink-0">
-                                   <img src="/rice_production_field_1773619191294.png" alt="Rice Production in flooded field" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                   <img src="/rice_farming_1773622538658.png" alt="Rice Production in flooded field" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                                 </div>
                                 <div className="p-8 flex-1 flex flex-col">
                                     <h4 className="text-2xl font-bold font-heading text-brand-dark mb-4">Rice Production</h4>
