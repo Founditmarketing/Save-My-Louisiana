@@ -485,14 +485,17 @@ export const WaterInCrosshairs: React.FC = () => {
                         </div>
                     </div>
 
-                    {/* Placeholder: Pipeline Map Image */}
-                    <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-2xl p-12 text-center my-16 relative overflow-hidden group">
-                        <div className="absolute inset-0 bg-white/50 backdrop-blur-sm z-0"></div>
-                        <div className="relative z-10 flex flex-col items-center">
-                            <Activity className="text-gray-400 mb-4" size={48} />
-                            <h4 className="text-2xl font-bold text-gray-800 mb-2 font-heading">[Insert MAP Image]</h4>
-                            <p className="text-gray-600 max-w-2xl font-serif">
-                             Map showing existing and proposed carbon capture infrastructure across Louisiana in relation to major freshwater aquifers. Dozens of proposed injection wells and hundreds of miles of CO₂ pipelines are planned across multiple parishes. Many of these projects are located in regions that rely heavily on groundwater systems such as the Chicot Aquifer for drinking water, agriculture, and local economies.
+                    {/* Pipeline Map Image */}
+                    <div className="my-16 rounded-3xl overflow-hidden shadow-2xl border border-gray-200">
+                        <img 
+                            src="/aquifer_ccs_map_1773623482197.png" 
+                            alt="Map of Louisiana showing carbon capture infrastructure overlaying the Chicot Aquifer" 
+                            className="w-full h-auto"
+                        />
+                        <div className="bg-gray-50 border-t border-gray-200 p-6 md:p-8">
+                            <p className="text-gray-700 text-lg md:text-xl font-serif text-center max-w-4xl mx-auto leading-relaxed">
+                                <span className="font-bold font-heading text-brand-dark uppercase tracking-wider block mb-2 text-sm">Industrial Overlay</span>
+                                Map showing existing and proposed carbon capture infrastructure across Louisiana in relation to major freshwater aquifers. Dozens of proposed injection wells and hundreds of miles of CO₂ pipelines are planned across multiple parishes. Many of these projects are located in regions that rely heavily on groundwater systems such as the Chicot Aquifer for drinking water, agriculture, and local economies.
                             </p>
                         </div>
                     </div>
