@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ChevronDown } from 'lucide-react';
 import { HERO_CONTENT, SITUATION_CONTENT } from '../constants';
-import { ParishResolutionsMap } from '../components/ParishResolutionsMap';
 
 const HERO_IMAGES = ['/atchafalaya-basin.jpg', '/sugar_cane_field.png', '/soccer_match.png', '/state-capital-hero.jpg'];
 
@@ -301,13 +300,6 @@ export const Home: React.FC = () => {
                             </Link>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            {/* Section C2.5: Local Governments Opposing CCS */}
-            <section className="py-24 px-6 bg-gray-100 border-t border-gray-200 relative">
-                <div className="max-w-7xl mx-auto">
-                    <ParishResolutionsMap />
                 </div>
             </section>
 

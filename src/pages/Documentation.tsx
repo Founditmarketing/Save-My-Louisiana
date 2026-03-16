@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FileText, Download, X, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { ParishResolutionsMap } from '../components/ParishResolutionsMap';
 
 const DOCUMENTS = [
     {
@@ -76,6 +77,22 @@ export const Documentation: React.FC = () => {
                     ))}
                 </div>
             </div>
+
+            {/* Interactive Map Section */}
+            <section className="bg-gray-100 py-20 px-6 border-t border-gray-200">
+                <div className="max-w-7xl mx-auto">
+                    <div className="text-center mb-12 space-y-4">
+                        <h2 className="text-3xl md:text-5xl font-heading font-bold text-gray-900 uppercase">
+                            Parish Resolutions Map
+                        </h2>
+                        <div className="w-24 h-1 bg-brand-red mx-auto"></div>
+                        <p className="text-lg text-gray-700 font-serif max-w-2xl mx-auto">
+                            Explore which local governments have taken official action against CCS projects in their jurisdictions.
+                        </p>
+                    </div>
+                    <ParishResolutionsMap />
+                </div>
+            </section>
 
             {/* Lightbox Modal */}
             {selectedDoc && (
