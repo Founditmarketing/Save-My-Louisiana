@@ -321,247 +321,97 @@ export const EnvironmentalDangers: React.FC = () => {
                     </div>
                 </section>
 
-                {/* Section 6: Louisiana's Water Is in the Crosshairs */}
+                {/* Section 6: Devastating Louisiana Agriculture */}
                 <section className="space-y-12 border-t border-gray-200 pt-16">
                     <div className="text-center max-w-3xl mx-auto border-b border-gray-200 pb-12">
-                        <Droplets size={48} className="mx-auto text-blue-700 mb-4" />
+                        <Tractor size={48} className="mx-auto text-green-700 mb-4" />
                         <h2 className="text-4xl font-heading font-bold text-gray-900 mb-4">
-                            Louisiana's Water Is in the Crosshairs
+                            Devastating Louisiana Agriculture
                         </h2>
                         <p className="text-xl font-serif text-gray-600">
-                            How CCS projects endanger the Chicot Aquifer—our primary source of freshwater.
+                            When Environmental Risk Becomes Economic Risk
+                        </p>
+                        <p className="text-lg font-serif text-gray-700 mt-6 text-left">
+                            The same water systems and soil conditions that sustain Louisiana’s wetlands also support the state’s agricultural economy, meaning environmental disruptions in these landscapes can extend beyond wildlife and into the industries that depend on healthy ecosystems.
                         </p>
                     </div>
 
-                    <div className="space-y-8">
-                        <div>
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">Louisiana’s Waters: Rivers, Wetlands, and Bayous</h3>
-                            <div className="prose prose-lg font-serif text-gray-700 max-w-none space-y-4">
-                                <p>While underground aquifers provide much of Louisiana’s drinking water, the state is also defined by an extensive network of rivers, bayous, lakes, and wetlands that shape both its environment and its economy.</p>
-                                <p>Major waterways such as the Mississippi River, the Red River, the Atchafalaya River, and countless bayous and marsh systems form one of the most complex surface-water landscapes in North America. These waters support commercial fisheries, recreation, agriculture, navigation, and wildlife habitats across the state.</p>
-                                <p>Louisiana’s wetlands are particularly important. They act as natural water filtration systems, trapping sediment and pollutants while providing critical habitat for fish, birds, reptiles, and amphibians. Wetlands also serve as natural buffers against flooding and storm surge, protecting communities and infrastructure along the Gulf Coast.</p>
-                                <p>Many of these surface-water systems are closely connected to groundwater aquifers beneath the surface. In some regions, groundwater slowly feeds streams and wetlands, while in others surface water can recharge underlying aquifers.</p>
-                                <p>Because of this interconnected relationship, disturbances in the subsurface—such as changes in underground pressure or fluid movement—can potentially influence surface-water systems over time.</p>
-                                <p>Protecting Louisiana’s waters therefore requires careful stewardship of both surface water and groundwater resources, recognizing that rivers, wetlands, and aquifers often function as parts of a single interconnected system.</p>
+                    <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">Existing Louisiana Industries Potentially Exposed to CCS Risks</h3>
+
+                    {/* Primary Agricultural Callouts */}
+                    <div className="grid md:grid-cols-3 gap-8">
+                        {/* Crawfish */}
+                        <div className="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-lg flex flex-col">
+                            <div className="h-48 bg-gray-200 relative">
+                                <img src="/crawfish-aquaculture.png" alt="Louisiana Crawfish Aquaculture" className="w-full h-full object-cover" />
+                            </div>
+                            <div className="p-6 flex flex-col flex-1">
+                                <h4 className="text-xl font-bold text-gray-900 mb-2">Crawfish Aquaculture</h4>
+                                <p className="text-brand-blue font-bold text-sm mb-4">$258 Million Annual Farm-Gate Value</p>
+                                <p className="text-gray-700 font-serif flex-1">
+                                    Crawfish are particularly sensitive to water chemistry. Changes in pH, salinity, or dissolved metals from CO₂ leaks can severely affect shell formation, molting cycles, and juvenile survival rates in our shallow, groundwater-fed ponds.
+                                </p>
                             </div>
                         </div>
 
-                        <div className="bg-blue-50 p-8 rounded-2xl border border-blue-100">
-                            <h3 className="text-2xl font-bold text-blue-900 mb-4">The Chicot Aquifer: Louisiana’s Lifeline</h3>
-                            <div className="prose prose-lg font-serif text-gray-700 max-w-none space-y-4">
-                                <p>Beneath much of southwest and central Louisiana lies one of the most important freshwater resources in the state: the <strong>Chicot Aquifer</strong>. This vast underground water system supplies drinking water to hundreds of thousands of residents and provides irrigation for farms across multiple parishes.</p>
-                                <p>Unlike surface reservoirs that can be easily seen and monitored, aquifers exist deep underground within porous sand and sediment layers that hold and transmit groundwater. Water stored in these formations may take decades—or even centuries—to naturally recharge.</p>
-                                <p>Because of this slow recharge process, contamination or disruption to an aquifer can have consequences that last for generations.</p>
-                                <p>Protecting the Chicot Aquifer is therefore not simply an environmental concern. It is a matter of long-term public health, economic stability, and responsible stewardship of Louisiana’s natural resources.</p>
+                        {/* Rice */}
+                        <div className="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-lg flex flex-col">
+                            <div className="h-48 bg-gray-200 relative">
+                                <img src="/rice-production-field.png" alt="Louisiana Rice Production Field" className="w-full h-full object-cover" />
+                            </div>
+                            <div className="p-6 flex flex-col flex-1">
+                                <h4 className="text-xl font-bold text-gray-900 mb-2">Rice Production</h4>
+                                <p className="text-brand-blue font-bold text-sm mb-4">$713 Million Annual Economic Impact</p>
+                                <p className="text-gray-700 font-serif flex-1">
+                                    Rice relies heavily on irrigation from the Chicot Aquifer. Increased salinity, metal mobilization, or acidity from CCS could destroy soil health across flooded fields, spreading rapid contamination across massive agricultural areas.
+                                </p>
                             </div>
                         </div>
 
-                        <div>
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">How Aquifers Work</h3>
-                            <div className="prose prose-lg font-serif text-gray-700 max-w-none space-y-4">
-                                <p>Aquifers function much like underground sponges. Layers of sand, gravel, and porous rock allow water to move slowly through the subsurface while storing large volumes of groundwater.</p>
-                                <p>In Louisiana, freshwater aquifers sit above deeper geological formations that often contain saltwater or naturally occurring minerals. These freshwater layers are protected by dense rock formations that act as natural barriers separating potable water from deeper geological zones.</p>
-                                <p>Carbon sequestration projects typically propose injecting compressed carbon dioxide thousands of feet underground into deep saline formations. These injection zones are intended to remain isolated from freshwater aquifers by impermeable rock layers known as <strong>caprock</strong>.</p>
-                                <p>However, maintaining that separation depends on the integrity of the surrounding geology and the absence of pathways that could allow fluids or gases to migrate upward.</p>
+                        {/* Nursery */}
+                        <div className="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-lg flex flex-col">
+                            <div className="h-48 bg-gray-200 relative">
+                                <img src="/nursery-landscape-greenhouse.png" alt="Louisiana Commercial Nursery Greenhouse" className="w-full h-full object-cover" />
+                            </div>
+                            <div className="p-6 flex flex-col flex-1">
+                                <h4 className="text-xl font-bold text-gray-900 mb-2">Nursery & Landscape</h4>
+                                <p className="text-brand-blue font-bold text-sm mb-4">$2.5 Billion Annual Economic Impact</p>
+                                <p className="text-gray-700 font-serif flex-1">
+                                    Nursery crops are high-value specialty plants highly sensitive to subtle groundwater changes. Even small shifts in pH or dissolved metals can stunt plant growth and ruin entire greenhouse inventories simultaneously.
+                                </p>
                             </div>
                         </div>
+                    </div>
 
-                        <div className="rounded-2xl overflow-hidden shadow-md max-w-2xl mx-auto border border-gray-200 mt-8 mb-8">
-                            <div className="h-64 flex flex-col items-center justify-center bg-gray-100 p-6 text-center">
-                                <ImageIcon size={40} className="text-gray-400 mb-4" />
-                                <p className="text-gray-500 font-bold uppercase tracking-widest text-xs mb-2">[Insert Image Injection Well]</p>
-                                <p className="text-sm text-gray-600 font-serif">Simplified illustration of how carbon dioxide injection occurs beneath Louisiana’s groundwater systems. Freshwater aquifers such as the Chicot Aquifer sit above deep geological formations targeted for carbon storage. Maintaining separation between these layers depends on the integrity of surrounding rock formations and the absence of pathways that could allow fluids or gases to migrate upward.</p>
-                            </div>
-                        </div>
-
-                        <div className="grid md:grid-cols-2 gap-8">
+                    {/* Secondary Agricultural Callouts List */}
+                    <div className="grid md:grid-cols-2 gap-6 mt-12 bg-gray-50 p-8 rounded-3xl border border-gray-100">
+                        <div className="flex gap-4">
+                            <TreePine size={24} className="text-green-700 shrink-0 mt-1" />
                             <div>
-                                <h3 className="text-2xl font-bold text-gray-900 mb-3">Pressure Changes Underground</h3>
-                                <p className="font-serif text-gray-700 text-lg mb-4">When carbon dioxide is injected underground, it does not simply occupy empty space. The process increases pressure within the storage formation.</p>
-                                <p className="font-serif text-gray-700 text-lg mb-4">That pressure can push existing fluids outward through surrounding rock layers. In some cases, those displaced fluids may include highly saline water or naturally occurring minerals contained within deep geological formations. If pressure changes extend beyond the intended storage zone, there is potential for these fluids to move into adjacent geological layers.</p>
-                                <p className="font-serif text-gray-700 text-lg">Because groundwater systems are interconnected across large areas, even small changes in subsurface pressure can influence how fluids move through underground formations. Understanding how pressure behaves underground is one of the central challenges in evaluating the long-term safety of carbon sequestration projects.</p>
-                            </div>
-                            <div>
-                                <h3 className="text-2xl font-bold text-gray-900 mb-3">Pathways for Underground Migration</h3>
-                                <p className="font-serif text-gray-700 text-lg mb-4">For carbon dioxide or formation fluids to reach freshwater aquifers, a pathway must exist through the rock layers that separate injection zones from groundwater systems. Several potential pathways may exist in Louisiana’s subsurface:</p>
-                                <ul className="list-disc pl-6 space-y-2 text-brand-red font-bold mb-4 font-serif">
-                                    <li>natural geological faults</li>
-                                    <li>fractures in rock formations</li>
-                                    <li>poorly sealed legacy oil and gas wells</li>
-                                    <li>abandoned wells with degraded cement or casing</li>
-                                </ul>
-                                <p className="font-serif text-gray-700 text-lg">Louisiana has more than a century of oil and gas development history, and hundreds of thousands of wells have been drilled across the state. Many of the earliest wells were constructed long before modern environmental standards existed. If any of these wells provide a vertical pathway through geological layers, they could potentially allow gases or fluids to migrate upward toward freshwater zones. This possibility is one reason why identifying and evaluating historic wells is an important part of assessing carbon sequestration proposals.</p>
+                                <h4 className="font-bold text-lg text-gray-900">Forestry & Timber ($11–13B)</h4>
+                                <p className="text-sm font-serif text-gray-600 mt-1">CO₂ migration can lower soil pH, mobilizing iron and manganese. With timber requiring 20–30 years to reach harvest, disrupted root systems pose drastic long-term economic hits to landowners.</p>
                             </div>
                         </div>
-
-                        <div>
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">What Happens if CO₂ Reaches Groundwater</h3>
-                            <div className="prose prose-lg font-serif text-gray-700 max-w-none space-y-4">
-                                <p>Carbon dioxide behaves differently when it dissolves in water. When CO₂ mixes with groundwater, it forms carbonic acid, which can lower the pH of the water. This process is known as <strong>acidification</strong>.</p>
-                                <p>Lower pH levels can alter the chemical balance of groundwater and may cause naturally occurring metals within surrounding rock formations to dissolve more easily into the water.</p>
-                                <p>These metals may include:</p>
-                                <ul className="list-disc pl-6 space-y-1 text-brand-red font-bold">
-                                    <li>iron</li>
-                                    <li>manganese</li>
-                                    <li>arsenic</li>
-                                    <li>other naturally occurring elements</li>
-                                </ul>
-                                <p>Changes in groundwater chemistry can affect water quality and may require additional treatment before the water can be used for drinking or irrigation. Because aquifers move water slowly, changes to groundwater chemistry can persist for long periods of time once they occur.</p>
+                        <div className="flex gap-4">
+                            <Anchor size={24} className="text-blue-700 shrink-0 mt-1" />
+                            <div>
+                                <h4 className="font-bold text-lg text-gray-900">Fisheries ($1.3B)</h4>
+                                <p className="text-sm font-serif text-gray-600 mt-1">Carbonic acid from wetland CO₂ leaks rapidly lowers pH levels, directly threatening shell-forming organisms like oysters, and disrupting critical shrimp nursery habitats.</p>
                             </div>
                         </div>
-
-                        <div className="grid md:grid-cols-2 gap-8 mt-8">
+                        <div className="flex gap-4">
+                            <Wheat size={24} className="text-yellow-600 shrink-0 mt-1" />
                             <div>
-                                <h3 className="text-2xl font-bold text-gray-900 mb-3">Monitoring Underground Carbon Storage</h3>
-                                <p className="font-serif text-gray-700 text-lg mb-4">One of the challenges associated with underground carbon storage is that the subsurface environment cannot be directly observed. Scientists and engineers rely on a combination of monitoring wells, pressure sensors, seismic imaging, and computer models to track how injected carbon dioxide behaves underground.</p>
-                                <p className="font-serif text-gray-700 text-lg">These monitoring systems provide valuable information, but they also involve a degree of uncertainty. Geological formations can behave differently than expected, particularly over long periods of time. For this reason, carbon storage projects often require long-term monitoring programs designed to track pressure changes, plume movement, and groundwater conditions for many years after injection begins. Ensuring that monitoring systems remain active and properly funded over the long term is an important part of protecting groundwater resources.</p>
-                            </div>
-                            <div>
-                                <h3 className="text-2xl font-bold text-gray-900 mb-3">Why Louisiana’s Aquifers Require Special Protection</h3>
-                                <p className="font-serif text-gray-700 text-lg mb-4">Louisiana’s geology is complex and shaped by millions of years of sediment deposition from the Mississippi River and its tributaries. The state contains multiple stacked aquifer systems and extensive networks of faults and salt structures beneath the surface. In addition, decades of oil and gas exploration have left a large number of historic wells across the state.</p>
-                                <p className="font-serif text-gray-700 text-lg">These factors make Louisiana both attractive for certain types of industrial development and uniquely sensitive to changes in subsurface pressure and fluid movement. Because groundwater resources such as the <strong>Chicot Aquifer</strong> provide drinking water and support local economies across large regions of the state, protecting these aquifers requires careful evaluation of any activities that alter underground pressure conditions.</p>
+                                <h4 className="font-bold text-lg text-gray-900">Sugarcane ($1.2–1.4B)</h4>
+                                <p className="text-sm font-serif text-gray-600 mt-1">Grown heavily in low-lying coastal parishes targeted by CCS. Susceptible to groundwater salinity increases and disrupted wetland drainage required for the 400+ cane farms.</p>
                             </div>
                         </div>
-
-                        <div className="mt-16 border-t border-gray-200 pt-16">
-                            <h3 className="text-3xl font-bold text-gray-900 text-center mb-8 border-l-4 border-brand-red pl-4 inline-block">The Economy That Depends on the Chicot Aquifer</h3>
-                            <div className="prose prose-lg font-serif text-gray-700 max-w-none space-y-4 mb-12">
-                                <p>The Chicot Aquifer is more than a geological formation beneath Louisiana’s surface. It is one of the most important freshwater resources supporting the state’s economy.</p>
-                                <p>Across southwest and central Louisiana, the Chicot Aquifer supplies water for municipalities, homes, farms, and businesses. In many parishes, it serves as the primary source of groundwater for drinking water systems and agricultural irrigation. Several major sectors of Louisiana’s economy depend directly on this aquifer.</p>
-                            </div>
-
-                            {/* Primary Agricultural Callouts */}
-                            <div className="grid md:grid-cols-3 gap-8 mb-12">
-                                {/* Rice */}
-                                <div className="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-lg flex flex-col">
-                                    <div className="h-48 bg-gray-200 relative">
-                                        <img src="/rice-production-field.png" alt="Louisiana Rice Production Field" className="w-full h-full object-cover" />
-                                    </div>
-                                    <div className="p-6 flex flex-col flex-1">
-                                        <h4 className="text-xl font-bold text-gray-900 mb-2">Rice Production</h4>
-                                        <p className="text-gray-700 font-serif flex-1">
-                                            Southwest Louisiana is one of the most productive rice-growing regions in the United States. Rice fields require large amounts of irrigation water, and much of that water is drawn from the Chicot Aquifer. According to the LSU AgCenter, Louisiana rice production generates hundreds of millions of dollars in annual economic value. Much of this production occurs in parishes located directly above the Chicot Aquifer. Reliable groundwater supplies are essential for maintaining irrigation levels throughout the growing season.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                {/* Crawfish */}
-                                <div className="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-lg flex flex-col">
-                                    <div className="h-48 bg-gray-200 relative">
-                                        <img src="/crawfish-aquaculture.png" alt="Louisiana Crawfish Aquaculture" className="w-full h-full object-cover" />
-                                    </div>
-                                    <div className="p-6 flex flex-col flex-1">
-                                        <h4 className="text-xl font-bold text-gray-900 mb-2">Crawfish Aquaculture</h4>
-                                        <p className="text-gray-700 font-serif flex-1">
-                                            Louisiana produces the vast majority of crawfish consumed in the United States. Many crawfish farms operate in rotation with rice production, meaning the same irrigation systems and groundwater sources support both industries. Because crawfish are raised in flooded ponds and rice fields, water quality is critical. Changes in groundwater chemistry could affect crawfish health, reproduction, and overall farm productivity. For thousands of families involved in crawfish production, the Chicot Aquifer provides the water needed to sustain this uniquely Louisiana industry.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                {/* Nursery */}
-                                <div className="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-lg flex flex-col">
-                                    <div className="h-48 bg-gray-200 relative">
-                                        <img src="/nursery-landscape-greenhouse.png" alt="Louisiana Commercial Nursery Greenhouse" className="w-full h-full object-cover" />
-                                    </div>
-                                    <div className="p-6 flex flex-col flex-1">
-                                        <h4 className="text-xl font-bold text-gray-900 mb-2">Nursery & Horticulture Industry</h4>
-                                        <p className="text-gray-700 font-serif flex-1">
-                                            Louisiana’s nursery and landscape industry is another sector that depends heavily on groundwater quality. Plant nurseries require consistent irrigation water to maintain large volumes of crops. Many of these plants are sensitive to changes in water chemistry, including shifts in pH levels or dissolved minerals. Groundwater drawn from regional aquifers, including the Chicot Aquifer, provides irrigation for wholesale plant nurseries, greenhouse operations, and landscape plant production. Because nursery crops are often grown in high-density environments, even small changes in water quality could affect large portions of plant inventory.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Secondary Agricultural Callouts List */}
-                            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 bg-gray-50 p-8 rounded-3xl border border-gray-100">
-                                <div className="flex gap-4">
-                                    <Tractor size={24} className="text-green-700 shrink-0 mt-1" />
-                                    <div>
-                                        <h4 className="font-bold text-lg text-gray-900">Livestock Operations</h4>
-                                        <p className="text-sm font-serif text-gray-600 mt-1">Livestock operations across southwest and central Louisiana also depend on reliable groundwater supplies. Cattle, poultry, and other livestock require consistent sources of clean water for daily operations. Farm wells drawing from the Chicot Aquifer provide water for livestock drinking water, pasture irrigation, and farm sanitation and maintenance. In many rural areas, groundwater wells connected to the aquifer are the primary water source supporting livestock operations.</p>
-                                    </div>
-                                </div>
-                                <div className="flex gap-4">
-                                    <Leaf size={24} className="text-green-600 shrink-0 mt-1" />
-                                    <div>
-                                        <h4 className="font-bold text-lg text-gray-900">Row Crop Farming</h4>
-                                        <p className="text-sm font-serif text-gray-600 mt-1">In addition to rice, Louisiana farmers grow a variety of crops including soybeans, corn, and other commodities that depend on stable groundwater resources. Groundwater irrigation can help farmers maintain crop production during dry periods and protect yields when rainfall is limited. Because crop production often spans thousands of acres across multiple parishes, access to dependable groundwater supplies plays an important role in maintaining Louisiana’s agricultural productivity.</p>
-                                    </div>
-                                </div>
-                                <div className="flex gap-4">
-                                    <Droplets size={24} className="text-blue-500 shrink-0 mt-1" />
-                                    <div>
-                                        <h4 className="font-bold text-lg text-gray-900">Municipal Drinking Water</h4>
-                                        <p className="text-sm font-serif text-gray-600 mt-1">Beyond agriculture, many communities across southwest Louisiana rely on groundwater wells drawing from the Chicot Aquifer for their municipal water supply. These systems provide drinking water for homes, schools, hospitals, and businesses across the region. In some parishes, groundwater from the Chicot Aquifer is the primary source of safe drinking water available to residents. Protecting this resource is therefore essential not only for economic activity, but for public health.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="bg-brand-blue text-white p-8 rounded-2xl shadow-lg mt-12 text-center">
-                                <h3 className="text-2xl font-bold mb-4">A Water System Supporting Entire Communities</h3>
-                                <p className="font-serif text-lg max-w-3xl mx-auto opacity-90">Taken together, these industries illustrate how deeply Louisiana’s economy depends on the Chicot Aquifer. Agriculture, aquaculture, municipal water systems, and rural businesses all rely on the long-term availability of clean groundwater stored within this aquifer. Because aquifers recharge slowly, any disruption to groundwater quality or availability could have long-lasting consequences for communities and industries that depend on this resource. For this reason, protecting Louisiana’s freshwater aquifers is not only an environmental issue—it is also an economic one.</p>
-                            </div>
-                        </div>
-
-                        <div className="space-y-12 mt-16 pt-16 border-t border-gray-200">
+                        <div className="flex gap-4">
+                            <Leaf size={24} className="text-green-500 shrink-0 mt-1" />
                             <div>
-                                <h3 className="text-2xl font-bold text-gray-900 mb-4">How Much Water Carbon Capture Projects Require</h3>
-                                <div className="prose prose-lg font-serif text-gray-700 max-w-none space-y-4">
-                                    <p>Carbon capture and sequestration projects are often discussed primarily in terms of carbon dioxide. However, many of the industrial facilities associated with these projects also require large volumes of water to operate.</p>
-                                    <p>Facilities involved in carbon capture, hydrogen production, biofuels, and chemical processing frequently rely on water for cooling systems, steam generation, and industrial processing. In some cases, these facilities can require millions of gallons of water each day depending on the size and type of operation.</p>
-                                    <p>In regions where groundwater aquifers already support municipal drinking water, agriculture, and existing industries, additional industrial demand can place new pressure on local water resources. Across southwest and central Louisiana, the <strong>Chicot Aquifer</strong> already supplies water for farms, crawfish production, municipal water systems, and rural communities. If new industrial developments significantly increase groundwater withdrawals, local water systems may face increased competition for limited resources.</p>
-                                    <p>Groundwater recharge occurs slowly, and heavy withdrawals over long periods can lower water levels within an aquifer. Declining groundwater levels may require deeper wells, increased pumping costs, and additional strain on municipal water infrastructure.</p>
-                                    <p>Because aquifers serve as long-term freshwater reserves, understanding the water requirements of proposed industrial developments is an important part of evaluating how these projects may affect Louisiana’s groundwater systems. Careful planning and responsible water management are essential to ensure that industrial water demand does not compromise the long-term sustainability of freshwater aquifers that communities depend on every day.</p>
-                                </div>
+                                <h4 className="font-bold text-lg text-gray-900">Soybeans, Corn & Cotton</h4>
+                                <p className="text-sm font-serif text-gray-600 mt-1">These major row crops generate over $1.2B combined annually. Like all commodity crops, their sheer acreage makes them wholly dependent on the stability of existing groundwater and soil chemistry.</p>
                             </div>
-
-                            <div className="bg-red-50 p-8 rounded-2xl border border-red-100">
-                                <h3 className="text-2xl font-bold text-red-900 mb-4">Why Groundwater Contamination Is Extremely Difficult to Reverse</h3>
-                                <div className="prose prose-lg font-serif text-gray-700 max-w-none space-y-4">
-                                    <p>Groundwater systems function very differently from surface water bodies such as rivers, lakes, or reservoirs. When contamination occurs in surface water, the affected water can often be treated, diluted, or flushed downstream over time.</p>
-                                    <p>Aquifers do not behave this way.</p>
-                                    <p>Water within underground aquifers moves extremely slowly through layers of sand, gravel, and rock. In some formations, groundwater may take decades—or even centuries—to travel through the subsurface. Because of this slow movement, contaminants that enter an aquifer can remain trapped within the groundwater system for very long periods of time. Removing or treating contaminated groundwater is often technically complex, expensive, and sometimes impossible to fully restore to its original condition.</p>
-                                    <p>In cases where groundwater contamination occurs, communities may be forced to drill deeper wells, seek alternative water sources, or install costly treatment systems to ensure safe drinking water.</p>
-                                    <p>For aquifers such as the <strong>Chicot Aquifer</strong>, which provide freshwater to large portions of Louisiana, prevention is far more effective than remediation.</p>
-                                    <p>Protecting groundwater resources requires careful evaluation of activities that could introduce contaminants or alter underground pressure conditions. Once groundwater systems are affected, the consequences may extend far beyond the original source of contamination and persist for generations. For this reason, safeguarding Louisiana’s aquifers is not only an environmental priority—it is an essential responsibility for protecting the long-term water security of the state.</p>
-                                </div>
-                            </div>
-
-                            <div>
-                                <h3 className="text-2xl font-bold text-gray-900 mb-4">Why the Chicot Aquifer Is in the Crosshairs of CCS Development</h3>
-                                <div className="prose prose-lg font-serif text-gray-700 max-w-none space-y-4">
-                                    <p>As carbon capture and sequestration projects expand across the United States, Louisiana has emerged as one of the primary regions targeted for large-scale carbon storage development. The state’s geology, industrial infrastructure, and existing energy corridors have made it a focal point for companies seeking locations to capture, transport, and inject carbon dioxide underground.</p>
-                                    <p>Much of this proposed development is concentrated in regions of Louisiana that sit above or near major freshwater aquifers, including the <strong>Chicot Aquifer</strong>, which serves as a critical source of drinking water and agricultural irrigation for large portions of the state.</p>
-                                    <p>The same geological characteristics that make Louisiana attractive for industrial activity—thick sediment layers, deep saline formations, and an extensive history of oil and gas development—also create complex subsurface conditions. These formations contain networks of faults, historic wellbores, and layered aquifer systems that interact with one another beneath the surface.</p>
-                                    <p>Carbon sequestration projects propose injecting large volumes of compressed carbon dioxide thousands of feet underground into deep geological formations. While these injection zones are intended to remain isolated from freshwater aquifers, the scale of proposed storage operations raises important questions about how underground pressure changes and fluid movement could affect surrounding geological systems.</p>
-                                    <p>In addition, Louisiana’s long history of oil and gas exploration has left hundreds of thousands of wells across the state. Some of these wells were drilled and abandoned decades ago using construction standards that were never designed to withstand modern injection pressures or long-term subsurface storage operations. If any of these historic wells provide pathways through underground rock layers, they could potentially allow gases or fluids to migrate upward toward freshwater zones.</p>
-                                    <p>At the same time, many proposed CCS projects involve the construction of extensive pipeline networks designed to transport compressed carbon dioxide from industrial facilities to underground injection sites. These pipelines may cross rural communities, agricultural lands, wetlands, and regions directly above important aquifer systems.</p>
-                                    <p>Taken together, these factors place Louisiana’s groundwater resources—particularly the <strong>Chicot Aquifer</strong>—at the center of a rapidly expanding industrial development effort. For communities that rely on groundwater for drinking water, agriculture, and local economies, the stakes are significant. Aquifers represent long-term freshwater reserves that cannot easily be replaced once damaged. Understanding how carbon sequestration development may interact with these underground water systems is therefore essential.</p>
-                                    <p>Protecting Louisiana’s aquifers requires careful scientific evaluation, transparent regulatory oversight, and thoughtful consideration of how large-scale subsurface industrial activity could affect one of the state’s most valuable natural resources. Because once groundwater is compromised, the consequences may extend far beyond the projects themselves and persist for generations.</p>
-                                </div>
-                            </div>
-
-                            <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100 text-center mt-8">
-                                <h3 className="text-2xl font-bold text-gray-900 mb-4">Proposed CO₂ Pipelines and Storage Projects in Relation to Louisiana Aquifers</h3>
-                                <div className="rounded-2xl overflow-hidden shadow-md max-w-2xl mx-auto border border-gray-200 mt-4 mb-4 text-center">
-                                    <div className="h-64 flex flex-col items-center justify-center bg-gray-200 p-6">
-                                        <ImageIcon size={40} className="text-gray-400 mb-2" />
-                                        <p className="text-gray-500 font-bold uppercase tracking-widest text-xs mb-2">[Insert MAP Image]</p>
-                                        <p className="text-sm text-gray-500 font-serif">Map showing existing and proposed carbon capture infrastructure across Louisiana in relation to major freshwater aquifers. Dozens of proposed injection wells and hundreds of miles of CO₂ pipelines are planned across multiple parishes. Many of these projects are located in regions that rely heavily on groundwater systems such as the Chicot Aquifer for drinking water, agriculture, and local economies.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div className="bg-brand-red text-white p-8 rounded-2xl shadow-lg mt-12">
-                                <h3 className="text-2xl font-bold mb-4">What Happens If an Aquifer Is Lost</h3>
-                                <div className="prose prose-lg font-serif text-white max-w-none space-y-4 opacity-90">
-                                    <p>Freshwater aquifers are among the most valuable natural resources a region can possess. Unlike rivers or lakes, which can be replenished relatively quickly through rainfall and surface runoff, groundwater systems recharge slowly over long periods of time. In some aquifers, water may take decades—or even centuries—to move through underground formations.</p>
-                                    <p>Because of this slow recharge process, damage to an aquifer can have consequences that last far longer than the events that caused it. If groundwater becomes contaminated or significantly altered, restoring the aquifer to its original condition can be extremely difficult. In many cases, contaminated groundwater must be pumped, treated, and monitored for years or even decades. Even with extensive treatment efforts, it may not always be possible to fully remove contaminants from the subsurface.</p>
-                                    <p>For communities that rely on groundwater as their primary source of drinking water, the loss of an aquifer can require major adjustments. Municipalities may need to drill deeper wells, construct new water treatment facilities, or seek alternative water sources from distant locations. These solutions can involve substantial infrastructure costs and long-term financial burdens for local residents. Agricultural operations may also be affected. Farms that depend on groundwater irrigation may face increased costs, reduced water availability, or the need to modify cropping systems if water quality changes. In rural regions where groundwater wells serve homes, farms, and small businesses, the consequences of aquifer damage can extend throughout the local economy.</p>
-                                    <p>Louisiana’s <strong>Chicot Aquifer</strong> supports drinking water systems, agriculture, and communities across a large portion of the state. Because this aquifer recharges slowly and serves such a wide region, protecting its water quality is essential for ensuring long-term water security. Once groundwater systems are compromised, the effects may persist for generations. For this reason, protecting Louisiana’s aquifers is not simply a matter of environmental protection—it is a commitment to safeguarding the water resources that future communities will depend on long after today’s industrial projects have ended.</p>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                 </section>
