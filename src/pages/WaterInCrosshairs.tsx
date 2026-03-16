@@ -215,13 +215,16 @@ export const WaterInCrosshairs: React.FC = () => {
                         </div>
                     </div>
 
-                    {/* Placeholder: Injection Well Image */}
-                    <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-2xl p-12 text-center my-12 relative overflow-hidden group">
-                        <div className="absolute inset-0 bg-white/50 backdrop-blur-sm z-0"></div>
-                        <div className="relative z-10 flex flex-col items-center">
-                            <Activity className="text-gray-400 mb-4" size={48} />
-                            <h4 className="text-2xl font-bold text-gray-800 mb-2 font-heading">[Insert Image Injection Well]</h4>
-                            <p className="text-gray-600 max-w-2xl font-serif">
+                    {/* Injection Well Image */}
+                    <div className="my-16 rounded-3xl overflow-hidden shadow-2xl border border-gray-200">
+                        <img 
+                            src="/injection_well_diagram_1773622040309.png" 
+                            alt="Cross-section diagram showing CO2 injection well penetrating the Chicot Aquifer and sealing layers" 
+                            className="w-full h-auto"
+                        />
+                        <div className="bg-gray-50 border-t border-gray-200 p-6 md:p-8">
+                            <p className="text-gray-700 text-lg md:text-xl font-serif text-center max-w-4xl mx-auto leading-relaxed">
+                                <span className="font-bold font-heading text-brand-dark uppercase tracking-wider block mb-2 text-sm">Cross-Section Analysis</span>
                                 Simplified illustration of how carbon dioxide injection occurs beneath Louisiana's groundwater systems. Freshwater aquifers such as the Chicot Aquifer sit above deep geological formations targeted for carbon storage. Maintaining separation between these layers depends on the integrity of surrounding rock formations and the absence of pathways that could allow fluids or gases to migrate upward.
                             </p>
                         </div>
