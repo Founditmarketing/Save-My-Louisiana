@@ -369,24 +369,43 @@ export const WaterInCrosshairs: React.FC = () => {
 
                         {/* Additional Economic Sectors */}
                         <div className="grid md:grid-cols-3 gap-6 pt-6">
-                            <div className="bg-gray-50 p-8 rounded-2xl border border-gray-200">
-                                <h4 className="text-xl font-bold text-gray-900 mb-3 uppercase tracking-tight">Livestock Operations</h4>
-                                <p className="text-gray-600 font-serif leading-relaxed">
-                                    Cattle, poultry, and livestock require consistent clean water for drinking, pasture irrigation, and sanitation. In many rural areas, groundwater wells connected to the aquifer are the primary water source.
-                                </p>
+                            
+                            <div className="bg-white rounded-[1.5rem] overflow-hidden shadow-xl border border-gray-100 flex flex-col group hover:-translate-y-1 transition-transform duration-300">
+                                <div className="h-48 relative overflow-hidden bg-gray-100 flex-shrink-0">
+                                    <img src="/livestock_operations_water_1773622792693.png" alt="Livestock Water Trough" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                </div>
+                                <div className="p-6 flex-1 flex flex-col bg-gray-50">
+                                    <h4 className="text-xl font-bold text-gray-900 mb-3 uppercase tracking-tight">Livestock Operations</h4>
+                                    <p className="text-gray-600 font-serif leading-relaxed flex-1">
+                                        Cattle, poultry, and livestock require consistent clean water for drinking, pasture irrigation, and sanitation. In many rural areas, groundwater wells connected to the aquifer are the primary water source.
+                                    </p>
+                                </div>
                             </div>
-                            <div className="bg-gray-50 p-8 rounded-2xl border border-gray-200">
-                                <h4 className="text-xl font-bold text-gray-900 mb-3 uppercase tracking-tight">Row Crop Farming</h4>
-                                <p className="text-gray-600 font-serif leading-relaxed">
-                                    Beyond rice, farmers grow soybeans, corn, and commodities depending on stable groundwater. Irrigation protects yields when rainfall is limited across thousands of acres.
-                                </p>
+                            
+                            <div className="bg-white rounded-[1.5rem] overflow-hidden shadow-xl border border-gray-100 flex flex-col group hover:-translate-y-1 transition-transform duration-300">
+                                <div className="h-48 relative overflow-hidden bg-gray-100 flex-shrink-0 flex items-center justify-center border-b border-gray-200">
+                                    <span className="text-gray-400 font-heading font-bold tracking-widest uppercase text-sm">[Insert Image Here]</span>
+                                </div>
+                                <div className="p-6 flex-1 flex flex-col bg-gray-50">
+                                    <h4 className="text-xl font-bold text-gray-900 mb-3 uppercase tracking-tight">Row Crop Farming</h4>
+                                    <p className="text-gray-600 font-serif leading-relaxed flex-1">
+                                        Beyond rice, farmers grow soybeans, corn, and commodities depending on stable groundwater. Irrigation protects yields when rainfall is limited across thousands of acres.
+                                    </p>
+                                </div>
                             </div>
-                            <div className="bg-gray-50 p-8 rounded-2xl border border-gray-200">
-                                <h4 className="text-xl font-bold text-gray-900 mb-3 uppercase tracking-tight">Municipal Drinking Water</h4>
-                                <p className="text-gray-600 font-serif leading-relaxed">
-                                    Communities across southwest LA rely on the Chicot Aquifer for their municipal supply. In some parishes, it is the <span className="font-bold underline">primary source of safe drinking water</span> available to residents.
-                                </p>
+
+                            <div className="bg-white rounded-[1.5rem] overflow-hidden shadow-xl border border-gray-100 flex flex-col group hover:-translate-y-1 transition-transform duration-300">
+                                <div className="h-48 relative overflow-hidden bg-gray-100 flex-shrink-0 flex items-center justify-center border-b border-gray-200">
+                                    <span className="text-gray-400 font-heading font-bold tracking-widest uppercase text-sm">[Insert Image Here]</span>
+                                </div>
+                                <div className="p-6 flex-1 flex flex-col bg-gray-50">
+                                    <h4 className="text-xl font-bold text-gray-900 mb-3 uppercase tracking-tight">Municipal Drinking Water</h4>
+                                    <p className="text-gray-600 font-serif leading-relaxed flex-1">
+                                        Communities across southwest LA rely on the Chicot Aquifer for their municipal supply. In some parishes, it is the <span className="font-bold underline">primary source of safe drinking water</span> available to residents.
+                                    </p>
+                                </div>
                             </div>
+
                         </div>
 
                         <div className="bg-brand-dark text-white p-10 rounded-3xl text-center space-y-4 shadow-xl">
