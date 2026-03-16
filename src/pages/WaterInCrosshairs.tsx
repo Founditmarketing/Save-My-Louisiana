@@ -395,8 +395,8 @@ export const WaterInCrosshairs: React.FC = () => {
                             </div>
 
                             <div className="bg-white rounded-[1.5rem] overflow-hidden shadow-xl border border-gray-100 flex flex-col group hover:-translate-y-1 transition-transform duration-300">
-                                <div className="h-48 relative overflow-hidden bg-gray-100 flex-shrink-0 flex items-center justify-center border-b border-gray-200">
-                                    <span className="text-gray-400 font-heading font-bold tracking-widest uppercase text-sm">[Insert Image Here]</span>
+                                <div className="h-48 relative overflow-hidden bg-gray-100 flex-shrink-0">
+                                    <img src="/municipal_water_supply_1773623235610.png" alt="Clean Municipal Drinking Water" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                                 </div>
                                 <div className="p-6 flex-1 flex flex-col bg-gray-50">
                                     <h4 className="text-xl font-bold text-gray-900 mb-3 uppercase tracking-tight">Municipal Drinking Water</h4>
