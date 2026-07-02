@@ -47,10 +47,15 @@ export const Contact: React.FC = () => {
         setErrorMessage('');
 
         try {
-            const res = await fetch('/api/submit-lead', {
+            const res = await fetch('https://www.founditos.com/api/contact-form/bfee00b7-1628-4710-9f0d-00a4ccd09314', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ firstName, lastName, email, phone, parish, message }),
+                body: JSON.stringify({
+                    name: `${firstName} ${lastName}`.trim(),
+                    email,
+                    phone,
+                    message: `Parish: ${parish || 'Not specified'}\n\n${message}`,
+                }),
             });
 
             const data = await res.json();
