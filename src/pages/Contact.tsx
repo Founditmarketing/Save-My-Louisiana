@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Mail, ExternalLink, Youtube, CheckCircle, AlertCircle, Loader } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { PageSEO } from '../components/PageSEO';
 
 const LOUISIANA_PARISHES = [
   'Acadia', 'Allen', 'Ascension', 'Assumption', 'Avoyelles',
@@ -72,6 +73,11 @@ export const Contact: React.FC = () => {
 
     return (
         <div className="bg-white min-h-screen font-sans text-gray-900">
+            <PageSEO
+                title="Contact & Get Involved"
+                description="Join the coalition to protect Louisiana. Contact Save My Louisiana to volunteer, share information, or get involved in the fight against unsafe CCS projects."
+                path="/contact"
+            />
 
             {/* Header */}
             <section className="bg-gray-900 text-white py-20 px-6 relative overflow-hidden">

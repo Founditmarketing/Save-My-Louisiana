@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Gavel, FileText, Scale, Shield, Users, Landmark, AlertCircle, ArrowRight, Download, Pin, Megaphone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { PageSEO } from '../components/PageSEO';
 
 interface ActionItem {
     id: string;
@@ -56,6 +57,11 @@ export const LegalAction: React.FC = () => {
 
     return (
         <div className="bg-white font-sans text-gray-900">
+            <PageSEO
+                title="Legal Action"
+                description="Save My Louisiana filed suit in the 19th Judicial District Court challenging unconstitutional eminent domain laws used for carbon capture projects."
+                path="/legal-action"
+            />
             {/* Hero Section */}
             <section className="bg-brand-blue text-white py-24 px-6 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FileText, Download, X, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { ParishResolutionsMap } from '../components/ParishResolutionsMap';
+import { PageSEO } from '../components/PageSEO';
 
 const DOCUMENTS = [
     {
@@ -23,6 +24,11 @@ export const Documentation: React.FC = () => {
 
     return (
         <div className="bg-white min-h-screen font-sans text-gray-900">
+            <PageSEO
+                title="Documentation & Reports"
+                description="In-depth research and evidence supporting the fight to protect Louisiana from carbon capture and sequestration (CCS) projects, including environmental impact reports and legal filings."
+                path="/documentation"
+            />
             {/* Header */}
             <section className="bg-gray-900 text-white py-20 px-6 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/40"></div>

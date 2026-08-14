@@ -3,12 +3,18 @@ import React from 'react';
 import { ArrowLeft, Check, ShieldCheck, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useSiteSettings } from '../hooks/useSiteSettings';
+import { PageSEO } from '../components/PageSEO';
 
 export const Donate: React.FC = () => {
     const { settings } = useSiteSettings();
 
     return (
         <div className="bg-white min-h-screen font-sans text-gray-900">
+            <PageSEO
+                title="Support the Legal Defense Fund"
+                description="Donate to Save My Louisiana's legal defense fund to help challenge unconstitutional eminent domain laws being used for carbon capture (CCS) projects."
+                path="/donate"
+            />
 
             {/* Header / Hero */}
             <section className="bg-brand-blue text-white py-20 px-6 relative overflow-hidden">

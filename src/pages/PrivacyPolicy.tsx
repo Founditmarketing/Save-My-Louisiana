@@ -1,9 +1,15 @@
 import React from 'react';
 import { Layout } from '../Layout';
+import { PageSEO } from '../components/PageSEO';
 
 export const PrivacyPolicy: React.FC = () => {
     return (
         <div className="bg-white min-h-screen py-24 px-6 font-sans text-gray-900">
+            <PageSEO
+                title="Privacy Policy"
+                description="Read Save My Louisiana's privacy policy to learn how we collect, use, and protect your information."
+                path="/privacy"
+            />
             <div className="max-w-4xl mx-auto space-y-8">
                 <h1 className="text-4xl font-heading font-bold">Privacy Policy</h1>
                 <p className="text-gray-600">Last Updated: February 2026</p>

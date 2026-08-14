@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { DollarSign, ChevronRight, AlertTriangle, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { PageSEO } from '../components/PageSEO';
 
 export const FollowTheMoney: React.FC = () => {
     useEffect(() => {
@@ -9,6 +10,11 @@ export const FollowTheMoney: React.FC = () => {
 
     return (
         <div className="min-h-screen font-sans selection:bg-brand-red selection:text-white pb-0">
+            <PageSEO
+                title="Follow the Money: Why Carbon Capture Exists Financially"
+                description="The CCS boom in Louisiana is driven by the 45Q tax credit—up to $85 per ton of CO2 stored—equating to billions in corporate rewards at taxpayer expense."
+                path="/follow-the-money"
+            />
 
             {/* Editorial Hero */}
             <header className="bg-brand-dark text-white pt-40 pb-32 px-6 relative overflow-hidden border-b-8 border-brand-red">

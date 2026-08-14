@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FileText, Video as VideoIcon, Megaphone, DollarSign, Calendar, Download, ExternalLink, Maximize2 } from 'lucide-react';
 import { Lightbox } from '../components/Lightbox';
+import { PageSEO } from '../components/PageSEO';
 
 interface NewsItem {
     id: string;
@@ -203,6 +204,11 @@ export const NewsUpdates: React.FC = () => {
 
     return (
         <div className="bg-gray-50 min-h-screen pb-24 font-sans text-gray-900">
+            <PageSEO
+                title="News & Updates"
+                description="The latest articles, announcements, and videos from the Save My Louisiana campaign against unsafe carbon capture and sequestration (CCS) projects."
+                path="/news"
+            />
             {/* Hero Section */}
             <section className="bg-brand-dark text-white py-24 px-6 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">

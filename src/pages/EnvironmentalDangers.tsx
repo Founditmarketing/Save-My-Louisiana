@@ -1,10 +1,16 @@
 import React from 'react';
 import { ArrowLeft, AlertTriangle, LandPlot, Activity, ImageIcon, Map, Leaf, Tractor, Anchor, Wheat, TreePine, Trees, Fish as FishIcon, Droplets, MapPin, Search } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { PageSEO } from '../components/PageSEO';
 
 export const EnvironmentalDangers: React.FC = () => {
     return (
         <div className="bg-white min-h-screen font-sans text-gray-900 leading-relaxed">
+            <PageSEO
+                title="Environmental & Economic Dangers"
+                description="Documented failures and acidification risks from carbon capture and sequestration threaten Louisiana's $2.4B fisheries and fragile wetlands ecosystem."
+                path="/environmental-dangers"
+            />
 
             {/* Hero Section */}
             <section className="relative text-white py-24 px-6 overflow-hidden">

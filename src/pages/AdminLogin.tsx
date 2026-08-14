@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Lock, AlertCircle } from 'lucide-react';
+import { PageSEO } from '../components/PageSEO';
 
 export const AdminLogin: React.FC = () => {
     const [password, setPassword] = useState('');
@@ -34,6 +35,12 @@ export const AdminLogin: React.FC = () => {
 
     return (
         <div className="min-h-screen bg-gray-50 flex items-center justify-center px-6 py-20">
+            <PageSEO
+                title="Admin Login"
+                description="Save My Louisiana admin login."
+                path="/admin/login"
+                noIndex
+            />
             <div className="max-w-md w-full">
                 <div className="text-center mb-8">
                     <div className="w-16 h-16 bg-brand-blue rounded-2xl flex items-center justify-center mx-auto mb-4">

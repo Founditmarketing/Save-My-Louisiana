@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import { ShieldAlert, Users, Gavel, Scale, Ban, FileText, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { PageSEO } from '../components/PageSEO';
 
 export const OversightGaps: React.FC = () => {
     // scroll to top on mount
@@ -11,6 +12,11 @@ export const OversightGaps: React.FC = () => {
 
     return (
         <div className="bg-white font-sans text-gray-900">
+            <PageSEO
+                title="Closing the Oversight Gaps"
+                description="Regulators are fast-tracking CCS permits with minimal public scrutiny. See the oversight failures putting Louisiana communities at risk."
+                path="/oversight-gaps"
+            />
             {/* Hero Section */}
             <section className="relative py-24 px-6 overflow-hidden">
                 <div className="absolute inset-0 z-0">

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Gavel, FileText, Shield, Scale, Landmark, Ban, ShieldAlert, ExternalLink, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { PageSEO } from '../components/PageSEO';
 
 export const PropertyRights: React.FC = () => {
     useEffect(() => {
@@ -111,6 +112,11 @@ export const PropertyRights: React.FC = () => {
 
     return (
         <div className="bg-white font-sans text-gray-900">
+            <PageSEO
+                title="Property Rights & Eminent Domain"
+                description="Louisiana law grants eminent domain power to private CCS companies, subordinating landowners' constitutional property rights to private industry profit."
+                path="/property-rights"
+            />
 
             {/* Hero Section */}
             <section className="relative text-white py-24 px-6 overflow-hidden">

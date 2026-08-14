@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { CalendarDays, MapPin, Clock, X, ChevronLeft, ChevronRight, ExternalLink, CalendarPlus, List, LayoutGrid } from 'lucide-react';
+import { PageSEO } from '../components/PageSEO';
 
 interface CalendarEvent {
     id: string;
@@ -235,6 +236,11 @@ export const Calendar: React.FC = () => {
 
     return (
         <div className="bg-gray-50 min-h-screen font-sans text-gray-900">
+            <PageSEO
+                title="Events Calendar"
+                description="Stay updated with Save My Louisiana's upcoming town halls, community meetings, and legislative sessions on carbon capture and sequestration (CCS)."
+                path="/calendar"
+            />
             {/* Hero */}
             <section className="bg-gray-900 text-white py-20 px-6 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-900/40 to-black/60" />

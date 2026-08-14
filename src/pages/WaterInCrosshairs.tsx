@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 import { ArrowLeft, Droplets, Activity, FlaskConical, X, ZoomIn } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { PageSEO } from '../components/PageSEO';
 
 export const WaterInCrosshairs: React.FC = () => {
     const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 
     return (
         <div className="bg-white min-h-screen font-sans text-gray-900">
+            <PageSEO
+                title="Louisiana's Water Is in the Crosshairs"
+                description="33 CCS projects and 107 injection wells target the Chicot Aquifer, the primary drinking-water source for more than 700,000 residents across 15 Louisiana parishes."
+                path="/water-in-crosshairs"
+            />
             {/* Lightbox Overlay */}
             {isLightboxOpen && (
                 <div

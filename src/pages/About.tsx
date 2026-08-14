@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Shield, Globe, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { PageSEO } from '../components/PageSEO';
 
 export const About: React.FC = () => {
     // scroll to top on mount
@@ -10,6 +11,11 @@ export const About: React.FC = () => {
 
     return (
         <div className="bg-white font-sans text-gray-900">
+            <PageSEO
+                title="About Us"
+                description="Save My Louisiana (SML) is a 501(c)(4) non-profit citizen volunteer organization defending Louisianans' constitutional rights to Life, Liberty, and Property."
+                path="/about"
+            />
             {/* Hero Section */}
             <section className="bg-brand-dark text-white py-24 px-6 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">

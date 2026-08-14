@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ChevronDown } from 'lucide-react';
 import { HERO_CONTENT, SITUATION_CONTENT } from '../constants';
+import { PageSEO } from '../components/PageSEO';
 
 const HERO_IMAGES = ['/atchafalaya-basin.jpg', '/sugar_cane_field.png', '/soccer_match.png', '/state-capital-hero.jpg'];
 
@@ -20,6 +21,12 @@ export const Home: React.FC = () => {
 
     return (
         <div className="font-sans text-gray-900 bg-white">
+            <PageSEO
+                rawTitle
+                title="Save My Louisiana | Empower, Educate, Inform"
+                description="Protecting our land, water, and constitutional rights. Join the grassroots movement against unsafe carbon capture injection in Louisiana."
+                path="/"
+            />
             {/* Section A: Hero (The Hook) */}
             <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden py-16 md:py-32">
                 {/* Background Slider */}

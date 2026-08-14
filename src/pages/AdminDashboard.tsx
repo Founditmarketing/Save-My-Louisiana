@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Plus, Trash2, LogOut, FileText, Upload, ArrowLeft, Eye, Video, Megaphone, DollarSign, Edit2, Users, LayoutDashboard, Mail, Download, CalendarDays, Clock, MapPin } from 'lucide-react';
 import { useNavigate, Link } from 'react-router-dom';
+import { PageSEO } from '../components/PageSEO';
 
 interface NewsItem {
     id: string;
@@ -408,9 +409,19 @@ export const AdminDashboard: React.FC = () => {
         document.body.removeChild(link);
     };
 
+    const adminSEO = (
+        <PageSEO
+            title="Admin Dashboard"
+            description="Save My Louisiana admin dashboard."
+            path="/admin"
+            noIndex
+        />
+    );
+
     if (loading) {
         return (
             <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+                {adminSEO}
                 <div className="animate-spin w-8 h-8 border-4 border-brand-blue border-t-transparent rounded-full"></div>
             </div>
         );
@@ -418,6 +429,7 @@ export const AdminDashboard: React.FC = () => {
 
     return (
         <div className="min-h-screen bg-gray-50 font-sans">
+            {adminSEO}
             <header className="bg-brand-dark text-white px-6 py-4 shadow-md sticky top-0 z-50">
                 <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
                     <div className="flex items-center gap-4">
