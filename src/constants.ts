@@ -208,20 +208,6 @@ export const SECTIONS: SectionData[] = [
   }
 ];
 
-export const NAV_LINKS = [
-  { name: 'Property Rights', href: '/property-rights' },
-  { name: 'Water & Aquifers', href: '/water-in-crosshairs' },
-  { name: 'Environmental & Economic Dangers', href: '/environmental-dangers' },
-  { name: 'Wildlife & Wetlands', href: '/wildlife-threats' },
-  { name: 'Oversight Gaps', href: '/oversight-gaps' },
-  { name: 'Legislative Betrayal', href: '/legislative-betrayal' },
-  { name: 'Follow The Money', href: '/follow-the-money' },
-  { name: 'Purpose of Government', href: '/purpose-of-government' },
-  { name: 'Videos', href: 'https://www.youtube.com/@SAVEMYLOUISIANA-p4l', external: true },
-  { name: 'Calendar', href: '/calendar' },
-  { name: 'Contact', href: '/contact' },
-];
-
 export const CONTACT_INFO = {
   address: '123 Bayou Road, Lafayette, LA 70501',
   phone: '318.542.6856',

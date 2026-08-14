@@ -389,7 +389,7 @@ export const Home: React.FC = () => {
                 <div className="relative z-10 max-w-4xl mx-auto text-center space-y-10">
                     <h2 className="text-3xl md:text-5xl font-heading font-bold leading-tight">
                         The Chicot Aquifer is Louisiana's lifeline. <span className="text-brand-red">Once polluted, it cannot be restored.</span>
-                    </h2>https://open.spotify.com/track/4epWIVSZM9MLbBZE6hQNEh
+                    </h2>
                     <p className="text-xl text-gray-300 font-serif max-w-2xl mx-auto">
                         Join Save My Louisiana in demanding a moratorium on CO₂ injection beneath our water.
                     </p>
