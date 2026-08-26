@@ -18,6 +18,7 @@ import { LegalAction } from './pages/LegalAction';
 import { AdminLogin } from './pages/AdminLogin';
 import { AdminDashboard } from './pages/AdminDashboard';
 import { NewsUpdates } from './pages/NewsUpdates';
+import { NewsArticle } from './pages/NewsArticle';
 
 import { ScrollToTop } from './components/ScrollToTop';
 
@@ -29,6 +30,7 @@ const App: React.FC = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="news" element={<NewsUpdates />} />
+          <Route path="news/:id" element={<NewsArticle />} />
           <Route path="water-in-crosshairs" element={<WaterInCrosshairs />} />
           <Route path="environmental-dangers" element={<EnvironmentalDangers />} />
           <Route path="oversight-gaps" element={<OversightGaps />} />

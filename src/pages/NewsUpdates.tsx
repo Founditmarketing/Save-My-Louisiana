@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { FileText, Video as VideoIcon, Megaphone, DollarSign, Calendar, Download, ExternalLink, Maximize2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { FileText, Video as VideoIcon, Megaphone, DollarSign, Calendar, Download, ExternalLink, Maximize2, ArrowRight } from 'lucide-react';
 import { Lightbox } from '../components/Lightbox';
 import { PageSEO } from '../components/PageSEO';
+import { ShareButtons } from '../components/ShareButtons';
 
 interface NewsItem {
     id: string;
@@ -20,6 +22,18 @@ const isImage = (fileName?: string) => {
     if (!fileName) return false;
     return /\.(jpg|jpeg|png|gif|webp)$/i.test(fileName);
 };
+
+const CardFooter: React.FC<{ item: NewsItem }> = ({ item }) => (
+    <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between gap-4 w-full">
+        <Link
+            to={`/news/${item.id}`}
+            className="inline-flex items-center gap-1.5 text-brand-blue hover:underline font-bold uppercase tracking-widest text-[10px]"
+        >
+            View & Share <ArrowRight size={12} />
+        </Link>
+        <ShareButtons compact url={`https://savemylouisiana.org/news/${item.id}`} title={item.title} />
+    </div>
+);
 
 export const NewsUpdates: React.FC = () => {
     const [items, setItems] = useState<NewsItem[]>([]);
@@ -76,16 +90,18 @@ export const NewsUpdates: React.FC = () => {
                                     {dateStr && <span className="flex items-center gap-1"><Calendar size={12} /> {dateStr}</span>}
                                 </span>
                             </div>
-                            <h2 className="text-xl font-heading font-bold text-gray-900 mb-3">{item.title}</h2>
+                            <h2 className="text-xl font-heading font-bold text-gray-900 mb-3">
+                                <Link to={`/news/${item.id}`} className="hover:text-brand-blue transition-colors">{item.title}</Link>
+                            </h2>
                             {item.content && (
                                 <p className="text-gray-600 text-sm leading-relaxed whitespace-pre-wrap flex-1">{item.content}</p>
                             )}
                         </div>
                         {item.fileUrl && (
                             <div className="w-full shrink-0 bg-black rounded-xl overflow-hidden shadow-inner group relative mt-auto aspect-video">
-                                <video 
-                                    src={item.fileUrl} 
-                                    controls 
+                                <video
+                                    src={item.fileUrl}
+                                    controls
                                     className="w-full h-full object-cover"
                                     preload="metadata"
                                 >
@@ -93,6 +109,7 @@ export const NewsUpdates: React.FC = () => {
                                 </video>
                             </div>
                         )}
+                        <CardFooter item={item} />
                     </div>
                 );
 
@@ -106,7 +123,9 @@ export const NewsUpdates: React.FC = () => {
                             <div className="text-green-600/60 font-bold uppercase tracking-widest text-[10px] mb-2 flex justify-center items-center gap-2">
                                 <Calendar size={12} /> {dateStr}
                             </div>
-                            <h2 className="text-xl font-heading font-bold text-green-900 mb-3">{item.title}</h2>
+                            <h2 className="text-xl font-heading font-bold text-green-900 mb-3">
+                                <Link to={`/news/${item.id}`} className="hover:text-green-700 transition-colors">{item.title}</Link>
+                            </h2>
                             {item.content && (
                                 <p className="text-green-800/80 text-sm leading-relaxed mb-6 flex-1">{item.content}</p>
                             )}
@@ -120,6 +139,7 @@ export const NewsUpdates: React.FC = () => {
                                     Donate Here <ExternalLink size={14} />
                                 </a>
                             )}
+                            <CardFooter item={item} />
                         </div>
                     </div>
                 );
@@ -186,13 +206,16 @@ export const NewsUpdates: React.FC = () => {
                                     {dateStr && <span className="flex items-center gap-1"><Calendar size={10} /> {dateStr}</span>}
                                 </span>
                             </div>
-                            <h2 className={`text-xl font-heading font-bold mb-3 ${isAnnounce ? 'text-amber-900' : 'text-gray-900'}`}>{item.title}</h2>
-                            
+                            <h2 className={`text-xl font-heading font-bold mb-3 ${isAnnounce ? 'text-amber-900' : 'text-gray-900'}`}>
+                                <Link to={`/news/${item.id}`} className="hover:text-brand-blue transition-colors">{item.title}</Link>
+                            </h2>
+
                             <div className="prose prose-sm max-w-none flex-1">
                                 {item.content && (
                                     <p className={`text-sm leading-relaxed whitespace-pre-wrap ${isAnnounce ? 'text-amber-800/80' : 'text-gray-600'}`}>{item.content}</p>
                                 )}
                             </div>
+                            <CardFooter item={item} />
                         </div>
                     </div>
                 );

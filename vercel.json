@@ -6,6 +6,10 @@
             "destination": "/api/$1"
         },
         {
+            "source": "/news/:id(\\d+)",
+            "destination": "/api/share-news?id=:id"
+        },
+        {
             "source": "/sitemap.xml",
             "destination": "/sitemap.xml"
         },
